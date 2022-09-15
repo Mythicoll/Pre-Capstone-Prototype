@@ -1,0 +1,2686 @@
+{
+	"name": "Event sheet Pipe",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "PipePickup",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 729525439374459
+		},
+		{
+			"eventType": "variable",
+			"name": "PipePickup2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 129933334447342
+		},
+		{
+			"eventType": "variable",
+			"name": "PipePickup3",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 542921436252882
+		},
+		{
+			"eventType": "variable",
+			"name": "PipePickup4",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 851248268202082
+		},
+		{
+			"eventType": "variable",
+			"name": "PipePickup5",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 404277247320528
+		},
+		{
+			"eventType": "variable",
+			"name": "PipePickup6",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 737358919060959
+		},
+		{
+			"eventType": "variable",
+			"name": "PipePickup7",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 439151403331090
+		},
+		{
+			"eventType": "variable",
+			"name": "PipePickup8",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 736312556642472
+		},
+		{
+			"eventType": "variable",
+			"name": "Dropable",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 610977068704135
+		},
+		{
+			"eventType": "variable",
+			"name": "Dropable2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 774392626879646
+		},
+		{
+			"eventType": "variable",
+			"name": "Pipepicked",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 453551749445081
+		},
+		{
+			"eventType": "variable",
+			"name": "StartEndConnect",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 177923928979685
+		},
+		{
+			"eventType": "variable",
+			"name": "PipeCon",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 142419252794240
+		},
+		{
+			"eventType": "variable",
+			"name": "PipeConnected",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 781813780033425
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 242861915833443,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PipeSelect",
+					"sid": 812501278611954,
+					"parameters": {
+						"x": "64",
+						"y": "0"
+					}
+				}
+			],
+			"sid": 212744350171121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 801004473663462,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PipeSelect",
+					"sid": 429924835084029,
+					"parameters": {
+						"x": "PipeSelect.X+128",
+						"y": "PipeSelect.Y"
+					}
+				}
+			],
+			"sid": 305197554572144
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 479878510238033,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PipeSelect",
+					"sid": 985961915970490,
+					"parameters": {
+						"x": "PipeSelect.X-128",
+						"y": "PipeSelect.Y"
+					}
+				}
+			],
+			"sid": 332685882986921
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 529002986041305,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PipeSelect",
+					"sid": 304105679034716,
+					"parameters": {
+						"x": "PipeSelect.X",
+						"y": "PipeSelect.Y-128"
+					}
+				}
+			],
+			"sid": 998726656135330
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 619704561857306,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PipeSelect",
+					"sid": 914435680795275,
+					"parameters": {
+						"x": "PipeSelect.X",
+						"y": "PipeSelect.Y+128"
+					}
+				}
+			],
+			"sid": 986770351579924
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pickup",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 128117688054732,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 499966559465954,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 349290357119977,
+									"parameters": {
+										"object": "PickupTest2A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 260934870375645,
+									"parameters": {
+										"variable": "PipePickup",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 707200949567340,
+									"disabled": true,
+									"parameters": {
+										"x": "PipeSelect.X",
+										"y": "PipeSelect.Y+50"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 303647407749367,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 178169321925456,
+									"parameters": {
+										"variable": "Dropable",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 995789763989526
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 801553678105931,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 974862784258753,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 216827884381558,
+									"parameters": {
+										"object": "PickupTest2A"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 281028941234459,
+									"parameters": {
+										"variable": "Dropable"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 642511392516699,
+									"parameters": {
+										"variable": "PipePickup",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 635796966384650,
+									"parameters": {
+										"x": "PickupTest2A.X",
+										"y": "PickupTest2A.Y"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PipeSelect",
+									"sid": 485343658771922,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 607385399772799,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 266783193717116,
+									"parameters": {
+										"variable": "Dropable",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 617130186264852
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 335376334352034,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 797794622814336,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 136771174806415,
+									"parameters": {
+										"object": "PickupTest3A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 439485234973262,
+									"parameters": {
+										"variable": "PipePickup3",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 710362859336659,
+									"disabled": true,
+									"parameters": {
+										"x": "PipeSelect.X",
+										"y": "PipeSelect.Y+50"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 487461231597936,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 822065275712256,
+									"parameters": {
+										"variable": "Dropable",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 974982497069791
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 470146755138326,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 520796396840112,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 193520832893110,
+									"parameters": {
+										"object": "PickupTest3A"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 350839561561968,
+									"parameters": {
+										"variable": "Dropable"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 805059165817506,
+									"parameters": {
+										"variable": "PipePickup3",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest3A",
+									"sid": 755760218257785,
+									"parameters": {
+										"x": "PickupTest3A.X",
+										"y": "PickupTest3A.Y"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PipeSelect",
+									"sid": 896302586302723,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 882374180652597,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 807707341736276,
+									"parameters": {
+										"variable": "Dropable",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 896157253715575
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 415717521154805,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 314661653080284,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 964219773165502,
+									"parameters": {
+										"object": "PickupTest1A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 678122256100871,
+									"parameters": {
+										"variable": "PipePickup2",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 235818923112934,
+									"disabled": true,
+									"parameters": {
+										"x": "PipeSelect.X",
+										"y": "PipeSelect.Y+50"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 299918739876906,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 380172986099328,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 319358520254299
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 847860802722402,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 380706769714922,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 326262834506728,
+									"parameters": {
+										"object": "PickupTest1A"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 462089515510000,
+									"parameters": {
+										"variable": "Dropable2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 442954190476769,
+									"parameters": {
+										"variable": "PipePickup2",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest1A",
+									"sid": 167355046300474,
+									"parameters": {
+										"x": "PickupTest1A.X",
+										"y": "PickupTest1A.Y"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PipeSelect",
+									"sid": 748155884586634,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 448736338946469,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 863232145749778,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 506684655641855
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 950326561908783,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 371164809927043,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 507119380162309,
+									"parameters": {
+										"object": "PickupTest4A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 396669894029218,
+									"parameters": {
+										"variable": "PipePickup4",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 103318427060214,
+									"disabled": true,
+									"parameters": {
+										"x": "PipeSelect.X",
+										"y": "PipeSelect.Y+50"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 262623340492498,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 870263304432876,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 641111268643299
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 551227115780214,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 132483039860116,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 849066610553105,
+									"parameters": {
+										"object": "PickupTest4A"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 411445462985889,
+									"parameters": {
+										"variable": "Dropable2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 398595604510345,
+									"parameters": {
+										"variable": "PipePickup4",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest4A",
+									"sid": 631972059943596,
+									"parameters": {
+										"x": "PickupTest4A.X",
+										"y": "PickupTest4A.Y"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PipeSelect",
+									"sid": 819791596600166,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 463219446693515,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 548118039373045,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 301281992611770
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 148695511468421,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 347681114089145,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 279882372626421,
+									"parameters": {
+										"object": "PickupTest5A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 779345470541223,
+									"parameters": {
+										"variable": "PipePickup5",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 470107306679193,
+									"disabled": true,
+									"parameters": {
+										"x": "PipeSelect.X",
+										"y": "PipeSelect.Y+50"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 422704847254174,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 432985669711549,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 568318187134509
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 981642319253146,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 966026310874831,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 701574866606208,
+									"parameters": {
+										"object": "PickupTest5A"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 908887564606486,
+									"parameters": {
+										"variable": "Dropable2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 723019777843991,
+									"parameters": {
+										"variable": "PipePickup5",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest5A",
+									"sid": 960454879291130,
+									"parameters": {
+										"x": "PickupTest5A.X",
+										"y": "PickupTest5A.Y"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PipeSelect",
+									"sid": 232587589901012,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 225865125222657,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 547559971298825,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 765238230318498
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 336333246248972,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 261966849871204,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 415002879183090,
+									"parameters": {
+										"object": "PickupTest6A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 418726956707256,
+									"parameters": {
+										"variable": "PipePickup6",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 810087108207436,
+									"disabled": true,
+									"parameters": {
+										"x": "PipeSelect.X",
+										"y": "PipeSelect.Y+50"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 111049108115662,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 200314353025943,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 460167880895499
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 903743886529513,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 434148887426771,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 232195536915926,
+									"parameters": {
+										"object": "PickupTest6A"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 482845262975427,
+									"parameters": {
+										"variable": "Dropable2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 349056419313146,
+									"parameters": {
+										"variable": "PipePickup6",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest6A",
+									"sid": 807317617196139,
+									"parameters": {
+										"x": "PickupTest6A.X",
+										"y": "PickupTest6A.Y"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PipeSelect",
+									"sid": 385687106798112,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 748333537905582,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 587182712059686,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 413208236246161
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 606681871743163,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 567871779263392,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 474666106265500,
+									"parameters": {
+										"object": "PickupTest7A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 746651279710812,
+									"parameters": {
+										"variable": "PipePickup7",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 744278979908474,
+									"disabled": true,
+									"parameters": {
+										"x": "PipeSelect.X",
+										"y": "PipeSelect.Y+50"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 457678687346524,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 391901993742082,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 600445517188860
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 429175927976505,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 326705743890103,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 353349504801966,
+									"parameters": {
+										"object": "PickupTest7A"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 158181114372197,
+									"parameters": {
+										"variable": "Dropable2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 878091823668774,
+									"parameters": {
+										"variable": "PipePickup7",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest7A",
+									"sid": 193803848065662,
+									"parameters": {
+										"x": "PickupTest7A.X",
+										"y": "PickupTest7A.Y"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PipeSelect",
+									"sid": 460396523654420,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 416476464478675,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 384286396351128,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 180360289706894
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 407950217089163,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 946370156322814,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 686926818114322,
+									"parameters": {
+										"object": "PickupTest8A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 728249180234394,
+									"parameters": {
+										"variable": "PipePickup8",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest2A",
+									"sid": 104770022065812,
+									"disabled": true,
+									"parameters": {
+										"x": "PipeSelect.X",
+										"y": "PipeSelect.Y+50"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 508129711662256,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 170982807821878,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 305010443088079
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 781404225800537,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 678515513377217,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 363637464231099,
+									"parameters": {
+										"object": "PickupTest8A"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 284115213244505,
+									"parameters": {
+										"variable": "Dropable2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 993658200604552,
+									"parameters": {
+										"variable": "PipePickup8",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "PickupTest8A",
+									"sid": 616401744686925,
+									"parameters": {
+										"x": "PickupTest8A.X",
+										"y": "PickupTest8A.Y"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PipeSelect",
+									"sid": 134032694850591,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 651683421149815,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 270641862667124,
+									"parameters": {
+										"variable": "Dropable2",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 755001367992262
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 289641874659391
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 226361810969420,
+							"parameters": {
+								"variable": "PipePickup"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PickupTest2A",
+							"sid": 696293519102095,
+							"parameters": {
+								"x": "PipeSelect.X",
+								"y": "PipeSelect.Y+64"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PipeSelect",
+							"sid": 484329169796246,
+							"parameters": {
+								"animation": "\"Pickup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 899432665087187
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 733059207168040
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 352242864105350,
+							"parameters": {
+								"variable": "PipePickup2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PickupTest1A",
+							"sid": 635759426461188,
+							"parameters": {
+								"x": "PipeSelect.X",
+								"y": "PipeSelect.Y+64"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PipeSelect",
+							"sid": 664895141640001,
+							"parameters": {
+								"animation": "\"Pickup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 745373346207882
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 640019857749060
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 853663381068776,
+							"parameters": {
+								"variable": "PipePickup3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PickupTest3A",
+							"sid": 321140350580899,
+							"parameters": {
+								"x": "PipeSelect.X",
+								"y": "PipeSelect.Y+64"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PipeSelect",
+							"sid": 644951011273692,
+							"parameters": {
+								"animation": "\"Pickup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 782370063173885
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 630877357965922
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 145481603384016,
+							"parameters": {
+								"variable": "PipePickup4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PickupTest4A",
+							"sid": 690641249193087,
+							"parameters": {
+								"x": "PipeSelect.X",
+								"y": "PipeSelect.Y+64"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PipeSelect",
+							"sid": 858203386458057,
+							"parameters": {
+								"animation": "\"Pickup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 751681641364143
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 767983090768865
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 718941845068141,
+							"parameters": {
+								"variable": "PipePickup5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PickupTest5A",
+							"sid": 539608857807231,
+							"parameters": {
+								"x": "PipeSelect.X",
+								"y": "PipeSelect.Y+64"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PipeSelect",
+							"sid": 766506476616548,
+							"parameters": {
+								"animation": "\"Pickup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 280013950104868
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 694824384152040
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 114069701004767,
+							"parameters": {
+								"variable": "PipePickup6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PickupTest6A",
+							"sid": 596883828297070,
+							"parameters": {
+								"x": "PipeSelect.X",
+								"y": "PipeSelect.Y+64"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PipeSelect",
+							"sid": 301585679591114,
+							"parameters": {
+								"animation": "\"Pickup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 323762444223394
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 746363179419623
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 495222407292177,
+							"parameters": {
+								"variable": "PipePickup7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PickupTest7A",
+							"sid": 299446189193154,
+							"parameters": {
+								"x": "PipeSelect.X",
+								"y": "PipeSelect.Y+64"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PipeSelect",
+							"sid": 859913077527685,
+							"parameters": {
+								"animation": "\"Pickup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 716684487213016
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 949595586022850
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 582411759589507,
+							"parameters": {
+								"variable": "PipePickup8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PickupTest8A",
+							"sid": 549494294221385,
+							"parameters": {
+								"x": "PipeSelect.X",
+								"y": "PipeSelect.Y+64"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PipeSelect",
+							"sid": 319043497998765,
+							"parameters": {
+								"animation": "\"Pickup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 655747084786157
+				}
+			],
+			"sid": 493581266162911
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Rotate",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 755477840184825,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [],
+					"sid": 175409632231515,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 132728747981725,
+									"parameters": {
+										"object": "PickupTest1A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "PickupTest1A",
+									"sid": 818822509391584,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 609791598221469
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 486419293995354,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [],
+					"sid": 439014731723205,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 886111152306656,
+									"parameters": {
+										"object": "PickupTest2A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "PickupTest2A",
+									"sid": 854236506927189,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 936561865608507
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 212949965793713,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [],
+					"sid": 364989884697908,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 707775282372211,
+									"parameters": {
+										"object": "PickupTest3A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "PickupTest3A",
+									"sid": 395383748618304,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 644830333573656
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 927137697787746,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [],
+					"sid": 695540277183978,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 456515640639626,
+									"parameters": {
+										"object": "PickupTest4A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "PickupTest4A",
+									"sid": 597604613139529,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 967060065872863
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 181545574046773,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [],
+					"sid": 859153542492859,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 101117980233156,
+									"parameters": {
+										"object": "PickupTest5A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "PickupTest5A",
+									"sid": 411880721882865,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 943102954156862
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 680355963817844,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [],
+					"sid": 457620944930316,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 264290989997219,
+									"parameters": {
+										"object": "PickupTest6A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "PickupTest6A",
+									"sid": 873146699994201,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 873672777633200
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 337842277363664,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [],
+					"sid": 565911870165368,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 724013731652651,
+									"parameters": {
+										"object": "PickupTest7A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "PickupTest7A",
+									"sid": 691084178197578,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 501803889421382
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "key",
+							"sid": 145338065144258,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [],
+					"sid": 673130140881040,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PipeSelect",
+									"sid": 800766311157676,
+									"parameters": {
+										"object": "PickupTest8A"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "PickupTest8A",
+									"sid": 111464611324482,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 835148808109068
+						}
+					]
+				}
+			],
+			"sid": 808018081722428
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 554322892993667
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_TriggerStart",
+					"sid": 874727128052534,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PipeStart",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_TriggerEnd",
+					"sid": 590595799919296,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PipeEnd",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger1A",
+					"sid": 495776326537387,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest1A",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger1B",
+					"sid": 710618909336783,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest1A",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger2A",
+					"sid": 505582051696343,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest2A",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger2B",
+					"sid": 191017352897490,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest2A",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger3A",
+					"sid": 278452053768898,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest3A",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger3B",
+					"sid": 133377581367548,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest3A",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger4A",
+					"sid": 202435531307949,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest4A",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger4B",
+					"sid": 814215964215030,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest4A",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger5A",
+					"sid": 351542501710712,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest5A",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger5B",
+					"sid": 519910256713709,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest5A",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger6A",
+					"sid": 693345788774141,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest6A",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger6B",
+					"sid": 364296860958056,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest6A",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger7A",
+					"sid": 920200829053432,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest7A",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger7B",
+					"sid": 384295333355713,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest7A",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger8A",
+					"sid": 258085838765701,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest8A",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "P_S_Trigger8B",
+					"sid": 503125051142127,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "PickupTest8A",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 701528281729397
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 910253468225606
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 259190041252464,
+					"parameters": {
+						"audio-file": "Theme-ish",
+						"loop": "looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 288839978659502
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 808289288051054,
+					"disabled": true
+				}
+			],
+			"actions": [],
+			"sid": 359792953607145,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "P_S_TriggerStart",
+							"sid": 872365809769275,
+							"parameters": {
+								"object": "Trigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 186955159410985,
+							"parameters": {
+								"variable": "PipeCon",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 236804838322525,
+							"parameters": {
+								"variable": "StartEndConnect",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 744832445804113
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 293329513978357,
+					"disabled": true
+				}
+			],
+			"actions": [],
+			"sid": 162354837232526,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "P_S_TriggerStart",
+							"sid": 463840909249190,
+							"parameters": {
+								"object": "Trigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 180799831166047,
+							"disabled": true,
+							"parameters": {
+								"variable": "PipeConnected",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 989604095784759
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 923746708390952,
+					"disabled": true
+				}
+			],
+			"actions": [],
+			"sid": 119057719964386,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Trigger",
+							"sid": 703513103497838,
+							"parameters": {
+								"object": "Trigger"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 235407248216434,
+							"disabled": true,
+							"parameters": {
+								"variable": "PipeConnected"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 581918612010803,
+							"parameters": {
+								"variable": "PipeCon",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 287154691149079
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 176021825196256,
+					"disabled": true
+				}
+			],
+			"actions": [],
+			"sid": 313528887148364,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "P_S_TriggerEnd",
+							"sid": 560236709804579,
+							"parameters": {
+								"object": "Trigger"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 173868437678952,
+							"disabled": true,
+							"parameters": {
+								"variable": "PipeConnected"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 176945966067738,
+							"parameters": {
+								"variable": "PipeCon",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 667378125600479,
+							"parameters": {
+								"variable": "StartEndConnect",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 308437651709725
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 107477368794517,
+					"parameters": {
+						"variable": "StartEndConnect",
+						"comparison": 5,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 277881095032917,
+					"parameters": {
+						"variable": "PipeCon",
+						"comparison": 5,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PickupTest2A",
+					"sid": 351385174423036,
+					"parameters": {
+						"animation": "\"Rattle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 985582410540761
+		}
+	],
+	"sid": 693814011019254
+}

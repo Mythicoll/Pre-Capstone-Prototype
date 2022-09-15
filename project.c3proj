@@ -169,19 +169,21 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"PipeTrigger"
+			"Trigger"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Puzzle 1"
+			"Puzzle 1",
+			"Layout PipePuzzle"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Event sheet Pipe"
 		],
 		"subfolders": []
 	},
@@ -191,7 +193,16 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Theme-ish.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 110952235864696,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
