@@ -1,0 +1,10 @@
+{
+	"name": "key",
+	"plugin-id": "Keyboard",
+	"sid": 739303732966060,
+	"singleglobal-inst": {
+		"type": "key",
+		"properties": {},
+		"uid": 18
+	}
+}

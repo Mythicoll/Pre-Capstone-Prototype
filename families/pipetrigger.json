@@ -1,0 +1,26 @@
+{
+	"name": "PipeTrigger",
+	"plugin-id": "Sprite",
+	"sid": 644114336083083,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"P_S_Trigger5A",
+		"P_S_Trigger1A",
+		"P_S_Trigger1B",
+		"P_S_Trigger2A",
+		"P_S_Trigger3A",
+		"P_S_Trigger2B",
+		"P_S_Trigger3B",
+		"P_S_Trigger4A",
+		"P_S_Trigger4B",
+		"P_S_Trigger5B",
+		"P_S_Trigger6A",
+		"P_S_Trigger6B",
+		"P_S_Trigger7A",
+		"P_S_Trigger7B",
+		"P_S_Trigger8A",
+		"P_S_Trigger8B"
+	]
+}

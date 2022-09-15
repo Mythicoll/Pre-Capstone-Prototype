@@ -31,6 +31,54 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -42,14 +90,6 @@
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
-			"author": "Scirra",
-			"version": "r308",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -70,14 +110,67 @@
 			"RightValve",
 			"Mouse",
 			"Text",
-			"Paper2"
+			"Paper2",
+			"TestPlayerC",
+			"key",
+			"Audio"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"PickupTest1A",
+							"PickupTest2A",
+							"PickupTest3A",
+							"PickupTest4A",
+							"PickupTest5A",
+							"PickupTest6A",
+							"PickupTest7A",
+							"PickupTest8A",
+							"PipeEnd",
+							"PipeSelect",
+							"PipeStart"
+						],
+						"subfolders": [],
+						"name": "Pipes"
+					},
+					{
+						"items": [
+							"P_S_Trigger1A",
+							"P_S_Trigger1B",
+							"P_S_Trigger2A",
+							"P_S_Trigger2B",
+							"P_S_Trigger3A",
+							"P_S_Trigger3B",
+							"P_S_Trigger4A",
+							"P_S_Trigger5A",
+							"P_S_Trigger5B",
+							"P_S_Trigger6A",
+							"P_S_Trigger7A",
+							"P_S_Trigger7B",
+							"P_S_Trigger8A",
+							"P_S_Trigger8B",
+							"P_S_Trigger4B",
+							"P_S_TriggerEnd",
+							"P_S_TriggerStart",
+							"P_S_Trigger6B"
+						],
+						"subfolders": [],
+						"name": "PipeTriggers"
+					}
+				],
+				"name": "PipePuzzle"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"PipeTrigger"
+		],
 		"subfolders": []
 	},
 	"layouts": {
