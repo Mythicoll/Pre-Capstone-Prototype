@@ -142,6 +142,26 @@
 			"sid": 781813780033425
 		},
 		{
+			"eventType": "variable",
+			"name": "PuzzleSet",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 163718502218208
+		},
+		{
+			"eventType": "variable",
+			"name": "PuzzleStart",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 979775150135610
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -150,6 +170,14 @@
 					"sid": 242861915833443,
 					"parameters": {
 						"key": 65
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 725837445081615,
+					"parameters": {
+						"variable": "PuzzleStart"
 					}
 				}
 			],
@@ -176,6 +204,14 @@
 					"parameters": {
 						"key": 39
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 377276763458627,
+					"parameters": {
+						"variable": "PuzzleStart"
+					}
 				}
 			],
 			"actions": [
@@ -200,6 +236,14 @@
 					"sid": 479878510238033,
 					"parameters": {
 						"key": 37
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 524111648057115,
+					"parameters": {
+						"variable": "PuzzleStart"
 					}
 				}
 			],
@@ -226,6 +270,14 @@
 					"parameters": {
 						"key": 38
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 606008365735955,
+					"parameters": {
+						"variable": "PuzzleStart"
+					}
 				}
 			],
 			"actions": [
@@ -250,6 +302,14 @@
 					"sid": 619704561857306,
 					"parameters": {
 						"key": 40
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 589676933205403,
+					"parameters": {
+						"variable": "PuzzleStart"
 					}
 				}
 			],
@@ -2486,6 +2546,7 @@
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 236804838322525,
+							"disabled": true,
 							"parameters": {
 								"variable": "StartEndConnect",
 								"value": "1"
@@ -2493,47 +2554,6 @@
 						}
 					],
 					"sid": 744832445804113
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 293329513978357,
-					"disabled": true
-				}
-			],
-			"actions": [],
-			"sid": 162354837232526,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "P_S_TriggerStart",
-							"sid": 463840909249190,
-							"parameters": {
-								"object": "Trigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 180799831166047,
-							"disabled": true,
-							"parameters": {
-								"variable": "PipeConnected",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 989604095784759
 				}
 			]
 		},
@@ -2609,15 +2629,6 @@
 							"parameters": {
 								"object": "Trigger"
 							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 173868437678952,
-							"disabled": true,
-							"parameters": {
-								"variable": "PipeConnected"
-							}
 						}
 					],
 					"actions": [
@@ -2634,6 +2645,7 @@
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 667378125600479,
+							"disabled": true,
 							"parameters": {
 								"variable": "StartEndConnect",
 								"value": "1"
@@ -2680,6 +2692,284 @@
 				}
 			],
 			"sid": 985582410540761
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 562837682667565,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 629572218365559,
+					"parameters": {
+						"object": "RightValve"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 854607763419589,
+					"parameters": {
+						"variable": "PuzzleStart",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 927887523326053
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 603668142635223,
+					"parameters": {
+						"variable": "PuzzleStart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 779677656461004,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TestPlayerC",
+					"sid": 346565809140444,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RightValve",
+					"sid": 948750631504977,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Valve",
+					"sid": 768012528673522,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PipeEnd",
+					"sid": 424546970787781,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PipeStart",
+					"sid": 866351367395067,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PipeSelect",
+					"sid": 911914573317531,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Trigger",
+					"sid": 998338684080662,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "P_S_TriggerStart",
+					"sid": 873819500494074,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "P_S_TriggerEnd",
+					"sid": 731055782876122,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pipes",
+					"sid": 245741132121691,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "OrangeBackgorund",
+					"sid": 603816321672853,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 262619678873072
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 463642273876193,
+					"parameters": {
+						"variable": "PuzzleStart"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 811118499075348,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PipeEnd",
+					"sid": 393312499225291,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PipeStart",
+					"sid": 366887871311762,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PipeSelect",
+					"sid": 996631860001930,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Trigger",
+					"sid": 355075820431479,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "P_S_TriggerStart",
+					"sid": 122662288455807,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "P_S_TriggerEnd",
+					"sid": 260686815777077,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pipes",
+					"sid": 984796257786482,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "OrangeBackgorund",
+					"sid": 419475175538492,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 325979588805611
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 458250758079169,
+					"disabled": true
+				}
+			],
+			"actions": [],
+			"sid": 163077265364856,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Trigger",
+							"sid": 543871206184748,
+							"disabled": true,
+							"parameters": {
+								"object": "P_S_TriggerStart"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 875540205443896,
+							"disabled": true,
+							"parameters": {
+								"variable": "StartEndConnect",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 715131542867779
+				}
+			]
 		}
 	],
 	"sid": 693814011019254

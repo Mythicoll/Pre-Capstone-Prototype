@@ -43,13 +43,13 @@
 						"imagePoints": [
 							{
 								"name": "Image Point 1",
-								"x": 0.456,
-								"y": 0.16
+								"x": 0.46,
+								"y": 0.208
 							},
 							{
 								"name": "Image Point 2",
-								"x": 0.808,
-								"y": 0.628
+								"x": 0.98,
+								"y": 0.644
 							}
 						],
 						"duration": 1

@@ -1,0 +1,18 @@
+{
+	"name": "Pipes",
+	"plugin-id": "Sprite",
+	"sid": 183611617422671,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"PickupTest1A",
+		"PickupTest2A",
+		"PickupTest3A",
+		"PickupTest4A",
+		"PickupTest5A",
+		"PickupTest6A",
+		"PickupTest7A",
+		"PickupTest8A"
+	]
+}
