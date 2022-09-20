@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 30800,
+	"savedWithRelease": 30802,
 	"name": "PRE-CAP Prototype",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "Flash",
 			"name": "Flash",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		},
 		{
@@ -99,7 +99,7 @@
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r308.2",
 			"bundled": false
 		}
 	],
@@ -186,14 +186,16 @@
 	"layouts": {
 		"items": [
 			"Puzzle 1",
-			"Layout PipePuzzle"
+			"Layout PipePuzzle",
+			"PipePuzzleWorld"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"Event sheet Pipe"
+			"Event sheet Pipe",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
@@ -354,7 +356,7 @@
 		"cordovaAndroidScheme": "https",
 		"autoReloadScriptsOnPreview": false
 	},
-	"viewportWidth": 854,
+	"viewportWidth": 848,
 	"viewportHeight": 480,
 	"firstLayout": null
 }

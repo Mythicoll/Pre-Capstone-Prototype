@@ -212,6 +212,24 @@
 					"parameters": {
 						"variable": "PuzzleStart"
 					}
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "PipeSelect",
+					"sid": 683121307724298,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "832"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "PipeSelect",
+					"sid": 126197235583365,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "446"
+					}
 				}
 			],
 			"actions": [
@@ -245,6 +263,15 @@
 					"parameters": {
 						"variable": "PuzzleStart"
 					}
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "PipeSelect",
+					"sid": 745495914551853,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "0"
+					}
 				}
 			],
 			"actions": [
@@ -269,6 +296,15 @@
 					"sid": 529002986041305,
 					"parameters": {
 						"key": 38
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "PipeSelect",
+					"sid": 397890262678638,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "0"
 					}
 				},
 				{
@@ -302,6 +338,15 @@
 					"sid": 619704561857306,
 					"parameters": {
 						"key": 40
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "PipeSelect",
+					"sid": 475917709947845,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "382"
 					}
 				},
 				{
