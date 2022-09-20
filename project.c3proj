@@ -122,7 +122,14 @@
 			"TestPlayerC",
 			"key",
 			"Audio",
-			"OrangeBackgorund"
+			"OrangeBackgorund",
+			"FactoryTile",
+			"MapTileFactory",
+			"MetalTile",
+			"PipeScreenUIBrown",
+			"PipeScreenUI",
+			"PipeScreenUIBrownSmall",
+			"PipeScreenUISmall"
 		],
 		"subfolders": [
 			{
