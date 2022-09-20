@@ -129,7 +129,14 @@
 			"PipeScreenUIBrown",
 			"PipeScreenUI",
 			"PipeScreenUIBrownSmall",
-			"PipeScreenUISmall"
+			"PipeScreenUISmall",
+			"MapTileVolcano",
+			"MapTileMine",
+			"MapTileSquidMonster",
+			"MapTile",
+			"TiledBackground",
+			"MapTileCut",
+			"MapEdge"
 		],
 		"subfolders": [
 			{
