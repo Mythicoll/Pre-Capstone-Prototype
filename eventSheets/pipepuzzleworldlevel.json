@@ -1,5 +1,35 @@
 {
 	"name": "PipePuzzleWorldLevel",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 407584041617221,
+					"parameters": {
+						"key": 76
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 862246535728881
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 477580332087531,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
+				}
+			],
+			"sid": 325455689383160
+		}
+	],
 	"sid": 149726328012861
 }

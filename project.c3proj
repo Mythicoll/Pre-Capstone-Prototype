@@ -136,7 +136,9 @@
 			"MapTile",
 			"TiledBackground",
 			"MapTileCut",
-			"MapEdge"
+			"MapEdge",
+			"MapTileCross",
+			"MapTileCompass"
 		],
 		"subfolders": [
 			{

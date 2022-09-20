@@ -341,6 +341,35 @@
 				}
 			],
 			"sid": 988467431493904
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 224430648254061,
+					"parameters": {
+						"key": 76
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 480091786052148
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 980430451506399,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
+				}
+			],
+			"sid": 102869500801347
 		}
 	],
 	"sid": 826693878308960

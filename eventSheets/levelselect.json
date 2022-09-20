@@ -181,10 +181,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 500231251052295,
+					"sid": 850458124470022,
 					"parameters": {
 						"variable": "LevelSelected",
-						"value": "1"
+						"value": "3"
 					}
 				}
 			],
@@ -216,6 +216,102 @@
 				}
 			],
 			"sid": 554531292544688
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 110821607561360
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 623067468057553,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "MapTileCross",
+					"sid": 121317469329098,
+					"parameters": {
+						"x": "MapTileMine.X",
+						"y": "MapTileMine.Y"
+					}
+				}
+			],
+			"sid": 100668038872559
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 403368039982463
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 829019763236126,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "MapTileCross",
+					"sid": 940023613313216,
+					"parameters": {
+						"x": "MapTileFactory.X",
+						"y": "MapTileFactory.Y"
+					}
+				}
+			],
+			"sid": 765402525170998
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 273846746266600
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 440359976172789,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "MapTileCross",
+					"sid": 901633276204761,
+					"parameters": {
+						"x": "MapTileVolcano.X",
+						"y": "MapTileVolcano.Y"
+					}
+				}
+			],
+			"sid": 399588155386220
 		}
 	],
 	"sid": 604025887444433
