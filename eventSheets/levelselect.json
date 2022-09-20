@@ -1,0 +1,222 @@
+{
+	"name": "LevelSelect",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "LevelSelected",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 340307339157885
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 103707020456801,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 915137219012360,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 847750463281599
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 490572525614735,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 450916582705936,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 369473782439845
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 360824732470938,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 688507087433958,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 460796555830130,
+					"parameters": {
+						"layout": "Puzzle 1"
+					}
+				}
+			],
+			"sid": 991169656683578
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 344215348071523,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 536263407853389,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 952707848354284,
+					"parameters": {
+						"layout": "PipePuzzleWorld"
+					}
+				}
+			],
+			"sid": 458991202507432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 106920204007809,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 944004866655172,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 547171972879317,
+					"parameters": {
+						"layout": "Layout PipePuzzle"
+					}
+				}
+			],
+			"sid": 814040198987023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 891685503018314,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 5,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 500231251052295,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 639639963781561
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 435566544381325,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 990004667645542,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 554531292544688
+		}
+	],
+	"sid": 604025887444433
+}

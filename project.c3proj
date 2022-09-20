@@ -194,7 +194,8 @@
 		"items": [
 			"Puzzle 1",
 			"Layout PipePuzzle",
-			"PipePuzzleWorld"
+			"PipePuzzleWorld",
+			"LevelSelect"
 		],
 		"subfolders": []
 	},
@@ -202,7 +203,8 @@
 		"items": [
 			"Event sheet 1",
 			"Event sheet Pipe",
-			"Event sheet 2"
+			"PipePuzzleWorldLevel",
+			"LevelSelect"
 		],
 		"subfolders": []
 	},
