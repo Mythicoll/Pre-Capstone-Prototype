@@ -1,7 +1,7 @@
 {
-	"name": "PipeScreenUIBrownSmall",
+	"name": "PipeScreenUIBrownSmall2",
 	"plugin-id": "Sprite",
-	"sid": 715341193774522,
+	"sid": 429877421040522,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3547723,
+						"imageSpriteId": 2101841,
 						"collisionPoly": {
 							"points": [
 								0.029411764705882353,
@@ -35,7 +35,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 759430180532388,
+				"sid": 562533255217693,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

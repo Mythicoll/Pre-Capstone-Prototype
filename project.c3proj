@@ -138,7 +138,8 @@
 			"MapTileCut",
 			"MapEdge",
 			"MapTileCross",
-			"MapTileCompass"
+			"MapTileCompass",
+			"PipeScreenUIBrownSmall2"
 		],
 		"subfolders": [
 			{
