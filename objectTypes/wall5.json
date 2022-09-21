@@ -1,14 +1,14 @@
 {
-	"name": "UIBakcground",
+	"name": "Wall5",
 	"plugin-id": "Sprite",
-	"sid": 947083653201914,
+	"sid": 440643274496638,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 413802543850034
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 625059157225518
 		}
 	],
 	"effectTypes": [],
@@ -17,39 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 376560,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.5,
-								0,
-								0.984375,
-								0,
-								0.984375,
-								0.5,
-								0.984375,
-								0.984375,
-								0.5,
-								0.984375,
-								0,
-								0.984375,
-								0,
-								0.5
-							]
-						},
+						"imageSpriteId": 9945905,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 253264419972772,
+				"sid": 805476881044763,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
@@ -139,7 +147,14 @@
 			"MapEdge",
 			"MapTileCross",
 			"MapTileCompass",
-			"PipeScreenUIBrownSmall2"
+			"PipeScreenUIBrownSmall2",
+			"Button",
+			"Puzzle1Button",
+			"Puzzle2Button",
+			"Text2",
+			"Wall4",
+			"Wall5",
+			"Paper3"
 		],
 		"subfolders": [
 			{
@@ -205,7 +220,8 @@
 			"Puzzle 1",
 			"Layout PipePuzzle",
 			"PipePuzzleWorld",
-			"LevelSelect"
+			"LevelSelect",
+			"Menu Page"
 		],
 		"subfolders": []
 	},
@@ -214,7 +230,8 @@
 			"Event sheet 1",
 			"Event sheet Pipe",
 			"PipePuzzleWorldLevel",
-			"LevelSelect"
+			"LevelSelect",
+			"Menu Page"
 		],
 		"subfolders": []
 	},

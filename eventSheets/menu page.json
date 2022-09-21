@@ -1,0 +1,27 @@
+{
+	"name": "Menu Page",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Puzzle1Button",
+					"sid": 509842907151453
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 842582548581219,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
+				}
+			],
+			"sid": 322969554822235
+		}
+	],
+	"sid": 979905761799991
+}

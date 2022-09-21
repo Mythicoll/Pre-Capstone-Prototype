@@ -81,6 +81,32 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 821816447865108,
+					"parameters": {
+						"object": "Paper3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 692240684778275,
+					"parameters": {
+						"layer": "1",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 171870562905408,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
 					"sid": 197521877829512,
