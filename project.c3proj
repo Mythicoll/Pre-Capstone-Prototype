@@ -213,6 +213,19 @@
 					}
 				],
 				"name": "PipePuzzle"
+			},
+			{
+				"items": [
+					"Disappearing_Tiles",
+					"Door1",
+					"Door2",
+					"Door3",
+					"Exit",
+					"Player",
+					"SolidWall"
+				],
+				"subfolders": [],
+				"name": "TilePuzzle"
 			}
 		]
 	},
@@ -231,7 +244,8 @@
 			"Layout PipePuzzle",
 			"PipePuzzleWorld",
 			"LevelSelect",
-			"Menu Page"
+			"Menu Page",
+			"Tile Puzzle Level"
 		],
 		"subfolders": []
 	},
@@ -241,7 +255,8 @@
 			"Event sheet Pipe",
 			"PipePuzzleWorldLevel",
 			"LevelSelect",
-			"Menu Page"
+			"Menu Page",
+			"tilelevel_ES"
 		],
 		"subfolders": []
 	},

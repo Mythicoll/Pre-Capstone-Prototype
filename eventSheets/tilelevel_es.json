@@ -1,0 +1,217 @@
+{
+	"name": "tilelevel_ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 599928593041354,
+					"parameters": {
+						"object": "Disappearing_Tiles"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Disappearing_Tiles",
+					"sid": 645686354479550,
+					"parameters": {
+						"animation": "\"StepOn\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Disappearing_Tiles",
+					"sid": 189897683966928,
+					"parameters": {
+						"instance-variable": "TileUsed",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 207689717468788
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 368112182874490
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 709706168012841,
+					"parameters": {
+						"object": "Disappearing_Tiles"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Disappearing_Tiles",
+					"sid": 140125322896415,
+					"parameters": {
+						"instance-variable": "TileUsed"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Disappearing_Tiles",
+					"sid": 517871300396693,
+					"parameters": {
+						"animation": "\"StepOn\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Disappearing_Tiles",
+					"sid": 768806568643667,
+					"parameters": {
+						"animation": "\"InActive\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Disappearing_Tiles",
+					"sid": 801387249420058,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Player",
+					"sid": 785566659884483,
+					"parameters": {
+						"instance-variable": "tilesUsed",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 510839118365054
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 635637818462003,
+					"parameters": {
+						"instance-variable": "tilesUsed",
+						"comparison": 5,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Door1",
+					"sid": 371404261460299
+				}
+			],
+			"sid": 656328535391572
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 351161563001124,
+					"parameters": {
+						"instance-variable": "tilesUsed",
+						"comparison": 5,
+						"value": "15"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Door2",
+					"sid": 391485974199478
+				}
+			],
+			"sid": 366793460063587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 692896581334250,
+					"parameters": {
+						"instance-variable": "tilesUsed",
+						"comparison": 5,
+						"value": "22"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Door3",
+					"sid": 988515635817471
+				}
+			],
+			"sid": 980592060050852
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 711621739599416,
+					"parameters": {
+						"object": "Exit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 812635304628062
+				}
+			],
+			"sid": 673231016597261
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 680996591546231
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 929424405573944,
+					"parameters": {
+						"width": "320",
+						"height": "320"
+					}
+				}
+			],
+			"sid": 948337040725287
+		}
+	],
+	"sid": 925857234592815
+}

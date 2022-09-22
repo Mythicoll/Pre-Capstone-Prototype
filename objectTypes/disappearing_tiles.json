@@ -1,0 +1,96 @@
+{
+	"name": "Disappearing_Tiles",
+	"plugin-id": "Sprite",
+	"sid": 505608807451413,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TileUsed",
+			"type": "boolean",
+			"desc": "",
+			"sid": 956922620431408
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 626927721396846
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9163662,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 607130208402296,
+				"name": "Active",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9467665,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 929700963250263,
+				"name": "StepOn",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9903901,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 983115469475111,
+				"name": "InActive",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
