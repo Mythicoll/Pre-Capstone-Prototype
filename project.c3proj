@@ -163,7 +163,8 @@
 			"Wall4",
 			"Wall5",
 			"Paper3",
-			"Tilemap"
+			"Tilemap",
+			"Platform"
 		],
 		"subfolders": [
 			{
