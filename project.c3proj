@@ -63,6 +63,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
@@ -154,7 +162,8 @@
 			"Text2",
 			"Wall4",
 			"Wall5",
-			"Paper3"
+			"Paper3",
+			"Tilemap"
 		],
 		"subfolders": [
 			{

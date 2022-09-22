@@ -2591,7 +2591,6 @@
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 236804838322525,
-							"disabled": true,
 							"parameters": {
 								"variable": "StartEndConnect",
 								"value": "1"
@@ -2690,7 +2689,6 @@
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 667378125600479,
-							"disabled": true,
 							"parameters": {
 								"variable": "StartEndConnect",
 								"value": "1"
