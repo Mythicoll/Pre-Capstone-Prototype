@@ -117,6 +117,30 @@
 			"author": "Scirra",
 			"version": "r308.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "n0pefy4jltn",
@@ -222,7 +246,8 @@
 					"Door3",
 					"Exit",
 					"Player",
-					"SolidWall"
+					"SolidWall",
+					"chaseEnemy"
 				],
 				"subfolders": [],
 				"name": "TilePuzzle"

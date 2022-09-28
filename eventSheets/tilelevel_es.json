@@ -210,7 +210,199 @@
 					}
 				}
 			],
-			"sid": 948337040725287
+			"sid": 948337040725287,
+			"disabled": true
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Ai Scripts",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 747835890527663
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "chaseEnemy",
+							"sid": 700994464995907,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "chaseEnemy.X+random(-32, 32)",
+								"y": "chaseEnemy.Y+random(-32, 32)"
+							}
+						}
+					],
+					"sid": 915244427566033
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "chaseEnemy",
+							"sid": 170397755861857,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "chaseEnemy",
+							"sid": 523724153213005,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 703348909496920
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "chaseEnemy",
+							"sid": 424057953264578,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "chaseEnemy",
+							"sid": 321384683061648,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "chaseEnemy.X+random(-32, 32)",
+								"y": "chaseEnemy.Y+random(-32, 32)"
+							}
+						}
+					],
+					"sid": 569491527087402
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "chaseEnemy",
+							"sid": 955396851225198,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "chaseEnemy",
+							"sid": 367994615405570,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "chaseEnemy",
+							"sid": 238935338288257,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 265714978203429
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "chaseEnemy",
+							"sid": 912396151463376,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 570007706457944,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 398012021894920,
+									"parameters": {
+										"interval-seconds": "random(3,6)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "chaseEnemy",
+									"sid": 923398247075955,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "chaseEnemy.X+random(-32, 32)",
+										"y": "chaseEnemy.Y+random(-32, 32)"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "chaseEnemy",
+									"sid": 552591284121118,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "enabled"
+									}
+								}
+							],
+							"sid": 868051925630878
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy",
+							"sid": 750054133378608,
+							"parameters": {
+								"object": "Player"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 625492715206791
+						}
+					],
+					"sid": 916498018353962
+				}
+			],
+			"sid": 686649215707688
 		}
 	],
 	"sid": 925857234592815
