@@ -5902,7 +5902,7 @@
 					"type": "TestPlayerC",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -5934,8 +5934,8 @@
 						}
 					},
 					"world": {
-						"x": 448,
-						"y": 576,
+						"x": 192,
+						"y": 864,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
