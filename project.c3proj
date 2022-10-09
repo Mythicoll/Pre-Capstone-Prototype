@@ -141,6 +141,14 @@
 			"author": "Scirra",
 			"version": "r308.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "n0pefy4jltn",
@@ -188,7 +196,9 @@
 			"Wall5",
 			"Paper3",
 			"Tilemap",
-			"Platform"
+			"Platform",
+			"Mudkip",
+			"HP"
 		],
 		"subfolders": [
 			{
