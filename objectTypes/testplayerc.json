@@ -200,7 +200,7 @@
 				],
 				"sid": 203130698783632,
 				"name": "Walk",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
