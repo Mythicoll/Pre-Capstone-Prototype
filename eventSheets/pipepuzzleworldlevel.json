@@ -32,6 +32,16 @@
 			"sid": 114892165593280
 		},
 		{
+			"eventType": "variable",
+			"name": "PlayerHP",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "3 is base max HP",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 785772792181520
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

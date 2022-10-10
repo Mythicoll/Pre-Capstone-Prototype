@@ -17502,6 +17502,35 @@
 					}
 				},
 				{
+					"type": "Crab",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 746,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1600,
+						"y": 1696,
+						"width": 96,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.65625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "TestPlayerC",
 					"properties": {
 						"initially-visible": true,
@@ -18147,7 +18176,7 @@
 					"type": "MetalBeams",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "KeyNo",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -18176,7 +18205,7 @@
 					"type": "MetalBeams",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "KeyNo",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
