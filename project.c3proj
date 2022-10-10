@@ -157,6 +157,30 @@
 			"author": "Scirra",
 			"version": "r308.2",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "highlightshadow",
+			"name": "Highlight shadow",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blurhorizontal",
+			"name": "Blur horizontal",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpripple",
+			"name": "Warp ripple",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "n0pefy4jltn",
@@ -218,7 +242,10 @@
 			"Divider",
 			"Divider2",
 			"Divider3",
-			"Divider4"
+			"Divider4",
+			"Shadow",
+			"ShadowLeftArea",
+			"ShadowRightArea"
 		],
 		"subfolders": [
 			{
