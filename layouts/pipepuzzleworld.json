@@ -15196,16 +15196,16 @@
 					"behaviors": {},
 					"world": {
 						"x": 1152,
-						"y": 2195,
+						"y": 2211,
 						"width": 352,
-						"height": 160,
+						"height": 192,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.1
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -21060,6 +21060,51 @@
 					}
 				},
 				{
+					"type": "PickupParticle",
+					"properties": {
+						"rate": 12,
+						"spray-cone": 15,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 150,
+						"size": 30,
+						"opacity": 100,
+						"grow-rate": 0,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 0,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 1
+					},
+					"uid": 870,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2368,
+						"y": 3200,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "CollectMudkip_Pink",
 					"properties": {
 						"initially-visible": true,
@@ -21749,7 +21794,7 @@
 				{
 					"type": "TutorialText1",
 					"properties": {
-						"text": "Hey! You see that switch? You can use \"Space\" to interact with it! Try it!",
+						"text": "Hey! You see that switch? You can use \"SPACE\" to interact with it! Try it!",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -21882,7 +21927,8 @@
 							0.3
 						],
 						"angle": 0,
-						"zElevation": 1.5
+						"zElevation": 1.5,
+						"blendMode": "destination-out"
 					}
 				},
 				{

@@ -449,9 +449,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 533319592971009,
+					"sid": 765843078622143,
 					"parameters": {
-						"seconds": "5"
+						"seconds": "9"
 					}
 				},
 				{
@@ -737,14 +737,91 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 611795494265656,
-					"disabled": true
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 930954663558263,
+					"parameters": {
+						"object": "CollectableBottle"
+					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "CollectableBottle",
+					"sid": 137496894158028,
+					"parameters": {
+						"object": "PickupParticle",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "PickupParticle",
+					"sid": 638156281349191,
+					"parameters": {
+						"angle": "270"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CollectableBottle",
+					"sid": 883412907229361
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CollectMudkip_Pink",
+					"sid": 920423192787791
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 533032871736301,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PickupParticle",
+					"sid": 801369376530784
+				}
+			],
 			"sid": 413853256001587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 498773360277577
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 190560147977035,
+					"parameters": {
+						"tag": "\"Theme\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 378259043894050,
+					"parameters": {
+						"audio-file": "Theme-ish",
+						"loop": "looping",
+						"volume": "-10",
+						"tag-optional": "\"Theme\""
+					}
+				}
+			],
+			"sid": 749842239098896
 		}
 	],
 	"sid": 149726328012861

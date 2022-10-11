@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
@@ -248,7 +256,8 @@
 			"ShadowRightArea",
 			"Crab",
 			"CollectMudkip_Pink",
-			"CollectableBottle"
+			"CollectableBottle",
+			"PickupParticle"
 		],
 		"subfolders": [
 			{
