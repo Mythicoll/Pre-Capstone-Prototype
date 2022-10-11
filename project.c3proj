@@ -263,7 +263,8 @@
 			"TriggerTextCollect",
 			"TextCollect",
 			"TextTutorialPipe1",
-			"TextTutorialPipe2"
+			"TextTutorialPipe2",
+			"TextTutorialPipe3"
 		],
 		"subfolders": [
 			{

@@ -449,9 +449,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 765843078622143,
+					"sid": 612888671967680,
 					"parameters": {
-						"seconds": "9"
+						"seconds": "5"
 					}
 				},
 				{
@@ -887,9 +887,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 620801140391531,
+					"sid": 779827655708412,
 					"parameters": {
-						"seconds": "9"
+						"seconds": "5"
 					}
 				},
 				{
@@ -1007,9 +1007,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 965667019905937,
+					"sid": 318684976038407,
 					"parameters": {
-						"seconds": "9"
+						"seconds": "5"
 					}
 				},
 				{

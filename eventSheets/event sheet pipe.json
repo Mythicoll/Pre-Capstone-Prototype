@@ -2732,6 +2732,117 @@
 						"animation": "\"Rattle\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mudkip",
+					"sid": 374569039748190,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBox",
+					"sid": 775685128125821,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxDetail",
+					"sid": 402704595138282,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBackDrop",
+					"sid": 439389424684382,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 178704996908470,
+					"parameters": {
+						"text": "TextTutorialPipe3.Text"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 692613855415627,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 977362320797248,
+					"disabled": true,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 336808273550274,
+					"disabled": true,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBox",
+					"sid": 986444536740959,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxDetail",
+					"sid": 705516022698601,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBackDrop",
+					"sid": 241319265801285,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 818836035107490,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mudkip",
+					"sid": 565497061668619,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 985582410540761
@@ -2914,9 +3025,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "SpriteFont",
-					"sid": 999680475496129,
+					"sid": 560230758648771,
 					"parameters": {
-						"text": "TextTutorialPipe1.Text"
+						"text": "TextTutorialPipe2.Text"
 					}
 				},
 				{
@@ -2938,9 +3049,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 473562752607252,
+					"sid": 931178305207602,
 					"parameters": {
-						"seconds": "6"
+						"seconds": "5"
 					}
 				},
 				{
@@ -3494,17 +3605,17 @@
 			],
 			"actions": [
 				{
+					"id": "destroy",
+					"objectClass": "TriggerText",
+					"sid": 840474321909368
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Mudkip",
 					"sid": 882174531621871,
 					"parameters": {
 						"visibility": "visible"
 					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "TriggerText",
-					"sid": 875793162934123
 				},
 				{
 					"id": "set-visible",
@@ -3549,9 +3660,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 367516048185103,
+					"sid": 203666543849106,
 					"parameters": {
-						"seconds": "9"
+						"seconds": "5"
 					}
 				},
 				{

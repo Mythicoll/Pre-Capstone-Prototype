@@ -21247,6 +21247,35 @@
 					}
 				},
 				{
+					"type": "MetalBeams",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "KeyYes",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 661,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 560,
+						"y": 64.86486486486487,
+						"width": 224,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5135135135135135,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "CollectMudkip_Pink",
 					"properties": {
 						"initially-visible": true,
@@ -21965,35 +21994,6 @@
 						"height": 128,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "MetalBeams",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "KeyYes",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 661,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 560,
-						"y": 64.86486486486487,
-						"width": 224,
-						"height": 192,
-						"originX": 0.5,
-						"originY": 0.5135135135135135,
 						"color": [
 							1,
 							1,
