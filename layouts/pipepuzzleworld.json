@@ -21105,6 +21105,148 @@
 					}
 				},
 				{
+					"type": "TriggerTextDoor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 869,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 576,
+						"y": 608,
+						"width": 352,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TextDoor",
+					"properties": {
+						"text": "Look that door is unlocked! GO GO GO",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 871,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 3456,
+						"width": 256,
+						"height": 128,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TriggerTextCollect",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 872,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1568,
+						"y": 1376,
+						"width": 352,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TextCollect",
+					"properties": {
+						"text": "One of my family members are nearby! Hurry and find them!",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 873,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1760,
+						"y": 3360,
+						"width": 256,
+						"height": 128,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "CollectMudkip_Pink",
 					"properties": {
 						"initially-visible": true,
@@ -21792,7 +21934,7 @@
 					}
 				},
 				{
-					"type": "TutorialText1",
+					"type": "TextTutorial",
 					"properties": {
 						"text": "Hey! You see that switch? You can use \"SPACE\" to interact with it! Try it!",
 						"enable-bbcode": true,
@@ -21837,7 +21979,7 @@
 					"type": "MetalBeams",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "KeyNo",
+						"initial-animation": "KeyYes",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -21846,10 +21988,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 832,
-						"y": 3264,
-						"width": 128,
-						"height": 96,
+						"x": 544,
+						"y": 48.432432432432435,
+						"width": 192,
+						"height": 160,
 						"originX": 0.5,
 						"originY": 0.5135135135135135,
 						"color": [

@@ -245,7 +245,7 @@
 			"SpriteFont",
 			"TextBox",
 			"TextBoxDetail",
-			"TutorialText1",
+			"TextTutorial",
 			"MetalBeams",
 			"Divider",
 			"Divider2",
@@ -257,7 +257,11 @@
 			"Crab",
 			"CollectMudkip_Pink",
 			"CollectableBottle",
-			"PickupParticle"
+			"PickupParticle",
+			"TriggerTextDoor",
+			"TextDoor",
+			"TriggerTextCollect",
+			"TextCollect"
 		],
 		"subfolders": [
 			{
