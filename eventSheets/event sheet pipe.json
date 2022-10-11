@@ -2889,10 +2889,106 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Mudkip",
-					"sid": 668858991249437,
+					"objectClass": "TextBox",
+					"sid": 938174343284139,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxDetail",
+					"sid": 591970158427542,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBackDrop",
+					"sid": 911191551376259,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 999680475496129,
+					"parameters": {
+						"text": "TextTutorialPipe1.Text"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 108255021603988,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mudkip",
+					"sid": 697164703174552,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 473562752607252,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 843724655043982,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBox",
+					"sid": 620311627291579,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxDetail",
+					"sid": 999972087663708,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBackDrop",
+					"sid": 918703192794747,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 713798997936081,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mudkip",
+					"sid": 154805931778205,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
@@ -2981,14 +3077,6 @@
 					"id": "set-visible",
 					"objectClass": "OrangeBackgorund",
 					"sid": 419475175538492,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Mudkip",
-					"sid": 941782304873349,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -3391,6 +3479,131 @@
 				}
 			],
 			"sid": 172917914577233
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 768557213197058,
+					"parameters": {
+						"object": "TriggerText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Mudkip",
+					"sid": 882174531621871,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "TriggerText",
+					"sid": 875793162934123
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBox",
+					"sid": 273910529979933,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxDetail",
+					"sid": 365215784165403,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBackDrop",
+					"sid": 933942733876591,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 328047719203961,
+					"parameters": {
+						"text": "TextTutorialPipe1.Text"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 379771385463599,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 367516048185103,
+					"parameters": {
+						"seconds": "9"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpriteFont",
+					"sid": 405364016156807,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBox",
+					"sid": 685227660349735,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxDetail",
+					"sid": 943053162789491,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBackDrop",
+					"sid": 258625389727105,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 955467213369551,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mudkip",
+					"sid": 147395659692801,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 737516246980364
 		}
 	],
 	"sid": 693814011019254

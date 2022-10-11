@@ -1062,6 +1062,30 @@
 				}
 			],
 			"sid": 145685654811806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 471978826323644,
+					"parameters": {
+						"object": "MetalBeams"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 872112560383537,
+					"parameters": {
+						"layout": "Layout PipePuzzle"
+					}
+				}
+			],
+			"sid": 644443083004286
 		}
 	],
 	"sid": 149726328012861

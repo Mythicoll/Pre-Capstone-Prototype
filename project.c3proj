@@ -261,7 +261,9 @@
 			"TriggerTextDoor",
 			"TextDoor",
 			"TriggerTextCollect",
-			"TextCollect"
+			"TextCollect",
+			"TextTutorialPipe1",
+			"TextTutorialPipe2"
 		],
 		"subfolders": [
 			{
