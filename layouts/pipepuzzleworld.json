@@ -21849,7 +21849,7 @@
 					"type": "HP",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "HP3",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
