@@ -21071,7 +21071,7 @@
 						},
 						"8Direction": {
 							"properties": {
-								"max-speed": 200,
+								"max-speed": 250,
 								"acceleration": 600,
 								"deceleration": 500,
 								"directions": "dir-4",
@@ -21416,6 +21416,64 @@
 						"y": 704,
 						"width": 1587,
 						"height": 1536,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shadow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 866,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1824,
+						"y": 1344,
+						"width": 192,
+						"height": 1333,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shadow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 867,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3024,
+						"y": 864,
+						"width": 544,
+						"height": 1333,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
