@@ -246,7 +246,9 @@
 			"Shadow",
 			"ShadowLeftArea",
 			"ShadowRightArea",
-			"Crab"
+			"Crab",
+			"CollectMudkip_Pink",
+			"CollectableBottle"
 		],
 		"subfolders": [
 			{
