@@ -509,19 +509,19 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 445055628558330,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "TestPlayerC",
 					"sid": 817943296211395,
 					"parameters": {
 						"object": "Lever"
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 574298482504432,
-					"parameters": {
-						"key": 32
 					}
 				}
 			],
