@@ -173,6 +173,29 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 622550543553129,
+					"parameters": {
+						"instance-variable": "tilesUsed",
+						"comparison": 5,
+						"value": "46"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Door4",
+					"sid": 493891679066802
+				}
+			],
+			"sid": 372151548809433
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "Player",
 					"sid": 711621739599416,
@@ -203,15 +226,14 @@
 				{
 					"id": "set-canvas-size",
 					"objectClass": "System",
-					"sid": 929424405573944,
+					"sid": 499836831905797,
 					"parameters": {
-						"width": "320",
-						"height": "320"
+						"width": "700",
+						"height": "600"
 					}
 				}
 			],
-			"sid": 948337040725287,
-			"disabled": true
+			"sid": 948337040725287
 		},
 		{
 			"eventType": "group",

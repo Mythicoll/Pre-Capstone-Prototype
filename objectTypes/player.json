@@ -16,6 +16,11 @@
 			"behaviorId": "EightDir",
 			"name": "8Direction",
 			"sid": 171228028174285
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 211304919025777
 		}
 	],
 	"effectTypes": [],
@@ -24,14 +29,14 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 29,
+						"height": 62,
+						"originX": 0.5172413793103449,
+						"originY": 0.5161290322580645,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4754327,
+						"imageSpriteId": 3495298,
 						"useCollisionPoly": true,
 						"duration": 1
 					}

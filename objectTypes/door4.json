@@ -1,24 +1,14 @@
 {
-	"name": "chaseEnemy",
+	"name": "Door4",
 	"plugin-id": "Sprite",
-	"sid": 528035176631236,
+	"sid": 919629984533361,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Pathfinding",
-			"name": "Pathfinding",
-			"sid": 779817455856955
-		},
-		{
-			"behaviorId": "LOS",
-			"name": "LineOfSight",
-			"sid": 122201017320951
-		},
-		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 143809031626229
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 116930321497477
 		}
 	],
 	"effectTypes": [],
@@ -27,19 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 50,
-						"height": 32,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
-						"originY": 0.53125,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2263746,
+						"imageSpriteId": 7953387,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 648114339637373,
+				"sid": 888574576008611,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

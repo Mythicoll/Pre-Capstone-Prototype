@@ -323,7 +323,8 @@
 					"Exit",
 					"Player",
 					"SolidWall",
-					"chaseEnemy"
+					"chaseEnemy",
+					"Door4"
 				],
 				"subfolders": [],
 				"name": "TilePuzzle"
@@ -537,7 +538,7 @@
 		"cordovaAndroidScheme": "https",
 		"autoReloadScriptsOnPreview": false
 	},
-	"viewportWidth": 848,
-	"viewportHeight": 480,
+	"viewportWidth": 700,
+	"viewportHeight": 600,
 	"firstLayout": null
 }
