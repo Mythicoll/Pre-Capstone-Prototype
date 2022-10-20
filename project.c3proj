@@ -264,7 +264,8 @@
 			"TextCollect",
 			"TextTutorialPipe1",
 			"TextTutorialPipe2",
-			"TextTutorialPipe3"
+			"TextTutorialPipe3",
+			"UnderWaterBackground"
 		],
 		"subfolders": [
 			{
@@ -363,7 +364,8 @@
 			"Tile Puzzle Level",
 			"FinalGame-1",
 			"FinalGame-2",
-			"FinalGame-3"
+			"FinalGame-3",
+			"Underwater"
 		],
 		"subfolders": []
 	},
@@ -377,7 +379,8 @@
 			"tilelevel_ES",
 			"FinalGame-1",
 			"FinalGame-2",
-			"FinalGame-3"
+			"FinalGame-3",
+			"UnderWater"
 		],
 		"subfolders": []
 	},
