@@ -1,0 +1,51 @@
+{
+	"name": "FinalGame-1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 561559501333160
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 892489836600207,
+					"parameters": {
+						"audio-file": "Theme-ish",
+						"loop": "not-looping",
+						"volume": "15",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 657488529742692
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "FinalGameStartPageButton",
+					"sid": 588735208549239
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 812053554856675,
+					"parameters": {
+						"layout": "FinalGame-2"
+					}
+				}
+			],
+			"sid": 319755566292987
+		}
+	],
+	"sid": 506884307399236
+}

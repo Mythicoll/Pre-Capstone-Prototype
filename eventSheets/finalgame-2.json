@@ -1,0 +1,74 @@
+{
+	"name": "FinalGame-2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 914917280964823
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FinalGame2Text3",
+					"sid": 486774208064900,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "FinalGame2Text",
+					"sid": 403495171673895,
+					"parameters": {
+						"text": "\"It was not us who woke the beast . . . . . but it was our ambition. . . \"",
+						"duration": "7"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 138679701342242,
+					"parameters": {
+						"seconds": "11"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FinalGame2Text3",
+					"sid": 774047295669838,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FinalGame2Text",
+					"sid": 303212181227511
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "FinalGame2Text3",
+					"sid": 580754031893480,
+					"parameters": {
+						"text": "\"The Divers warned us to stop submerging. . . . . heavens forgive our mistake . . . \"",
+						"duration": "8"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 304338777569448,
+					"parameters": {
+						"seconds": "22"
+					}
+				}
+			],
+			"sid": 625761552534288
+		}
+	],
+	"sid": 853469557618692
+}

@@ -1,0 +1,70 @@
+{
+	"name": "FinalGame-3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 348070155086536
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FinalGame2Text4",
+					"sid": 581547985589059,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 456711720990848,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FinalGame2Text4",
+					"sid": 763704353092216,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "FinalGame2Text4",
+					"sid": 945126311988516,
+					"parameters": {
+						"text": "\"HEY. . . . WAKE UP!\"",
+						"duration": "6"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 563002921612007,
+					"parameters": {
+						"seconds": "9"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FinalGame2Text4",
+					"sid": 717621451281065
+				},
+				{
+					"id": "destroy",
+					"objectClass": "TextBackDrop",
+					"sid": 722612097036261
+				}
+			],
+			"sid": 204374800102013
+		}
+	],
+	"sid": 384510294910911
+}
