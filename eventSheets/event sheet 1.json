@@ -721,6 +721,38 @@
 				}
 			],
 			"sid": 922935064564755
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 128001803237197
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 177239947456125,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 193630213279681,
+					"parameters": {
+						"audio-file": "Steam Shaft",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 403593338415413
 		}
 	],
 	"sid": 826693878308960

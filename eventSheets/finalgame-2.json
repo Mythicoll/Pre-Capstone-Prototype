@@ -65,9 +65,76 @@
 					"parameters": {
 						"seconds": "22"
 					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 789655867941324,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
 				}
 			],
 			"sid": 625761552534288
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 946056552746866
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 539325960234597,
+					"parameters": {
+						"audio-file": "Steam on the Beach",
+						"loop": "not-looping",
+						"volume": "15",
+						"tag-optional": "\"Beach\""
+					}
+				}
+			],
+			"sid": 524001292443842
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 555530334533527,
+					"parameters": {
+						"interval-seconds": "15"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 254234326251449,
+					"parameters": {
+						"tag": "\"Beach\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 374611186037530,
+					"parameters": {
+						"audio-file": "Steam on the Beach",
+						"loop": "not-looping",
+						"volume": "15",
+						"tag-optional": "\"Beach\""
+					}
+				}
+			],
+			"sid": 970823311847545
 		}
 	],
 	"sid": 853469557618692

@@ -395,6 +395,38 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "Steam on the Beach.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 191930766383950,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Water in Hell.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 584481532769254,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Part of the Machine.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 951738211087673,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Steam Shaft.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 787850663390198,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []

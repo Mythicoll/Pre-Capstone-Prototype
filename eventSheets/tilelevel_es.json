@@ -454,6 +454,73 @@
 				}
 			],
 			"sid": 718510315460425
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 186907134080330
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 123998377520803,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 490372248706381,
+					"parameters": {
+						"audio-file": "Water in Hell",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"Lava\""
+					}
+				}
+			],
+			"sid": 765682583303080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 872739242550215,
+					"parameters": {
+						"interval-seconds": "111"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 407914430061225,
+					"parameters": {
+						"tag": "\"Lava\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 236655536497694,
+					"parameters": {
+						"audio-file": "Water in Hell",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"Lava\""
+					}
+				}
+			],
+			"sid": 378822403208735
 		}
 	],
 	"sid": 925857234592815
