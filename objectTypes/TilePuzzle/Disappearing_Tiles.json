@@ -8,6 +8,7 @@
 			"name": "TileUsed",
 			"type": "boolean",
 			"desc": "",
+			"show": true,
 			"sid": 956922620431408
 		}
 	],

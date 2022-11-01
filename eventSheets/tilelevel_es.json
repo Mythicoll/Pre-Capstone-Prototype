@@ -481,6 +481,7 @@
 						"audio-file": "Water in Hell",
 						"loop": "looping",
 						"volume": "0",
+						"stereo-pan": "0",
 						"tag-optional": "\"Lava\""
 					}
 				}
@@ -516,6 +517,7 @@
 						"audio-file": "Water in Hell",
 						"loop": "looping",
 						"volume": "0",
+						"stereo-pan": "0",
 						"tag-optional": "\"Lava\""
 					}
 				}

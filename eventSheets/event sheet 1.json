@@ -748,6 +748,7 @@
 						"audio-file": "Steam Shaft",
 						"loop": "looping",
 						"volume": "0",
+						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}
 				}

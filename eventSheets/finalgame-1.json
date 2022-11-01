@@ -19,6 +19,7 @@
 						"audio-file": "Steam on the Beach",
 						"loop": "not-looping",
 						"volume": "15",
+						"stereo-pan": "0",
 						"tag-optional": "\"Beach\""
 					}
 				}
@@ -75,6 +76,7 @@
 						"audio-file": "Steam on the Beach",
 						"loop": "not-looping",
 						"volume": "15",
+						"stereo-pan": "0",
 						"tag-optional": "\"Beach\""
 					}
 				}

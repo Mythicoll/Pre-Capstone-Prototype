@@ -8,6 +8,7 @@
 			"name": "tilesUsed",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 109311342128089
 		}
 	],
