@@ -167,6 +167,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r317",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "highlightshadow",
 			"name": "Highlight shadow",
@@ -265,7 +273,10 @@
 			"TextTutorialPipe1",
 			"TextTutorialPipe2",
 			"TextTutorialPipe3",
-			"UnderWaterBackground"
+			"UnderWaterBackground",
+			"PatrollerEnemy",
+			"TurretEnemy",
+			"Bullet"
 		],
 		"subfolders": [
 			{

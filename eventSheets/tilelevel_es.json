@@ -226,10 +226,10 @@
 				{
 					"id": "set-canvas-size",
 					"objectClass": "System",
-					"sid": 499836831905797,
+					"sid": 978812758827979,
 					"parameters": {
-						"width": "700",
-						"height": "600"
+						"width": "1000",
+						"height": "1000"
 					}
 				}
 			],
@@ -238,7 +238,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Ai Scripts",
+			"title": " Chase Ai Script",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -523,6 +523,187 @@
 				}
 			],
 			"sid": 378822403208735
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Patrol AI Script",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "PatrollerEnemy",
+							"sid": 610953046818266,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "PatrollerEnemy",
+							"sid": 143049615681016,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 200620001986791
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Patrol Loop",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 137431522125910
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "PatrollerEnemy",
+									"sid": 351423749986312,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "PatrollerEnemy.X+150",
+										"y": "PatrollerEnemy.Y"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 127997326387954,
+									"parameters": {
+										"seconds": "4.0"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "PatrollerEnemy",
+									"sid": 450892914166615,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "PatrollerEnemy.X-150",
+										"y": "PatrollerEnemy.Y"
+									}
+								}
+							],
+							"sid": 593547526662502
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 710550865697833,
+									"parameters": {
+										"interval-seconds": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "PatrollerEnemy",
+									"sid": 115559628786265,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "PatrollerEnemy.X+150",
+										"y": "PatrollerEnemy.Y"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 678205442421415,
+									"parameters": {
+										"seconds": "4.0"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "PatrollerEnemy",
+									"sid": 777408070588217,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "PatrollerEnemy.X-150",
+										"y": "PatrollerEnemy.Y"
+									}
+								}
+							],
+							"sid": 862316918447145
+						}
+					],
+					"sid": 923403244502305
+				}
+			],
+			"sid": 217478087818130
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Turret AI Script",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "TurretEnemy",
+							"sid": 131357991227065,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 611702764622704,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "TurretEnemy",
+							"sid": 592923273474743,
+							"parameters": {
+								"x": "Player.x",
+								"y": "Player.y"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "TurretEnemy",
+							"sid": 834227686527613,
+							"parameters": {
+								"object": "Bullet",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 350033475291867
+				}
+			],
+			"sid": 744593125524785
 		}
 	],
 	"sid": 925857234592815
