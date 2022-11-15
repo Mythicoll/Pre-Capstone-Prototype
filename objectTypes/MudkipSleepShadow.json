@@ -1,0 +1,49 @@
+{
+	"name": "MudkipSleepShadow",
+	"plugin-id": "Sprite",
+	"sid": 477352339048528,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 35,
+						"height": 9,
+						"originX": 0.7428571428571429,
+						"originY": -6.888888888888889,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8936822,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 35,
+						"height": 9,
+						"originX": 0.7428571428571429,
+						"originY": -6.888888888888889,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6885227,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 161140675397408,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 2
+			}
+		],
+		"subfolders": []
+	}
+}
