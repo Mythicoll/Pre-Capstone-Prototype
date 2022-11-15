@@ -2,6 +2,16 @@
 	"name": "UnderWater",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Talking",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 535622186108032
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -315,6 +325,217 @@
 				}
 			],
 			"sid": 169612037150369
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-time",
+					"objectClass": "System",
+					"sid": 495524767925387,
+					"parameters": {
+						"comparison": 5,
+						"time-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 388167634997640,
+					"parameters": {
+						"variable": "Talking",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 182439358621722
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 802213973726751,
+					"parameters": {
+						"variable": "Talking"
+					}
+				},
+				{
+					"id": "compare-time",
+					"objectClass": "System",
+					"sid": 183630347148270,
+					"parameters": {
+						"comparison": 5,
+						"time-seconds": "5"
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 898956061968704,
+					"disabled": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FinalGame2Text3",
+					"sid": 131765461580708,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FinalGame2Text3",
+					"sid": 424132100936929,
+					"disabled": true,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "FinalGame2Text3",
+					"sid": 561047246852578,
+					"disabled": true
+				}
+			],
+			"sid": 361470664969601
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 546660028407108
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 474925424666229,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "FinalGame2Text3",
+					"sid": 520208045449832,
+					"parameters": {
+						"text": "\"Want to hear a tale?\"",
+						"duration": "2.5"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "SleepMudkip",
+					"sid": 306389925544734,
+					"parameters": {
+						"animation": "\"Wake\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 651725634187325,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FinalGame2Text3",
+					"sid": 997554577238335,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "FinalGame2Text3",
+					"sid": 115866661602433,
+					"parameters": {
+						"text": "\"Imagine a world, one in peril. To save it you must use your wit...If you have any that is!\"",
+						"duration": "5"
+					}
+				}
+			],
+			"sid": 658078807063165
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 125425442999833
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 311834263915837,
+					"parameters": {
+						"seconds": "2.5"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MudkipSleepShadow",
+					"sid": 370050808877026,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 112310607479806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "SleepMudkip",
+					"sid": 305610234733734,
+					"parameters": {
+						"animation": "\"Wake\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "SleepMudkip",
+					"sid": 670423668023496
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Mudkip",
+					"sid": 393059321340274,
+					"parameters": {
+						"x": "SleepMudkip.X",
+						"y": "SleepMudkip.Y"
+					}
+				}
+			],
+			"sid": 829056489923289
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 614498126928133
 		}
 	],
 	"sid": 854919884790757

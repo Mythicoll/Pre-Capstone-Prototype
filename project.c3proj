@@ -197,6 +197,14 @@
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "waterbg",
+			"name": "Water background",
+			"author": "Viktor Korsun",
+			"version": "r317.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "n0pefy4jltn",
@@ -278,7 +286,8 @@
 			"TurretEnemy",
 			"Bullet",
 			"SleepMudkip",
-			"MudkipSleepShadow"
+			"MudkipSleepShadow",
+			"TestEffect"
 		],
 		"subfolders": [
 			{
