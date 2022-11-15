@@ -462,10 +462,43 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "FinalGame2Text3",
-					"sid": 115866661602433,
+					"sid": 287807448979490,
 					"parameters": {
-						"text": "\"Imagine a world, one in peril. To save it you must use your wit...If you have any that is!\"",
+						"text": "\"Imagine a world in peril. Well thats this one!\"",
 						"duration": "5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 987931862252209,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FinalGame2Text3",
+					"sid": 114321665026528,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "FinalGame2Text3",
+					"sid": 595615130378126,
+					"parameters": {
+						"text": "\" To save it you must use your wit...If you have any that is!\"",
+						"duration": "5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 129718064043221,
+					"parameters": {
+						"seconds": "6"
 					}
 				}
 			],
@@ -484,9 +517,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 311834263915837,
+					"sid": 934434982068230,
 					"parameters": {
-						"seconds": "2.5"
+						"seconds": "3.25"
 					}
 				},
 				{

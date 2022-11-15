@@ -178,6 +178,48 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "FinalGame2Text3",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "cursive",
+						"size": 21,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 934,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 81,
+						"y": 497,
+						"width": 686,
+						"height": 368,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 282921609768273,
@@ -252,8 +294,8 @@
 						"isEnabled": true,
 						"parameters": {
 							"speed": 0.01,
-							"x-speed": 0.05,
-							"y-speed": 0.05,
+							"x-speed": 0.02,
+							"y-speed": 0.02,
 							"intensity": 2,
 							"frequency": 4,
 							"angle": 7,
@@ -308,54 +350,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 618,
-						"y": 652,
+						"x": 447.5,
+						"y": 653,
 						"width": 114.49521705353251,
 						"height": 29.441627242336928,
 						"originX": 0.7428571428571429,
 						"originY": -6.888888888888889,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "FinalGame2Text3",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"font": "cursive",
-						"size": 21,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 934,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 240,
-						"y": 496,
-						"width": 686,
-						"height": 368,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -418,8 +418,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 594.581710176969,
-						"y": 817.4551733628114,
+						"x": 424.5,
+						"y": 818,
 						"width": 126.86704494274103,
 						"height": 116.71768134732176,
 						"originX": 0.5,
