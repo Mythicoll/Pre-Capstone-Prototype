@@ -22034,6 +22034,41 @@
 					}
 				},
 				{
+					"type": "PlayerShadow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IDLE",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 97,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1184,
+						"y": 3456,
+						"width": 96,
+						"height": 128,
+						"originX": 0.5172413793103449,
+						"originY": 0.5161290322580645,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "TextBackDrop",
 					"properties": {
 						"initially-visible": false,

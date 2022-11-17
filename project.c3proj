@@ -200,6 +200,22 @@
 		},
 		{
 			"type": "effect",
+			"id": "vignette",
+			"name": "Vignette",
+			"author": "Brad Larson",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "dodge",
+			"name": "Dodge",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "waterbg",
 			"name": "Water background",
 			"author": "Viktor Korsun",
@@ -287,7 +303,12 @@
 			"Bullet",
 			"SleepMudkip",
 			"MudkipSleepShadow",
-			"TestEffect"
+			"TestEffect",
+			"PlayerShadow",
+			"Underwater_tutorial",
+			"Underwater_tutorial2",
+			"EffectLayer",
+			"MapTileBend"
 		],
 		"subfolders": [
 			{

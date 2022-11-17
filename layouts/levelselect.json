@@ -327,7 +327,19 @@
 				}
 			],
 			"sid": 475094811886454,
-			"effectTypes": [],
+			"effectTypes": [
+				{
+					"effectId": "vignette",
+					"name": "Vignette",
+					"instance": {
+						"isEnabled": true,
+						"parameters": {
+							"start-radius": 0.25,
+							"end-radius": 0.7
+						}
+					}
+				}
+			],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
 			"color": [
@@ -424,6 +436,48 @@
 			],
 			"sid": 354628407372105,
 			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Effect",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 701073791853138,
+			"effectTypes": [
+				{
+					"effectId": "dodge",
+					"name": "Dodge",
+					"instance": {
+						"isEnabled": true,
+						"parameters": {}
+					}
+				}
+			],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
 			"color": [

@@ -129,6 +129,15 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 410976414039012,
+					"parameters": {
+						"animation": "\"IDLE\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 633786746308187,
@@ -157,6 +166,15 @@
 					"id": "set-animation",
 					"objectClass": "TestPlayerC",
 					"sid": 216817881686823,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 936576525057820,
 					"parameters": {
 						"animation": "\"Walk\"",
 						"from": "beginning"
@@ -214,6 +232,15 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 608775214921023,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 549560138263077,
@@ -259,6 +286,15 @@
 					"id": "set-animation",
 					"objectClass": "TestPlayerC",
 					"sid": 590246432494209,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 995314036020850,
 					"parameters": {
 						"animation": "\"Walk\"",
 						"from": "beginning"
@@ -315,6 +351,15 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 784598715139719,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-mirrored",
 					"objectClass": "TestPlayerC",
 					"sid": 420328017227570,
@@ -360,6 +405,15 @@
 					"id": "set-animation",
 					"objectClass": "TestPlayerC",
 					"sid": 250131844552947,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 422901069456649,
 					"parameters": {
 						"animation": "\"Walk\"",
 						"from": "beginning"
@@ -1087,6 +1141,33 @@
 				}
 			],
 			"sid": 644443083004286
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 435226573101886
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "PlayerShadow",
+					"sid": 602485458632675,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "TestPlayerC",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 943336510059509
 		}
 	],
 	"sid": 149726328012861
