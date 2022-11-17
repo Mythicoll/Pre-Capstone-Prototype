@@ -233,7 +233,8 @@
 					}
 				}
 			],
-			"sid": 948337040725287
+			"sid": 948337040725287,
+			"disabled": true
 		},
 		{
 			"eventType": "group",

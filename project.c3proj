@@ -557,7 +557,7 @@
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-integer-scale",
-		"fullscreenQuality": "low",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -596,7 +596,7 @@
 		"autoReloadScriptsOnPreview": false,
 		"exportFileStructure": "flat"
 	},
-	"viewportWidth": 848,
+	"viewportWidth": 854,
 	"viewportHeight": 480,
 	"firstLayout": null
 }
