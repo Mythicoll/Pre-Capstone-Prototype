@@ -344,7 +344,9 @@
 			"MineTrack3A",
 			"MineTrack3B2",
 			"Dark",
-			"chaseEnemy2"
+			"chaseEnemy2",
+			"SteamEnd",
+			"MapTileCheck"
 		],
 		"subfolders": [
 			{

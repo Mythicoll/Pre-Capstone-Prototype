@@ -87,9 +87,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 460796555830130,
+					"sid": 668804653619682,
 					"parameters": {
-						"layout": "Puzzle 1"
+						"layout": "MinePuzzleWorld"
 					}
 				}
 			],
@@ -234,6 +234,15 @@
 						"comparison": 0,
 						"value": "1"
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 116344809642559,
+					"parameters": {
+						"variable": "MineLevelComp"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -312,6 +321,76 @@
 				}
 			],
 			"sid": 399588155386220
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 500303392825021
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 412620602026150,
+					"parameters": {
+						"variable": "MineLevelComp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "MapTileCheck",
+					"sid": 192531477379418,
+					"parameters": {
+						"x": "MapTileMine.X",
+						"y": "MapTileMine.Y"
+					}
+				}
+			],
+			"sid": 713381890326029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 611026147993257
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 975207207685712,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 990795971628727,
+					"parameters": {
+						"variable": "MineLevelComp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 674880771349303,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 363980282473245
 		}
 	],
 	"sid": 604025887444433
