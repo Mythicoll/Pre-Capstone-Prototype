@@ -2,6 +2,16 @@
 	"name": "MinePuzzleWorld",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "HP",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 159484642559131
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1371,6 +1381,15 @@
 								"x": "chaseEnemy.X+random(-32, 32)",
 								"y": "chaseEnemy.Y+random(-32, 32)"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "chaseEnemy",
+							"sid": 418930155702379,
+							"parameters": {
+								"animation": "\"IDLE\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 962985637206843
@@ -1425,15 +1444,24 @@
 						{
 							"id": "has-los-to-object",
 							"objectClass": "chaseEnemy",
-							"sid": 215336250362794,
+							"sid": 794100796801795,
 							"behaviorType": "LineOfSight",
 							"parameters": {
-								"object": "Player",
+								"object": "TestPlayerC",
 								"image-point": "0"
 							}
 						}
 					],
 					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "chaseEnemy",
+							"sid": 732294149713485,
+							"parameters": {
+								"animation": "\"HATE\"",
+								"from": "beginning"
+							}
+						},
 						{
 							"id": "set-enabled",
 							"objectClass": "chaseEnemy",
@@ -1446,12 +1474,21 @@
 						{
 							"id": "move-to-object",
 							"objectClass": "chaseEnemy",
-							"sid": 879722122297120,
+							"sid": 388620792056103,
 							"behaviorType": "MoveTo",
 							"parameters": {
-								"object": "Player",
+								"object": "TestPlayerC",
 								"image-point": "0",
 								"mode": "direct"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 690797678304558,
+							"disabled": true,
+							"parameters": {
+								"seconds": "2"
 							}
 						}
 					],
@@ -1463,16 +1500,40 @@
 						{
 							"id": "has-los-to-object",
 							"objectClass": "chaseEnemy",
-							"sid": 611656844746211,
+							"sid": 246168953751677,
 							"behaviorType": "LineOfSight",
 							"parameters": {
-								"object": "Player",
+								"object": "TestPlayerC",
 								"image-point": "0"
 							},
 							"isInverted": true
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 756838268192657,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "chaseEnemy",
+							"sid": 275924387658878,
+							"parameters": {
+								"animation": "\"IDLE\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "chaseEnemy",
+							"sid": 209751523496226,
+							"behaviorType": "MoveTo"
+						}
+					],
 					"sid": 584947493439280,
 					"children": [
 						{
@@ -1518,9 +1579,69 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "chaseEnemy",
-							"sid": 576684838574772,
+							"sid": 877870155232824,
 							"parameters": {
-								"object": "Player"
+								"object": "TestPlayerC"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 760304219031936,
+							"parameters": {
+								"variable": "HP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "TestPlayerC",
+							"sid": 343216872347221,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "chaseEnemy",
+							"sid": 356740761199489,
+							"behaviorType": "MoveTo"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 600758796705747,
+							"parameters": {
+								"seconds": "2"
+							}
+						}
+					],
+					"sid": 312001790774282
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy",
+							"sid": 423410477119455,
+							"parameters": {
+								"object": "TestPlayerC"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 863863414050054,
+							"parameters": {
+								"variable": "HP",
+								"comparison": 3,
+								"value": "0"
 							}
 						}
 					],
@@ -1528,13 +1649,443 @@
 						{
 							"id": "restart-layout",
 							"objectClass": "System",
-							"sid": 109642095658391
+							"sid": 568627150271176
 						}
 					],
-					"sid": 312001790774282
+					"sid": 462038855013313
 				}
 			],
 			"sid": 991118947228592
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": " Chase Ai Script3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 775324537778098
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "chaseEnemy2",
+							"sid": 632408140724353,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "chaseEnemy2.X+random(-32, 32)",
+								"y": "chaseEnemy2.Y+random(-32, 32)"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "chaseEnemy2",
+							"sid": 296159133922540,
+							"parameters": {
+								"animation": "\"IDLE\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 876512091095937
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "chaseEnemy2",
+							"sid": 343100441717830,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "chaseEnemy2",
+							"sid": 342055256470154,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 671947705451703
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "chaseEnemy2",
+							"sid": 779810177929232,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "chaseEnemy2",
+							"sid": 587468702318391,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "chaseEnemy2.X+random(-32, 32)",
+								"y": "chaseEnemy2.Y+random(-32, 32)"
+							}
+						}
+					],
+					"sid": 172721042484369
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "chaseEnemy2",
+							"sid": 977493786700320,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "TestPlayerC",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "chaseEnemy2",
+							"sid": 665980357831208,
+							"parameters": {
+								"animation": "\"HATE\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "chaseEnemy2",
+							"sid": 865133328159770,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "chaseEnemy2",
+							"sid": 963082160821523,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "TestPlayerC",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 577819432829931,
+							"disabled": true,
+							"parameters": {
+								"seconds": "2"
+							}
+						}
+					],
+					"sid": 663963207219467
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "chaseEnemy2",
+							"sid": 180316662345440,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "TestPlayerC",
+								"image-point": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 473842893468139,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "chaseEnemy2",
+							"sid": 883518229677887,
+							"parameters": {
+								"animation": "\"IDLE\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "chaseEnemy2",
+							"sid": 626806344738086,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"sid": 376679712939832,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 896218592636955,
+									"parameters": {
+										"interval-seconds": "random(3,6)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "chaseEnemy2",
+									"sid": 259125769374923,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "chaseEnemy2.X+random(-32, 32)",
+										"y": "chaseEnemy2.Y+random(-32, 32)"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "chaseEnemy2",
+									"sid": 617371743979119,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "enabled"
+									}
+								}
+							],
+							"sid": 164830755183360
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy2",
+							"sid": 882770452157795,
+							"parameters": {
+								"object": "TestPlayerC"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 225001024165922,
+							"parameters": {
+								"variable": "HP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "TestPlayerC",
+							"sid": 292977266897534,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "chaseEnemy2",
+							"sid": 680257348731254,
+							"behaviorType": "MoveTo"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 452686200123814,
+							"parameters": {
+								"seconds": "2"
+							}
+						}
+					],
+					"sid": 823223517830397
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy2",
+							"sid": 413418664561221,
+							"parameters": {
+								"object": "TestPlayerC"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 179273721998636,
+							"parameters": {
+								"variable": "HP",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 116934507623978
+						}
+					],
+					"sid": 609230067378841
+				}
+			],
+			"sid": 393809270354236
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 352534106340987
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 816022846755944,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 875812968080584,
+					"parameters": {
+						"animation": "\"HP3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 581109042791978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 841204503912264
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 291075162533519,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 678506954398918,
+					"parameters": {
+						"animation": "\"HP2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 289066680403974
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 929807730244984
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 160521752684951,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 488418561121092,
+					"parameters": {
+						"animation": "\"HP1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 241970074014656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 912238536364734
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 937404534598427,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 537258622565650,
+					"parameters": {
+						"variable": "HP",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 359006675147105
 		}
 	],
 	"sid": 779865521013904

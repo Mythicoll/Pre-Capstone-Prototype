@@ -605,15 +605,18 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Flash": {
+							"properties": {}
 						}
 					},
 					"world": {
 						"x": 134,
 						"y": 814,
-						"width": 166.6309909046529,
-						"height": 166.6309909046529,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 62.486621589244834,
+						"height": 145.80211704157128,
+						"originX": 0.5833333333333334,
+						"originY": 0.48214285714285715,
 						"color": [
 							1,
 							1,

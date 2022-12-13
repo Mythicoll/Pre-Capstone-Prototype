@@ -1,29 +1,29 @@
 {
-	"name": "chaseEnemy",
+	"name": "chaseEnemy2",
 	"plugin-id": "Sprite",
-	"sid": 528035176631236,
+	"sid": 920068782024645,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pathfinding",
 			"name": "Pathfinding",
-			"sid": 779817455856955
+			"sid": 894734156595838
 		},
 		{
 			"behaviorId": "LOS",
 			"name": "LineOfSight",
-			"sid": 122201017320951
+			"sid": 324042370724635
 		},
 		{
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
-			"sid": 143809031626229
+			"sid": 711336866901443
 		},
 		{
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
-			"sid": 474123568732612
+			"sid": 835447323035166
 		}
 	],
 	"effectTypes": [],
@@ -39,7 +39,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3259892,
+						"imageSpriteId": 6958362,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -51,7 +51,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5344637,
+						"imageSpriteId": 250008,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -63,12 +63,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3450916,
+						"imageSpriteId": 8515760,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 858891272051818,
+				"sid": 439286288930175,
 				"name": "IDLE",
 				"isLooping": true,
 				"isPingPong": false,
@@ -86,7 +86,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5468388,
+						"imageSpriteId": 1263941,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -98,7 +98,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8036324,
+						"imageSpriteId": 2695324,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -110,12 +110,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4166734,
+						"imageSpriteId": 819361,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 498646111824937,
+				"sid": 709660838478284,
 				"name": "HATE",
 				"isLooping": true,
 				"isPingPong": false,

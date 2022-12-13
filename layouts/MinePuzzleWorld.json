@@ -240,9 +240,9 @@
 					},
 					"world": {
 						"x": 605,
-						"y": 2714,
+						"y": 2829.5,
 						"width": 1085,
-						"height": 588,
+						"height": 357,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1851,8 +1851,8 @@
 					"behaviors": {},
 					"world": {
 						"x": 800,
-						"y": 2304,
-						"width": 224,
+						"y": 2422,
+						"width": 460,
 						"height": 704,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -2659,7 +2659,7 @@
 					"type": "chaseEnemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "IDLE",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2684,14 +2684,14 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "solids",
-								"range": 10000,
+								"range": 200,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
 						},
 						"MoveTo": {
 							"properties": {
-								"max-speed": 180,
+								"max-speed": 100,
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
@@ -2707,12 +2707,80 @@
 						}
 					},
 					"world": {
-						"x": 1382,
-						"y": 2648,
-						"width": 84.3977504940091,
-						"height": 54.95767642375405,
+						"x": 834,
+						"y": 2264,
+						"width": 67.24446623481597,
+						"height": 43.78789239037124,
 						"originX": 0.5,
-						"originY": 0.53125,
+						"originY": 0.65625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "chaseEnemy2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IDLE",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 961,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 32,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 120,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 200,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 1014,
+						"y": 1277,
+						"width": 67.24446623481597,
+						"height": 43.78789239037124,
+						"originX": 0.5,
+						"originY": 0.65625,
 						"color": [
 							1,
 							1,
@@ -2785,15 +2853,18 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Flash": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 1536,
-						"y": 2912,
-						"width": 128,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1425,
+						"y": 2683,
+						"width": 48,
+						"height": 112,
+						"originX": 0.5833333333333334,
+						"originY": 0.48214285714285715,
 						"color": [
 							1,
 							1,

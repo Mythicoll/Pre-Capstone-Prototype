@@ -2649,7 +2649,7 @@
 					"type": "chaseEnemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "IDLE",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2702,7 +2702,7 @@
 						"width": 192,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.53125,
+						"originY": 0.65625,
 						"color": [
 							1,
 							1,
@@ -2876,7 +2876,7 @@
 					"type": "chaseEnemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "IDLE",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2929,7 +2929,7 @@
 						"width": 160,
 						"height": 128,
 						"originX": 0.5,
-						"originY": 0.53125,
+						"originY": 0.65625,
 						"color": [
 							1,
 							1,

@@ -343,7 +343,8 @@
 			"MineTrack1A",
 			"MineTrack3A",
 			"MineTrack3B2",
-			"Dark"
+			"Dark",
+			"chaseEnemy2"
 		],
 		"subfolders": [
 			{

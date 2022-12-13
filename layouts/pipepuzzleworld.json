@@ -21337,15 +21337,18 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Flash": {
+							"properties": {}
 						}
 					},
 					"world": {
 						"x": 1152,
 						"y": 2880,
-						"width": 128,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 48,
+						"height": 112,
+						"originX": 0.5833333333333334,
+						"originY": 0.48214285714285715,
 						"color": [
 							1,
 							1,
