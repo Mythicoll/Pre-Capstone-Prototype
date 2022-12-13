@@ -1,17 +1,16 @@
 {
-	"name": "Blocking",
+	"name": "Dark",
 	"plugin-id": "Sprite",
-	"sid": 724704174843730,
+	"sid": 426935875276635,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
+	"behaviorTypes": [],
+	"effectTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 787656730167551
+			"effectId": "burn",
+			"name": "Burn"
 		}
 	],
-	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
@@ -24,12 +23,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8918549,
+						"imageSpriteId": 406286,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 343605924156754,
+				"sid": 579504048024140,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

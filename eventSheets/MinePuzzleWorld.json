@@ -384,6 +384,21 @@
 			],
 			"actions": [
 				{
+					"id": "stop",
+					"objectClass": "TestPlayerC",
+					"sid": 951725837737768,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 224786395957467,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
 					"id": "set-enabled",
 					"objectClass": "TestPlayerC",
 					"sid": 108313955749544,
@@ -500,6 +515,15 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 731572580522628,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
 				}
 			],
 			"sid": 465504055331326
@@ -517,6 +541,21 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "TestPlayerC",
+					"sid": 776416860012839,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 841456328100004,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
 				{
 					"id": "set-enabled",
 					"objectClass": "TestPlayerC",
@@ -634,6 +673,15 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 402844777155040,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
 				}
 			],
 			"sid": 876865380865478
@@ -651,6 +699,21 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "TestPlayerC",
+					"sid": 533745905968511,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 582274494341857,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
 				{
 					"id": "set-enabled",
 					"objectClass": "TestPlayerC",
@@ -768,6 +831,15 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 220890775737425,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
 				}
 			],
 			"sid": 942483738970947
@@ -785,6 +857,21 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "TestPlayerC",
+					"sid": 481716675814693,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 135724263902972,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
 				{
 					"id": "set-enabled",
 					"objectClass": "TestPlayerC",
@@ -902,6 +989,15 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 493256710041644,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
 				}
 			],
 			"sid": 731152980741197
@@ -919,6 +1015,21 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "TestPlayerC",
+					"sid": 307688103362218,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 824619990712905,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
 				{
 					"id": "set-enabled",
 					"objectClass": "TestPlayerC",
@@ -1036,6 +1147,15 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 557331979432529,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
 				}
 			],
 			"sid": 663886649356902
@@ -1053,6 +1173,21 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "TestPlayerC",
+					"sid": 886597878236799,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 990479540773954,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
 				{
 					"id": "set-enabled",
 					"objectClass": "TestPlayerC",
@@ -1170,9 +1305,236 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 554817451839163,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
 				}
 			],
 			"sid": 154478456293178
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 978858091681736
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "PlayerShadow",
+					"sid": 248380011013503,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "TestPlayerC",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 409781664619984
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": " Chase Ai Script2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 190267737052121
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "chaseEnemy",
+							"sid": 803439715349962,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "chaseEnemy.X+random(-32, 32)",
+								"y": "chaseEnemy.Y+random(-32, 32)"
+							}
+						}
+					],
+					"sid": 962985637206843
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "chaseEnemy",
+							"sid": 443204061959384,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "chaseEnemy",
+							"sid": 631224249605044,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 976186820699328
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "chaseEnemy",
+							"sid": 295344209798771,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "chaseEnemy",
+							"sid": 596056323695124,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "chaseEnemy.X+random(-32, 32)",
+								"y": "chaseEnemy.Y+random(-32, 32)"
+							}
+						}
+					],
+					"sid": 198762117920948
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "chaseEnemy",
+							"sid": 215336250362794,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "chaseEnemy",
+							"sid": 537895488604214,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "chaseEnemy",
+							"sid": 879722122297120,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 712836508356597
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "chaseEnemy",
+							"sid": 611656844746211,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 584947493439280,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 418021127115792,
+									"parameters": {
+										"interval-seconds": "random(3,6)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "chaseEnemy",
+									"sid": 644737165506436,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "chaseEnemy.X+random(-32, 32)",
+										"y": "chaseEnemy.Y+random(-32, 32)"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "chaseEnemy",
+									"sid": 125498733279175,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "enabled"
+									}
+								}
+							],
+							"sid": 101767237152645
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy",
+							"sid": 576684838574772,
+							"parameters": {
+								"object": "Player"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 109642095658391
+						}
+					],
+					"sid": 312001790774282
+				}
+			],
+			"sid": 991118947228592
 		}
 	],
 	"sid": 779865521013904

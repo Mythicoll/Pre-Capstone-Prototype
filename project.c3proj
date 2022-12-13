@@ -192,6 +192,14 @@
 		},
 		{
 			"type": "effect",
+			"id": "burn",
+			"name": "Burn",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "blurhorizontal",
 			"name": "Blur horizontal",
 			"author": "Scirra",
@@ -334,7 +342,8 @@
 			"MineTrack2A",
 			"MineTrack1A",
 			"MineTrack3A",
-			"MineTrack3B2"
+			"MineTrack3B2",
+			"Dark"
 		],
 		"subfolders": [
 			{
