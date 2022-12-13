@@ -1,0 +1,28 @@
+{
+	"name": "CartScene",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 927328253117404
+				}
+			],
+			"actions": [
+				{
+					"id": "play-timeline",
+					"objectClass": "TimelineController",
+					"sid": 297418703595463,
+					"parameters": {
+						"timeline": "Timeline 1",
+						"tags": "\"\""
+					}
+				}
+			],
+			"sid": 451341972460503
+		}
+	],
+	"sid": 117600215697643
+}

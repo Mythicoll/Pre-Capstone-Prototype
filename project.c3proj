@@ -87,6 +87,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Timeline",
+			"name": "Timeline controller",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
@@ -310,7 +318,16 @@
 			"EffectLayer",
 			"MapTileBend",
 			"MineFloor",
-			"MineTrack"
+			"MineTrackprop",
+			"MCCartl",
+			"MineCartWall",
+			"TimelineController",
+			"MineTrack2",
+			"MineTrack3",
+			"MineTrack1",
+			"MineTrack2B",
+			"MineTrack3B",
+			"MineTrackprop2"
 		],
 		"subfolders": [
 			{
@@ -411,7 +428,8 @@
 			"FinalGame-2",
 			"FinalGame-3",
 			"Underwater",
-			"MinePuzzleWorld"
+			"MinePuzzleWorld",
+			"CartScene"
 		],
 		"subfolders": []
 	},
@@ -426,7 +444,9 @@
 			"FinalGame-1",
 			"FinalGame-2",
 			"FinalGame-3",
-			"UnderWater"
+			"UnderWater",
+			"CartScene",
+			"MinePuzzleWorld"
 		],
 		"subfolders": []
 	},

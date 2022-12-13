@@ -1,0 +1,500 @@
+{
+	"name": "MinePuzzleWorld",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 559707062624547,
+					"parameters": {
+						"key": 39
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 622325583229778,
+					"parameters": {
+						"key": 38
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 898039319361252,
+					"parameters": {
+						"key": 40
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 583903086912997,
+					"parameters": {
+						"key": 37
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 898089520532596,
+					"parameters": {
+						"variable": "Walking"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TestPlayerC",
+					"sid": 248213711392189,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 297381121618651,
+					"parameters": {
+						"animation": "\"IDLE\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 792824697242970,
+					"parameters": {
+						"variable": "Walking",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 516650374637985
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 645475142427683,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TestPlayerC",
+					"sid": 751128565329154,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 514724645376823,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 917049307351518,
+					"parameters": {
+						"variable": "Walking",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "TestPlayerC",
+					"sid": 896326154507208,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 734966162909335,
+					"parameters": {
+						"variable": "LeftORRight",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 341118276450792
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 864251258388743,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TestPlayerC",
+					"sid": 183057839181248,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 515272448212306,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 321113763299571,
+					"parameters": {
+						"variable": "Walking",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "TestPlayerC",
+					"sid": 807600392330863,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 500314772564816,
+					"parameters": {
+						"variable": "LeftORRight",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 241781105439162
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 872023712153831,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TestPlayerC",
+					"sid": 608434257221868,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 450825836892654,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 801995044719528,
+					"parameters": {
+						"variable": "Walking",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "TestPlayerC",
+					"sid": 125253218013331,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 285294932439855
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 217125157400964,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 934653169513576,
+					"parameters": {
+						"variable": "LeftORRight"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TestPlayerC",
+					"sid": 658368018647057,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 244909205610810,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "TestPlayerC",
+					"sid": 396220801935437,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 340388878560932,
+					"parameters": {
+						"variable": "Walking",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 698373191662041
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 534356786338170,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 163961254501972,
+					"parameters": {
+						"variable": "LeftORRight"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "TestPlayerC",
+					"sid": 703742489441107,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerShadow",
+					"sid": 366402121996501,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 563726481610794,
+					"parameters": {
+						"variable": "Walking",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "TestPlayerC",
+					"sid": 329192227903108,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 645484064298748
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 997422780912641,
+					"parameters": {
+						"object": "MineTrackprop"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 108313955749544,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TestPlayerC",
+					"sid": 680176913878903,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MineCartWall",
+					"sid": 294040020929398,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MCCartl",
+					"sid": 717955764004285,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "MCCartl",
+					"sid": 551754837682312,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play-timeline",
+					"objectClass": "TimelineController",
+					"sid": 686495090498502,
+					"parameters": {
+						"timeline": "Timeline 1",
+						"tags": "\"Cart\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 863059471192742,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "stop-timeline-by-tags",
+					"objectClass": "TimelineController",
+					"sid": 280013669029572,
+					"parameters": {
+						"tags": "\"Cart\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "MCCartl",
+					"sid": 214491988975562,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MineCartWall",
+					"sid": 444291109112678,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MCCartl",
+					"sid": 837582318886800,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TestPlayerC",
+					"sid": 984779262146813,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 244179440595997,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 465504055331326
+		}
+	],
+	"sid": 779865521013904
+}

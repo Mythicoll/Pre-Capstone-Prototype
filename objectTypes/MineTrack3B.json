@@ -1,7 +1,7 @@
 {
-	"name": "MineTrack",
+	"name": "MineTrack3B",
 	"plugin-id": "Sprite",
-	"sid": 131995729116951,
+	"sid": 323540639819255,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8282849,
+						"imageSpriteId": 303107,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 109485654652532,
+				"sid": 527084436025678,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
