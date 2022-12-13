@@ -401,6 +401,15 @@
 					}
 				},
 				{
+					"id": "set-position",
+					"objectClass": "TestPlayerC",
+					"sid": 927653079823365,
+					"parameters": {
+						"x": "MineTrack1B2.X",
+						"y": "MineTrack1B2.Y"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "MineCartWall",
 					"sid": 294040020929398,
@@ -523,6 +532,15 @@
 					"sid": 823722626147020,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TestPlayerC",
+					"sid": 218921859615526,
+					"parameters": {
+						"x": "MineTrack1A.X",
+						"y": "MineTrack1A.Y"
 					}
 				},
 				{
@@ -651,6 +669,15 @@
 					}
 				},
 				{
+					"id": "set-position",
+					"objectClass": "TestPlayerC",
+					"sid": 211963970429914,
+					"parameters": {
+						"x": "MineTrack2B2.X",
+						"y": "MineTrack2B2.Y"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "MineCartWall",
 					"sid": 272971689015410,
@@ -773,6 +800,15 @@
 					"sid": 437646451684072,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TestPlayerC",
+					"sid": 964369643356872,
+					"parameters": {
+						"x": "MineTrack2A.X",
+						"y": "MineTrack2A.Y"
 					}
 				},
 				{
@@ -901,6 +937,15 @@
 					}
 				},
 				{
+					"id": "set-position",
+					"objectClass": "TestPlayerC",
+					"sid": 643604221086576,
+					"parameters": {
+						"x": "MineTrack3B2.X",
+						"y": "MineTrack3B2.Y"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "MineCartWall",
 					"sid": 173569747550791,
@@ -1023,6 +1068,15 @@
 					"sid": 113856335150486,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TestPlayerC",
+					"sid": 352433012458027,
+					"parameters": {
+						"x": "MineTrack3A.X",
+						"y": "MineTrack3A.Y"
 					}
 				},
 				{

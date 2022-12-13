@@ -328,7 +328,13 @@
 			"MineTrack2B",
 			"MineTrack3B",
 			"MineTrack1B",
-			"Blocking"
+			"Blocking",
+			"MineTrack2B2",
+			"MineTrack1B2",
+			"MineTrack2A",
+			"MineTrack1A",
+			"MineTrack3A",
+			"MineTrack3B2"
 		],
 		"subfolders": [
 			{

@@ -285,9 +285,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 37,
-						"y": 2246,
+						"y": 2194,
 						"width": 490,
-						"height": 564,
+						"height": 668,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -314,9 +314,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 238.5,
-						"y": 1680,
+						"y": 1636.5,
 						"width": 895,
-						"height": 564,
+						"height": 477,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1897,10 +1897,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 416,
-						"y": 2048,
-						"width": 256,
-						"height": 160,
+						"x": 424.5,
+						"y": 2003.5,
+						"width": 273,
+						"height": 249,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1926,8 +1926,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 191,
-						"y": 2048,
+						"x": 192,
+						"y": 2017,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,
@@ -1999,8 +1999,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 446,
-						"y": 877,
+						"x": 415,
+						"y": 966,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,
@@ -3179,8 +3179,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 287,
-						"y": 2048,
+						"x": 288,
+						"y": 2017,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,
@@ -3267,7 +3267,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 416,
-						"y": 832,
+						"y": 869,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,
@@ -3297,6 +3297,180 @@
 					"world": {
 						"x": 2592,
 						"y": 1152,
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MineTrack2B2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1020,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1297,
+						"y": 1472,
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MineTrack1B2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1021,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2588,
+						"y": 1020,
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MineTrack2A",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1022,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1536,
+						"y": 2525,
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MineTrack1A",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1023,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1913,
+						"y": 2943,
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MineTrack3A",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1024,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 406,
+						"y": 2016,
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MineTrack3B2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1025,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 416,
+						"y": 737,
 						"width": 96,
 						"height": 96,
 						"originX": 0.5,
