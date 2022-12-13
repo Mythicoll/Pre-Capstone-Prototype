@@ -309,7 +309,8 @@
 			"Underwater_tutorial2",
 			"EffectLayer",
 			"MapTileBend",
-			"MineFloor"
+			"MineFloor",
+			"MineTrack"
 		],
 		"subfolders": [
 			{
@@ -409,7 +410,8 @@
 			"FinalGame-1",
 			"FinalGame-2",
 			"FinalGame-3",
-			"Underwater"
+			"Underwater",
+			"MinePuzzleWorld"
 		],
 		"subfolders": []
 	},

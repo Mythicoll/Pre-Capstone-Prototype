@@ -1,7 +1,7 @@
 {
-	"name": "MineFloor",
+	"name": "MineTrack",
 	"plugin-id": "Sprite",
-	"sid": 119829825121604,
+	"sid": 131995729116951,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7762814,
+						"imageSpriteId": 8282849,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 762677331551960,
-				"name": "Animation 1",
+				"sid": 109485654652532,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
