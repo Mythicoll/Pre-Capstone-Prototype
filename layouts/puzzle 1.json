@@ -26,8 +26,8 @@
 						}
 					},
 					"world": {
-						"x": 854.5,
-						"y": 720.5,
+						"x": 568,
+						"y": 1561,
 						"width": 1709,
 						"height": 479,
 						"originX": 0.5,
@@ -62,8 +62,8 @@
 						}
 					},
 					"world": {
-						"x": 857,
-						"y": -238,
+						"x": 552,
+						"y": -485,
 						"width": 1709,
 						"height": 479,
 						"originX": 0.5,
@@ -98,8 +98,8 @@
 						}
 					},
 					"world": {
-						"x": -190,
-						"y": 245.5,
+						"x": -599,
+						"y": 229,
 						"width": 386,
 						"height": 1436,
 						"originX": 0.5,
@@ -670,6 +670,35 @@
 						"y": 302,
 						"width": 104.63269087622663,
 						"height": 104.63269087622663,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MineFloor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 897,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 365,
+						"y": 677,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

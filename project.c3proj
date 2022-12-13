@@ -308,7 +308,8 @@
 			"Underwater_tutorial",
 			"Underwater_tutorial2",
 			"EffectLayer",
-			"MapTileBend"
+			"MapTileBend",
+			"MineFloor"
 		],
 		"subfolders": [
 			{
