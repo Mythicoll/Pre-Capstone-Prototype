@@ -3283,7 +3283,7 @@
 					}
 				},
 				{
-					"type": "MineTrackprop1B",
+					"type": "MineTrack1B",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
