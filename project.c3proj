@@ -327,7 +327,8 @@
 			"MineTrack1",
 			"MineTrack2B",
 			"MineTrack3B",
-			"MineTrackprop2"
+			"MineTrackprop1B",
+			"Blocking"
 		],
 		"subfolders": [
 			{
