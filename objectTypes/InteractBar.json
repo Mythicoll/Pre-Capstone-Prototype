@@ -3,6 +3,20 @@
 	"plugin-id": "progressbar",
 	"sid": 809375781857080,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": []
+	"instanceVariables": [
+		{
+			"name": "interactCounter",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 967540517400818
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 923603579991459
+		}
+	]
 }

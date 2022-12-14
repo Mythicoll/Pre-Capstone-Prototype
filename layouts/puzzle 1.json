@@ -79,7 +79,9 @@
 						"live-preview": false
 					},
 					"uid": 7,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"InteractCounter": 0
+					},
 					"behaviors": {
 						"BoundToLayout": {
 							"properties": {

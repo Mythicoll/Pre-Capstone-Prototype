@@ -14546,7 +14546,9 @@
 						"live-preview": false
 					},
 					"uid": 1113,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"InteractCounter": 0
+					},
 					"behaviors": {
 						"BoundToLayout": {
 							"properties": {
@@ -14638,8 +14640,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2112,
-						"y": 4096,
+						"x": 2304,
+						"y": 4192,
 						"width": 197,
 						"height": 197,
 						"originX": 0.5076142131979695,
@@ -14667,10 +14669,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2112,
-						"y": 3968,
-						"width": 32,
-						"height": 32,
+						"x": 2304,
+						"y": 4032,
+						"width": 256,
+						"height": 256,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -14694,12 +14696,20 @@
 						"class": ""
 					},
 					"uid": 1302,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"interactCounter": 0
+					},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"world": {
-						"x": 2208,
-						"y": 4096,
-						"width": 200,
+						"x": 1952,
+						"y": 4640,
+						"width": 192,
 						"height": 25,
 						"originX": 0,
 						"originY": 0,

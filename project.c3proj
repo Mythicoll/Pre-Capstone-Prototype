@@ -369,7 +369,8 @@
 			"Lightfloor",
 			"PlayerCheck",
 			"E",
-			"InteractBar"
+			"InteractBar",
+			"InteractbarProg"
 		],
 		"subfolders": [
 			{

@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 302258600325692,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "InteractCounter",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 222869419570802
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "bound",
