@@ -346,7 +346,8 @@
 			"Dark",
 			"chaseEnemy2",
 			"SteamEnd",
-			"MapTileCheck"
+			"MapTileCheck",
+			"VolcanoFloor"
 		],
 		"subfolders": [
 			{
@@ -448,7 +449,8 @@
 			"FinalGame-3",
 			"Underwater",
 			"MinePuzzleWorld",
-			"CartScene"
+			"CartScene",
+			"VolcanoPuzzleWorld"
 		],
 		"subfolders": []
 	},
@@ -465,7 +467,8 @@
 			"FinalGame-3",
 			"UnderWater",
 			"CartScene",
-			"MinePuzzleWorld"
+			"MinePuzzleWorld",
+			"VolcanoPuzzleWorld"
 		],
 		"subfolders": []
 	},
