@@ -883,101 +883,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1598.6551465063874,
-						"y": 4470.565289256172,
-						"width": 64,
-						"height": 64,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "lavaTiles",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1597.9038317054858,
-						"y": 4408.957475582242,
-						"width": 64,
-						"height": 64,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "lavaTiles",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 1051,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 1663.2682193839232,
 						"y": 4410.4601051840455,
-						"width": 64,
-						"height": 64,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "lavaTiles",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1052,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1531.7881292261468,
-						"y": 4408.957475582242,
-						"width": 64,
-						"height": 64,
+						"width": 128,
+						"height": 128,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
