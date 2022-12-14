@@ -95,6 +95,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Progress bar",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
@@ -356,7 +364,12 @@
 			"SteamEnd",
 			"MapTileCheck",
 			"VolcanoFloor",
-			"lavaTiles"
+			"lavaTiles",
+			"Lightlava",
+			"Lightfloor",
+			"PlayerCheck",
+			"E",
+			"InteractBar"
 		],
 		"subfolders": [
 			{

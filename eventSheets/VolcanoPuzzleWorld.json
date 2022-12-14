@@ -22,6 +22,16 @@
 			"sid": 203439871280570
 		},
 		{
+			"eventType": "variable",
+			"name": "Interact",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 896603139788089
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2128,6 +2138,39 @@
 				}
 			],
 			"sid": 400960424762506
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 359246279698317,
+					"parameters": {
+						"object": "PlayerCheck"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "E",
+					"sid": 592124071690230,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 875874941925591,
+					"parameters": {
+						"variable": "Interact",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 877522811446221
 		}
 	],
 	"sid": 194596489338002
