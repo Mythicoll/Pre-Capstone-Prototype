@@ -200,6 +200,22 @@
 		},
 		{
 			"type": "effect",
+			"id": "waterbg",
+			"name": "Water background",
+			"author": "Viktor Korsun",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "blurhorizontal",
 			"name": "Blur horizontal",
 			"author": "Scirra",
@@ -227,14 +243,6 @@
 			"id": "dodge",
 			"name": "Dodge",
 			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "waterbg",
-			"name": "Water background",
-			"author": "Viktor Korsun",
 			"version": "r317.2",
 			"bundled": false
 		}
