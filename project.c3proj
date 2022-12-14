@@ -347,7 +347,8 @@
 			"chaseEnemy2",
 			"SteamEnd",
 			"MapTileCheck",
-			"VolcanoFloor"
+			"VolcanoFloor",
+			"lavaTiles"
 		],
 		"subfolders": [
 			{
