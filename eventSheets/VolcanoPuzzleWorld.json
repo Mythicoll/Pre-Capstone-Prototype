@@ -2318,6 +2318,14 @@
 			],
 			"actions": [
 				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 556469344661006,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
 					"id": "set-progress",
 					"objectClass": "InteractBar",
 					"sid": 421880337102913,
@@ -2457,9 +2465,18 @@
 					"isInverted": true
 				},
 				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 512221672232312,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				},
+				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 293895895440728,
+					"disabled": true,
 					"parameters": {
 						"variable": "Interact"
 					},
@@ -2474,7 +2491,8 @@
 				{
 					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 383004518848967
+					"sid": 383004518848967,
+					"disabled": true
 				}
 			],
 			"actions": [
@@ -2482,6 +2500,7 @@
 					"id": "set-progress",
 					"objectClass": "InteractBar",
 					"sid": 661896746757061,
+					"disabled": true,
 					"parameters": {
 						"value": "0"
 					}
@@ -2496,6 +2515,14 @@
 					}
 				},
 				{
+					"id": "set-progress",
+					"objectClass": "InteractBar",
+					"sid": 900046975456606,
+					"parameters": {
+						"value": "InteractBar.interactCounter"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "InteractBar",
 					"sid": 869664428027333,
@@ -2505,8 +2532,7 @@
 					}
 				}
 			],
-			"sid": 729192347381455,
-			"disabled": true
+			"sid": 729192347381455
 		},
 		{
 			"eventType": "block",

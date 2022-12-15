@@ -378,7 +378,8 @@
 			"PlayerCheckEnemyClam2",
 			"lavaplat",
 			"lavaPlatwallL",
-			"lavaPlatwallR"
+			"lavaPlatwallR",
+			"lavaPlatwallsmall"
 		],
 		"subfolders": [
 			{

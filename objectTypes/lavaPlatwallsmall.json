@@ -1,14 +1,14 @@
 {
-	"name": "lavaPlatwallR",
+	"name": "lavaPlatwallsmall",
 	"plugin-id": "Sprite",
-	"sid": 540361855511853,
+	"sid": 301549269050627,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 150240188594609
+			"sid": 898313406038873
 		}
 	],
 	"effectTypes": [],
@@ -17,31 +17,31 @@
 			{
 				"frames": [
 					{
-						"width": 16,
-						"height": 36,
+						"width": 15,
+						"height": 19,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1817867,
+						"imageSpriteId": 4727472,
 						"collisionPoly": {
 							"points": [
 								1,
 								1,
-								0.5625,
+								0.5333333333333333,
 								1,
-								0.5625,
-								0,
-								0.9953703703703705,
-								0
+								0.5333333333333333,
+								0.05263157894736842,
+								0.9950617283950618,
+								0.05263157894736842
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 461795791102317,
+				"sid": 498321860757886,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
