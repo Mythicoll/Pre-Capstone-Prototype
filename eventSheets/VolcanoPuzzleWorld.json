@@ -2125,6 +2125,15 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 801030836788981,
+					"parameters": {
+						"variable": "PlatformStepped",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 948549502044588
@@ -2264,9 +2273,15 @@
 					}
 				},
 				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 442265399526777
+				},
+				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "lavaplat",
 					"sid": 845905820304885,
+					"disabled": true,
 					"parameters": {
 						"object": "Creatures"
 					},
