@@ -375,7 +375,10 @@
 			"clam",
 			"PlayerCheckEnemyClam",
 			"clam2",
-			"PlayerCheckEnemyClam2"
+			"PlayerCheckEnemyClam2",
+			"lavaplat",
+			"lavaPlatwallL",
+			"lavaPlatwallR"
 		],
 		"subfolders": [
 			{
