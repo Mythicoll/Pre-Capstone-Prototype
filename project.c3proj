@@ -380,7 +380,8 @@
 			"lavaPlatwallL",
 			"lavaPlatwallR",
 			"lavaPlatwallsmall",
-			"lavaPlatspirel"
+			"lavaPlatspirel",
+			"HurtBox"
 		],
 		"subfolders": [
 			{
