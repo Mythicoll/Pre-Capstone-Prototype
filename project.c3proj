@@ -465,7 +465,8 @@
 	"families": {
 		"items": [
 			"Trigger",
-			"Pipes"
+			"Pipes",
+			"Creatures"
 		],
 		"subfolders": []
 	},

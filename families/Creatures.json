@@ -1,0 +1,15 @@
+{
+	"name": "Creatures",
+	"plugin-id": "Sprite",
+	"sid": 706752077680471,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"chaseEnemy",
+		"chaseEnemy2",
+		"clam",
+		"clam2",
+		"TestPlayerC"
+	]
+}
