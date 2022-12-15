@@ -469,7 +469,8 @@
 			"Trigger",
 			"Pipes",
 			"Creatures",
-			"PlayerXY"
+			"PlayerXY",
+			"Clams"
 		],
 		"subfolders": []
 	},

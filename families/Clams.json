@@ -1,0 +1,12 @@
+{
+	"name": "Clams",
+	"plugin-id": "Sprite",
+	"sid": 204679428215391,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"PlayerCheckEnemyClam",
+		"PlayerCheckEnemyClam2"
+	]
+}
