@@ -33520,10 +33520,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": 2624,
-						"width": 1728,
-						"height": 4384,
+						"x": 384,
+						"y": 3296,
+						"width": 1024,
+						"height": 2336,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -33533,7 +33533,8 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0,
+						"blendMode": "copy"
 					}
 				},
 				{
@@ -33562,7 +33563,8 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0,
+						"blendMode": "copy"
 					}
 				},
 				{
@@ -33578,10 +33580,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 5888,
-						"y": 3200,
-						"width": 3776,
-						"height": 1984,
+						"x": 4928,
+						"y": 3104,
+						"width": 2496,
+						"height": 1856,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -33591,7 +33593,8 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0,
+						"blendMode": "copy"
 					}
 				},
 				{
@@ -33607,10 +33610,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 5440,
-						"y": 4272,
-						"width": 3776,
-						"height": 160,
+						"x": 4736,
+						"y": 4080,
+						"width": 2272,
+						"height": 128,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -33620,7 +33623,8 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0,
+						"blendMode": "copy"
 					}
 				},
 				{
@@ -33649,7 +33653,638 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1779,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4384,
+						"y": 4256,
+						"width": 2240,
+						"height": 224,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1780,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2848,
+						"y": 3248,
+						"width": 256,
+						"height": 1280,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1781,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3072,
+						"y": 2464,
+						"width": 256,
+						"height": 672,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.7853981633974483,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1782,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4160,
+						"y": 2736,
+						"width": 2496,
+						"height": 576,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1783,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3712,
+						"y": 2432,
+						"width": 1088,
+						"height": 576,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1784,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4832,
+						"y": 1664,
+						"width": 2496,
+						"height": 1056,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1785,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 5056,
+						"y": 1600,
+						"width": 2496,
+						"height": 1056,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1786,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4416,
+						"y": 1376,
+						"width": 1024,
+						"height": 1056,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1787,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4928,
+						"y": 544,
+						"width": 1024,
+						"height": 1056,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1788,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3504,
+						"y": -48,
+						"width": 3360,
+						"height": 384,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1789,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3072,
+						"y": 480,
+						"width": 1696,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1790,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2912,
+						"y": 608,
+						"width": 288,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1791,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4016,
+						"y": 656,
+						"width": 192,
+						"height": 416,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1792,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1856,
+						"y": 368,
+						"width": 192,
+						"height": 896,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1793,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1232,
+						"y": 880,
+						"width": 864,
+						"height": 544,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1794,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 592,
+						"y": 4512,
+						"width": 800,
+						"height": 736,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1795,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1200,
+						"y": 4320,
+						"width": 992,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1796,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1472,
+						"y": 2736,
+						"width": 256,
+						"height": 2240,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1797,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1616,
+						"y": 3408,
+						"width": 32,
+						"height": 928,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1798,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1776,
+						"y": 3808,
+						"width": 160,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0,
+						"blendMode": "copy"
+					}
+				},
+				{
+					"type": "Lightlava",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1799,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1632,
+						"y": 3712,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "copy"
 					}
 				}
 			],
