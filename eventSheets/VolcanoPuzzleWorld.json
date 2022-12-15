@@ -3053,12 +3053,135 @@
 					}
 				},
 				{
-					"id": "destroy",
+					"id": "set-visible",
 					"objectClass": "lavaplat",
-					"sid": 999615202128485
+					"sid": 581419746516927,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 652924944432142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "lavaplat",
+					"sid": 508890691515799,
+					"parameters": {
+						"object": "Creatures"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 250400277660677
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "lavaplat",
+					"sid": 319339465603303,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Creatures",
+					"sid": 560230681482406
+				}
+			],
+			"sid": 260662055857085
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "lavaplat",
+					"sid": 553723150530646,
+					"parameters": {
+						"object": "TestPlayerC"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "lavaplat",
+					"sid": 565690237478534,
+					"parameters": {
+						"animation": "\"Cracked\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 454969487168158,
+					"parameters": {
+						"tag": "\"Cracking\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "lavaplat",
+					"sid": 675484122046142,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 948549502044588
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "lavaplat",
+					"sid": 294171093216675,
+					"parameters": {
+						"object": "TestPlayerC"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 179957023704109
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "lavaplat",
+					"sid": 997577093367148,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 995584024186019,
+					"parameters": {
+						"variable": "HP",
+						"value": "1"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "TestPlayerC",
+					"sid": 511763692145138,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 641616521249881
 		},
 		{
 			"eventType": "block",
