@@ -1,0 +1,11 @@
+{
+	"name": "PlayerXY",
+	"plugin-id": "Sprite",
+	"sid": 136201491399707,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Checkpoint"
+	]
+}

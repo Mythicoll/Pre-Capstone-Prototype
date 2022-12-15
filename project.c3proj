@@ -381,7 +381,8 @@
 			"lavaPlatwallR",
 			"lavaPlatwallsmall",
 			"lavaPlatspirel",
-			"HurtBox"
+			"HurtBox",
+			"Checkpoint"
 		],
 		"subfolders": [
 			{
@@ -467,7 +468,8 @@
 		"items": [
 			"Trigger",
 			"Pipes",
-			"Creatures"
+			"Creatures",
+			"PlayerXY"
 		],
 		"subfolders": []
 	},

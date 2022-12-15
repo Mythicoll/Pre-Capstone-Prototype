@@ -1,0 +1,64 @@
+{
+	"name": "Checkpoint",
+	"plugin-id": "Sprite",
+	"sid": 514723440910795,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "PlayerX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 918660421661118
+		},
+		{
+			"name": "PlayerY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 948029747543829
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 354788,
+						"collisionPoly": {
+							"points": [
+								0.04,
+								0.04,
+								0.96,
+								0.04,
+								0.96,
+								0.96,
+								0.04,
+								0.96
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 723077460174594,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

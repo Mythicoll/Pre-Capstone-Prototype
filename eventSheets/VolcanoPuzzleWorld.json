@@ -3065,6 +3065,82 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "HurtBox",
+					"sid": 303191019485396,
+					"parameters": {
+						"object": "TestPlayerC"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 233782414064870
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 592864986013134,
+					"parameters": {
+						"variable": "HP",
+						"value": "1"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "TestPlayerC",
+					"sid": 513252195529241,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TestPlayerC",
+					"sid": 789248378905486,
+					"parameters": {
+						"x": "Checkpoint.PlayerX",
+						"y": "Checkpoint.PlayerY"
+					}
+				}
+			],
+			"sid": 208116996120741
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "HurtBox",
+					"sid": 844681406344350,
+					"parameters": {
+						"object": "Creatures"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 332832280013688
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Creatures",
+					"sid": 574025061729956
+				}
+			],
+			"sid": 907308068946108
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-animation-finished",
 					"objectClass": "lavaplat",
 					"sid": 890433787731907,
@@ -3191,6 +3267,45 @@
 				}
 			],
 			"sid": 784830171268654
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Checkpoint",
+					"sid": 476812054678326,
+					"parameters": {
+						"object": "TestPlayerC"
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 970995468788335
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Checkpoint",
+					"sid": 987280349165110,
+					"parameters": {
+						"instance-variable": "PlayerX",
+						"value": "TestPlayerC.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Checkpoint",
+					"sid": 670572249602857,
+					"parameters": {
+						"instance-variable": "PlayerY",
+						"value": "TestPlayerC.Y"
+					}
+				}
+			],
+			"sid": 245196001188425
 		}
 	],
 	"sid": 194596489338002
