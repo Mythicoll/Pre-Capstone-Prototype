@@ -33458,7 +33458,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 416,
-						"y": 736,
+						"y": 832,
 						"width": 98.97979591815695,
 						"height": 98.97979591815695,
 						"originX": 0.5,
@@ -33503,7 +33503,7 @@
 			"global": false
 		},
 		{
-			"name": "Darkness",
+			"name": "LavaLight",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -33533,35 +33533,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Lightfloor",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1276,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2432.1401472843304,
-						"y": 2336.0000613789534,
-						"width": 3136,
-						"height": 4064,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.0008759206390707153,
 						"zElevation": 0
 					}
 				},
@@ -33718,6 +33689,69 @@
 					}
 				}
 			],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "FloorLight",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Lightfloor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1276,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2432.1401472843304,
+						"y": 2336.0000613789534,
+						"width": 3136,
+						"height": 4064,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.0008759206390707153,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 651731011865001,
+			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
 			"color": [
