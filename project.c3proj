@@ -367,7 +367,7 @@
 			"lavaTiles",
 			"Lightlava",
 			"Lightfloor",
-			"PlayerCheck",
+			"InteractTrigger",
 			"E",
 			"InteractBar",
 			"InteractbarProg",

@@ -2156,7 +2156,7 @@
 					"objectClass": "TestPlayerC",
 					"sid": 614189646274727,
 					"parameters": {
-						"object": "PlayerCheck"
+						"object": "InteractTrigger"
 					}
 				},
 				{
@@ -2194,7 +2194,7 @@
 					"objectClass": "TestPlayerC",
 					"sid": 436658919065872,
 					"parameters": {
-						"object": "PlayerCheck"
+						"object": "InteractTrigger"
 					},
 					"isInverted": true
 				}
@@ -2376,6 +2376,20 @@
 					"behaviorType": "Pin",
 					"parameters": {
 						"pin-to": "clam",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "E",
+					"sid": 269215428333066,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "InteractTrigger",
 						"image-point": "0",
 						"angle": true,
 						"width-type": "no",
