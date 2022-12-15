@@ -2565,9 +2565,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "clam",
-					"sid": 958919537271294,
+					"sid": 294932154759647,
 					"parameters": {
-						"animation": "\"Animation 1\"",
+						"animation": "\"Attack\"",
 						"from": "beginning"
 					}
 				},
@@ -2724,9 +2724,9 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "TestPlayerC",
-					"sid": 151409793448745,
+					"sid": 123158787554687,
 					"parameters": {
-						"object": "PlayerCheckEnemyClam"
+						"object": "PlayerCheckEnemyClam2"
 					},
 					"isInverted": true
 				},
@@ -2757,59 +2757,10 @@
 			"conditions": [
 				{
 					"id": "on-animation-finished",
-					"objectClass": "clam2",
-					"sid": 686249044496293,
-					"parameters": {
-						"animation": "\"Animation 1\""
-					}
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 109778452824744
-				}
-			],
-			"actions": [
-				{
-					"id": "set-flipped",
-					"objectClass": "clam2",
-					"sid": 997809843898437,
-					"parameters": {
-						"state": "flipped"
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "clam2",
-					"sid": 693545000482945,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "clam2.PlayerX",
-						"y": "clam2.PlayerY",
-						"mode": "direct"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "clam2",
-					"sid": 297814074717906,
-					"parameters": {
-						"animation": "\"Default\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 965991680941136
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-animation-finished",
 					"objectClass": "clam",
-					"sid": 426103533938170,
+					"sid": 243774979747802,
 					"parameters": {
-						"animation": "\"Animation 1\""
+						"animation": "\"Attack\""
 					}
 				},
 				{
@@ -2841,14 +2792,63 @@
 				{
 					"id": "set-animation",
 					"objectClass": "clam",
-					"sid": 853556761604600,
+					"sid": 560883869044941,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 882473666571262
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "clam2",
+					"sid": 551954079974190,
+					"parameters": {
+						"animation": "\"Animation 1\""
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 982243597829298
+				}
+			],
+			"actions": [
+				{
+					"id": "set-flipped",
+					"objectClass": "clam2",
+					"sid": 946180425396157,
+					"parameters": {
+						"state": "flipped"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "clam2",
+					"sid": 500699661429630,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "clam2.PlayerX",
+						"y": "clam2.PlayerY",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "clam2",
+					"sid": 933523613214768,
 					"parameters": {
 						"animation": "\"Default\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 882473666571262
+			"sid": 329046090188547
 		},
 		{
 			"eventType": "block",

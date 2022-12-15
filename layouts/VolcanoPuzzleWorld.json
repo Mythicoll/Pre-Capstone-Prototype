@@ -20365,8 +20365,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1162,
-						"y": 5378,
+						"x": 1152,
+						"y": 5376,
 						"width": 108.48963084092415,
 						"height": 108.48963084092415,
 						"originX": 0.5,
@@ -23609,6 +23609,105 @@
 							1
 						],
 						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayerCheckEnemyClam2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1307,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1999.269035532995,
+						"y": 5329.218274111675,
+						"width": 960,
+						"height": 960,
+						"originX": 0.5076142131979695,
+						"originY": 0.4873096446700508,
+						"color": [
+							1,
+							1,
+							1,
+							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayerCheckEnemyClam",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 1305,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 3023.269035532995,
+						"y": 5329.218274111675,
+						"width": 960,
+						"height": 960,
+						"originX": 0.5076142131979695,
+						"originY": 0.4873096446700508,
+						"color": [
+							1,
+							1,
+							1,
+							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CollectableBottle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1864,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4256,
+						"y": 736,
+						"width": 108.48963084092415,
+						"height": 108.48963084092415,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -33847,7 +33946,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 2
+						"zElevation": 1
 					}
 				}
 			],
@@ -33887,7 +33986,7 @@
 				{
 					"type": "InteractTrigger",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -33987,7 +34086,7 @@
 				{
 					"type": "PlayerCheckEnemy",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -34058,41 +34157,6 @@
 					}
 				},
 				{
-					"type": "PlayerCheckEnemyClam",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1305,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 3023.269035532995,
-						"y": 5329.218274111675,
-						"width": 960,
-						"height": 960,
-						"originX": 0.5076142131979695,
-						"originY": 0.4873096446700508,
-						"color": [
-							1,
-							1,
-							1,
-							0.25
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "clam2",
 					"properties": {
 						"initially-visible": true,
@@ -34131,41 +34195,6 @@
 							1,
 							1,
 							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PlayerCheckEnemyClam2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1307,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1999.269035532995,
-						"y": 5329.218274111675,
-						"width": 960,
-						"height": 960,
-						"originX": 0.5076142131979695,
-						"originY": 0.4873096446700508,
-						"color": [
-							1,
-							1,
-							1,
-							0.25
 						],
 						"angle": 0,
 						"zElevation": 0
