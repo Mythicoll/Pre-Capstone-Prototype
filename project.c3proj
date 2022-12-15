@@ -370,7 +370,10 @@
 			"PlayerCheck",
 			"E",
 			"InteractBar",
-			"InteractbarProg"
+			"InteractbarProg",
+			"PlayerCheckEnemy",
+			"clam",
+			"PlayerCheckEnemyClam"
 		],
 		"subfolders": [
 			{

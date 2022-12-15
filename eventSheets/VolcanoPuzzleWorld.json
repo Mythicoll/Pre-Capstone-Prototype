@@ -32,6 +32,16 @@
 			"sid": 896603139788089
 		},
 		{
+			"eventType": "variable",
+			"name": "Clam",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 786507127769333
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2359,6 +2369,20 @@
 						"height-type": "no",
 						"z": false
 					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "PlayerCheckEnemyClam",
+					"sid": 728675172174177,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "clam",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
 				}
 			],
 			"sid": 340423308248505
@@ -2470,6 +2494,142 @@
 			],
 			"sid": 729192347381455,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 423120538595099,
+					"parameters": {
+						"object": "PlayerCheckEnemyClam"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 622968308342308
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "clam",
+					"sid": 958919537271294,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 969892843644299,
+					"parameters": {
+						"variable": "Clam",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "clam",
+					"sid": 186811894332969,
+					"parameters": {
+						"instance-variable": "PlayerX",
+						"value": "TestPlayerC.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "clam",
+					"sid": 943489467384783,
+					"parameters": {
+						"instance-variable": "PlayerY",
+						"value": "TestPlayerC.Y"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 626925057900731,
+					"parameters": {
+						"seconds": "3"
+					}
+				}
+			],
+			"sid": 266214980404604
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 303154951469757
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 602909025244882,
+					"parameters": {
+						"object": "PlayerCheckEnemyClam"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 694037242752659,
+					"parameters": {
+						"variable": "Clam"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 605513883871135,
+					"parameters": {
+						"variable": "Clam",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 163868958742101
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "clam",
+					"sid": 135575799671849,
+					"parameters": {
+						"animation": "\"Animation 1\""
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 109778452824744
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-position",
+					"objectClass": "clam",
+					"sid": 486943314465863,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "clam.PlayerX",
+						"y": "clam.PlayerY",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 965991680941136
 		}
 	],
 	"sid": 194596489338002

@@ -13940,8 +13940,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2215.2851239669426,
-						"y": 3554.5,
+						"x": 2240,
+						"y": 3552,
 						"width": 1544,
 						"height": 1216,
 						"originX": 0.5,
@@ -14719,6 +14719,114 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "PlayerCheckEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1303,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1536,
+						"y": 4864,
+						"width": 384,
+						"height": 384,
+						"originX": 0.5076142131979695,
+						"originY": 0.4873096446700508,
+						"color": [
+							1,
+							1,
+							1,
+							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "clam",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1304,
+					"instanceVariables": {
+						"PlayerX": 0,
+						"PlayerY": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 3392,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayerCheckEnemyClam",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1305,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 2976,
+						"y": 5280,
+						"width": 1056,
+						"height": 1056,
+						"originX": 0.5076142131979695,
+						"originY": 0.4873096446700508,
+						"color": [
+							1,
+							1,
+							1,
+							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],
