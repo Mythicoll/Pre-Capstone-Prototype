@@ -544,6 +544,106 @@
 					}
 				},
 				{
+					"type": "InteractTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1913,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1359,
+						"y": 583,
+						"width": 435.45378629654834,
+						"height": 435.45378629654834,
+						"originX": 0.5076142131979695,
+						"originY": 0.4873096446700508,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "E",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1914,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1363,
+						"y": 506,
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InteractBar",
+					"properties": {
+						"value": 0,
+						"maximum": 3,
+						"tooltip": "",
+						"initially-visible": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 1915,
+					"instanceVariables": {
+						"interactCounter": 0
+					},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1284,
+						"y": 1229,
+						"width": 192,
+						"height": 25,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
 					"type": "SleepMudkip",
 					"properties": {
 						"initially-visible": true,
@@ -613,10 +713,10 @@
 						}
 					},
 					"world": {
-						"x": 134,
-						"y": 814,
-						"width": 62.486621589244834,
-						"height": 145.80211704157128,
+						"x": 238,
+						"y": 835,
+						"width": 37.5,
+						"height": 87.5,
 						"originX": 0.5833333333333334,
 						"originY": 0.48214285714285715,
 						"color": [
