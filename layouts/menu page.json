@@ -93,7 +93,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 384,
+						"x": 366.5,
 						"y": 271,
 						"width": 121,
 						"height": 45,
@@ -110,7 +110,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Puzzle Prototypes",
+						"text": "Full Steam Ahead: Set Sail",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 20,
@@ -133,9 +133,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 344,
+						"x": 266.5,
 						"y": 202,
-						"width": 252,
+						"width": 321,
 						"height": 57,
 						"originX": 0,
 						"originY": 0,
