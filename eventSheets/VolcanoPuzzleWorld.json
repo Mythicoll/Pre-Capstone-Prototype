@@ -1202,11 +1202,12 @@
 			],
 			"actions": [
 				{
-					"id": "toggle-boolean-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 102884426503018,
+					"sid": 205630708200646,
 					"parameters": {
-						"variable": "MineLevelComp"
+						"variable": "VolcanoLevelComp",
+						"value": "true"
 					}
 				},
 				{

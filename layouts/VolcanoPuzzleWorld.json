@@ -23631,10 +23631,10 @@
 						}
 					},
 					"world": {
-						"x": 1999.269035532995,
-						"y": 5329.218274111675,
-						"width": 960,
-						"height": 960,
+						"x": 2109.56345177665,
+						"y": 5444.0609137055835,
+						"width": 736,
+						"height": 736,
 						"originX": 0.5076142131979695,
 						"originY": 0.4873096446700508,
 						"color": [
@@ -23671,76 +23671,6 @@
 							1,
 							1,
 							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PlayerCheckEnemyClam2",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1867,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1376,
-						"y": 5344,
-						"width": 960.0000000000001,
-						"height": 960.0000000000001,
-						"originX": 0.5076142131979695,
-						"originY": 0.4873096446700508,
-						"color": [
-							1,
-							1,
-							1,
-							0.25
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PlayerCheckEnemyClam2",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1868,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 544,
-						"y": 5376,
-						"width": 960.0000000000001,
-						"height": 960.0000000000001,
-						"originX": 0.5076142131979695,
-						"originY": 0.4873096446700508,
-						"color": [
-							1,
-							1,
-							1,
-							0.25
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -33917,10 +33847,10 @@
 						}
 					},
 					"world": {
-						"x": 3040,
-						"y": 5344,
-						"width": 960,
-						"height": 960,
+						"x": 3072,
+						"y": 5408,
+						"width": 736,
+						"height": 736,
 						"originX": 0.5076142131979695,
 						"originY": 0.4873096446700508,
 						"color": [
@@ -34014,76 +33944,6 @@
 							1,
 							1,
 							1
-						],
-						"angle": 0,
-						"zElevation": 1
-					}
-				},
-				{
-					"type": "PlayerCheckEnemyClam",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1865,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 3840,
-						"y": 5344,
-						"width": 960.0000000000001,
-						"height": 960.0000000000001,
-						"originX": 0.5076142131979695,
-						"originY": 0.4873096446700508,
-						"color": [
-							1,
-							1,
-							1,
-							0.25
-						],
-						"angle": 0,
-						"zElevation": 1
-					}
-				},
-				{
-					"type": "PlayerCheckEnemyClam",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1866,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 4448,
-						"y": 5312,
-						"width": 960.0000000000001,
-						"height": 960.0000000000001,
-						"originX": 0.5076142131979695,
-						"originY": 0.4873096446700508,
-						"color": [
-							1,
-							1,
-							1,
-							0.25
 						],
 						"angle": 0,
 						"zElevation": 1
