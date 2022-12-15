@@ -73,6 +73,15 @@
 					}
 				},
 				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 130305821429772,
+					"parameters": {
+						"variable": "MineLevelComp"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 688507087433958,
@@ -107,6 +116,15 @@
 					}
 				},
 				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 909277381261844,
+					"parameters": {
+						"variable": "FactoryLevelComp"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 536263407853389,
@@ -139,6 +157,15 @@
 					"parameters": {
 						"key": 32
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 950510109633095,
+					"parameters": {
+						"variable": "VolcanoLevelComp"
+					},
+					"isInverted": true
 				},
 				{
 					"id": "compare-eventvar",
@@ -267,6 +294,15 @@
 					"sid": 403368039982463
 				},
 				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 209779679576191,
+					"parameters": {
+						"variable": "FactoryLevelComp"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 829019763236126,
@@ -297,6 +333,15 @@
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 273846746266600
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 648515177785318,
+					"parameters": {
+						"variable": "VolcanoLevelComp"
+					},
+					"isInverted": true
 				},
 				{
 					"id": "compare-eventvar",
@@ -358,6 +403,70 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
+					"sid": 531848111270331
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 239473470396584,
+					"parameters": {
+						"variable": "VolcanoLevelComp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "MapTileVolcano",
+					"sid": 813607738757047,
+					"parameters": {
+						"object": "MapTileCheck",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 219343738476593
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 532427073260228
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 306724521780377,
+					"parameters": {
+						"variable": "FactoryLevelComp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "MapTileFactory",
+					"sid": 462361283104460,
+					"parameters": {
+						"object": "MapTileCheck",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 363291627710974
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
 					"sid": 611026147993257
 				},
 				{
@@ -398,16 +507,56 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
+					"sid": 829331774157607
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 239420164562041,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 919414770772502,
+					"parameters": {
+						"variable": "FactoryLevelComp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 747042221607531,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 435371100347024
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
 					"sid": 279676763831614
 				},
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 417377163656042,
+					"sid": 940425675176504,
 					"parameters": {
 						"variable": "LevelSelected",
 						"comparison": 0,
-						"value": "2"
+						"value": "3"
 					}
 				},
 				{
@@ -423,14 +572,56 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 910667796587833,
+					"sid": 608132319541924,
 					"parameters": {
 						"variable": "LevelSelected",
-						"value": "3"
+						"value": "2"
 					}
 				}
 			],
 			"sid": 214904080207682
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 699391102967508
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 846435181941574,
+					"parameters": {
+						"variable": "MineLevelComp"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 373170461604639,
+					"parameters": {
+						"variable": "VolcanoLevelComp"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 686199517509808,
+					"parameters": {
+						"variable": "FactoryLevelComp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "MapTileCross",
+					"sid": 308924602099869
+				}
+			],
+			"sid": 267821385908779
 		}
 	],
 	"sid": 604025887444433

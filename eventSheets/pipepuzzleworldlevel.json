@@ -42,6 +42,16 @@
 			"sid": 785772792181520
 		},
 		{
+			"eventType": "variable",
+			"name": "FactoryLevelComp",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 855070776780394
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -566,6 +576,7 @@
 					"id": "on-key-pressed",
 					"objectClass": "key",
 					"sid": 445055628558330,
+					"disabled": true,
 					"parameters": {
 						"key": 32
 					}
@@ -574,6 +585,7 @@
 					"id": "is-overlapping-another-object",
 					"objectClass": "TestPlayerC",
 					"sid": 817943296211395,
+					"disabled": true,
 					"parameters": {
 						"object": "Lever"
 					}
@@ -584,6 +596,7 @@
 					"id": "toggle-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 743790934842221,
+					"disabled": true,
 					"parameters": {
 						"variable": "Lever1"
 					}
@@ -592,6 +605,7 @@
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 992214883436578,
+					"disabled": true,
 					"parameters": {
 						"seconds": "1.0"
 					}
@@ -1140,7 +1154,8 @@
 					}
 				}
 			],
-			"sid": 644443083004286
+			"sid": 644443083004286,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -1168,6 +1183,400 @@
 				}
 			],
 			"sid": 943336510059509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 684759348785689,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 453207614524560,
+					"parameters": {
+						"variable": "Interact"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 638692552277819,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "E",
+					"sid": 854400441337609,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "InteractBar",
+					"sid": 845922227321343,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "InteractBar",
+					"sid": 201668380465833,
+					"parameters": {
+						"instance-variable": "interactCounter",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "InteractBar",
+					"sid": 331082858093199,
+					"parameters": {
+						"value": "InteractBar.interactCounter"
+					}
+				}
+			],
+			"sid": 700738668528252
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 499848892257340,
+					"disabled": true
+				},
+				{
+					"id": "compare-progress",
+					"objectClass": "InteractBar",
+					"sid": 278161528364071,
+					"parameters": {
+						"comparison": 5,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 833334974633113
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 354909544078728,
+					"parameters": {
+						"variable": "Lever1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 176342566229956,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "InteractBar",
+					"sid": 702126964639339,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "InteractBar",
+					"sid": 405153224856285,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "InteractBar",
+					"sid": 470778211959375,
+					"parameters": {
+						"instance-variable": "interactCounter",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 649045094955798
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 202473211036883
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "InteractBar",
+					"sid": 204330137029591,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "E",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "E",
+					"sid": 796337647364777,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "InteractTrigger",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 149434478242669
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 139130139757923
+				},
+				{
+					"id": "compare-progress",
+					"objectClass": "InteractBar",
+					"sid": 138299461627285,
+					"parameters": {
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 282555193177931,
+					"disabled": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-progress",
+					"objectClass": "InteractBar",
+					"sid": 468073521667991,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "InteractBar",
+					"sid": 377607169552562,
+					"parameters": {
+						"instance-variable": "interactCounter",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 594635751884213
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "key",
+					"sid": 544104352747707,
+					"parameters": {
+						"key": 69
+					},
+					"isInverted": true
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 707694229236601,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-progress",
+					"objectClass": "InteractBar",
+					"sid": 377920471897073,
+					"disabled": true,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "InteractBar",
+					"sid": 728083875967640,
+					"parameters": {
+						"instance-variable": "interactCounter",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "InteractBar",
+					"sid": 981404846320833,
+					"parameters": {
+						"value": "InteractBar.interactCounter"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "InteractBar",
+					"sid": 851233707730057,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 795494038445913
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 822542904945186,
+					"parameters": {
+						"object": "InteractTrigger"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "E",
+					"sid": 311405493693085,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 237174958692293,
+					"parameters": {
+						"variable": "Interact",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 473375377988862
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 216811900778140,
+					"parameters": {
+						"object": "InteractTrigger"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 107880939338942,
+					"disabled": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 405731217174760,
+					"parameters": {
+						"variable": "Interact",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "E",
+					"sid": 896594052620893,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "InteractBar",
+					"sid": 174625039242466,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 712996499827126
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 800777320453564,
+					"parameters": {
+						"object": "SteamEnd"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 232331868645715,
+					"parameters": {
+						"variable": "FactoryLevelComp",
+						"value": "true"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 326789636714183,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
+				}
+			],
+			"sid": 994257744450337
 		}
 	],
 	"sid": 149726328012861
