@@ -100,6 +100,15 @@
 					"parameters": {
 						"layout": "MinePuzzleWorld"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 243501933455794,
+					"parameters": {
+						"variable": "HP",
+						"value": "3"
+					}
 				}
 			],
 			"sid": 991169656683578
@@ -143,6 +152,15 @@
 					"parameters": {
 						"layout": "PipePuzzleWorld"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 985241989775595,
+					"parameters": {
+						"variable": "HP",
+						"value": "3"
+					}
 				}
 			],
 			"sid": 458991202507432
@@ -182,9 +200,18 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 263941638091532,
+					"sid": 692875458128583,
 					"parameters": {
-						"layout": "Tile Puzzle Level"
+						"layout": "VolcanoPuzzleWorld"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 911407523228931,
+					"parameters": {
+						"variable": "HP",
+						"value": "3"
 					}
 				}
 			],

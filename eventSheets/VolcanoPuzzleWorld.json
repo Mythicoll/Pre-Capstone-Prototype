@@ -1177,9 +1177,24 @@
 			],
 			"actions": [
 				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 286379048291752,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 209151133282471,
+					"disabled": true
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 707572578423937,
+					"sid": 157071453129325,
+					"disabled": true,
 					"parameters": {
 						"variable": "HP",
 						"value": "3"
@@ -2437,6 +2452,35 @@
 				}
 			],
 			"sid": 245196001188425
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 470587394949653,
+					"parameters": {
+						"key": 76
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 964724305245657
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 366760513345895,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
+				}
+			],
+			"sid": 340630968861831
 		}
 	],
 	"sid": 194596489338002
