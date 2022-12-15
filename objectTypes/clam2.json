@@ -1,7 +1,7 @@
 {
-	"name": "clam",
+	"name": "clam2",
 	"plugin-id": "Sprite",
-	"sid": 567584809055046,
+	"sid": 413602983757956,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
@@ -9,21 +9,21 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 320736441512540
+			"sid": 979102321283557
 		},
 		{
 			"name": "PlayerY",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 312549869611219
+			"sid": 531964050963227
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
-			"sid": 771747177461480
+			"sid": 839425511798805
 		}
 	],
 	"effectTypes": [],
@@ -39,7 +39,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8439130,
+						"imageSpriteId": 1180115,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -63,7 +63,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5725015,
+						"imageSpriteId": 6839568,
 						"collisionPoly": {
 							"points": [
 								0.9354838709677419,
@@ -95,7 +95,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3500515,
+						"imageSpriteId": 8577617,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -112,8 +112,8 @@
 						"duration": 1
 					}
 				],
-				"sid": 469511008111278,
-				"name": "Idle",
+				"sid": 205943900120382,
+				"name": "Default",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -130,7 +130,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4204708,
+						"imageSpriteId": 4797082,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -154,7 +154,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2512785,
+						"imageSpriteId": 9471404,
 						"collisionPoly": {
 							"points": [
 								0.935483870967742,
@@ -186,7 +186,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3836441,
+						"imageSpriteId": 2533342,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -210,7 +210,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5261747,
+						"imageSpriteId": 3802156,
 						"collisionPoly": {
 							"points": [
 								0.935483870967742,
@@ -242,7 +242,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 465515,
+						"imageSpriteId": 4056214,
 						"collisionPoly": {
 							"points": [
 								0.9538461538461538,
@@ -267,8 +267,8 @@
 						"duration": 1
 					}
 				],
-				"sid": 358850575544249,
-				"name": "Attack",
+				"sid": 924418606174004,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

@@ -5426,7 +5426,7 @@
 					},
 					"world": {
 						"x": 1248,
-						"y": 3104,
+						"y": 3072,
 						"width": 256,
 						"height": 256,
 						"originX": 0.5,
@@ -5484,7 +5484,7 @@
 						}
 					},
 					"world": {
-						"x": 1472,
+						"x": 1504,
 						"y": 3072,
 						"width": 256,
 						"height": 256,
@@ -14754,7 +14754,7 @@
 					"type": "clam",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -14767,7 +14767,7 @@
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 200,
+								"max-speed": 400,
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
@@ -14779,11 +14779,11 @@
 					},
 					"world": {
 						"x": 2688,
-						"y": 3392,
+						"y": 3168,
 						"width": 128,
-						"height": 128,
+						"height": 92,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.45652173913043476,
 						"color": [
 							1,
 							1,
@@ -14824,6 +14824,513 @@
 							1,
 							1,
 							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "clam2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1306,
+					"instanceVariables": {
+						"PlayerX": 0,
+						"PlayerY": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1792,
+						"y": 2400,
+						"width": 128,
+						"height": 92,
+						"originX": 0.5,
+						"originY": 0.45652173913043476,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayerCheckEnemyClam2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1307,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1952,
+						"y": 5280,
+						"width": 1056,
+						"height": 1056,
+						"originX": 0.5076142131979695,
+						"originY": 0.4873096446700508,
+						"color": [
+							1,
+							1,
+							1,
+							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "chaseEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IDLE",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1308,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 32,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 120,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 180,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 1472,
+						"y": 4032,
+						"width": 67.244466,
+						"height": 43.787892,
+						"originX": 0.5,
+						"originY": 0.65625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "chaseEnemy2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IDLE",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1309,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 32,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 120,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 200,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 1984,
+						"y": 3584,
+						"width": 67.24446623481597,
+						"height": 43.78789239037124,
+						"originX": 0.5,
+						"originY": 0.65625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "chaseEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IDLE",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1310,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 32,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 120,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 180,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 3808,
+						"y": 2240,
+						"width": 67.244466,
+						"height": 43.787892,
+						"originX": 0.5,
+						"originY": 0.65625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "chaseEnemy2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IDLE",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1311,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 32,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 120,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 200,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 4128,
+						"y": 1248,
+						"width": 67.24446623481597,
+						"height": 43.78789239037124,
+						"originX": 0.5,
+						"originY": 0.65625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "clam2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1312,
+					"instanceVariables": {
+						"PlayerX": 0,
+						"PlayerY": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2720,
+						"y": 1120,
+						"width": 128,
+						"height": 92,
+						"originX": 0.5,
+						"originY": 0.45652173913043476,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "chaseEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IDLE",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1313,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 32,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 120,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 180,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 1344,
+						"y": 1408,
+						"width": 67.244466,
+						"height": 43.787892,
+						"originX": 0.5,
+						"originY": 0.65625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "clam",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1314,
+					"instanceVariables": {
+						"PlayerX": 0,
+						"PlayerY": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 416,
+						"y": 1920,
+						"width": 128,
+						"height": 92,
+						"originX": 0.5,
+						"originY": 0.45652173913043476,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0

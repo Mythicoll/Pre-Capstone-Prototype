@@ -373,7 +373,9 @@
 			"InteractbarProg",
 			"PlayerCheckEnemy",
 			"clam",
-			"PlayerCheckEnemyClam"
+			"PlayerCheckEnemyClam",
+			"clam2",
+			"PlayerCheckEnemyClam2"
 		],
 		"subfolders": [
 			{

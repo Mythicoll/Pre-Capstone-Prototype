@@ -1,0 +1,73 @@
+{
+	"name": "PlayerCheckEnemyClam2",
+	"plugin-id": "Sprite",
+	"sid": 930997279050054,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 505335590052819
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 197,
+						"height": 197,
+						"originX": 0.5076142131979695,
+						"originY": 0.4873096446700508,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8829191,
+						"collisionPoly": {
+							"points": [
+								0.143824027072758,
+								0.1573604060913705,
+								0.3075296108291037,
+								0.033840947546531296,
+								0.5270727580372249,
+								0,
+								0.7618443316412863,
+								0.0761421319796954,
+								0.9357021996615912,
+								0.2618443316412861,
+								1,
+								0.5,
+								0.9323181049069382,
+								0.7703045685279185,
+								0.75,
+								0.9458544839255502,
+								0.5,
+								1,
+								0.21996615905245326,
+								0.9204737732656518,
+								0.0812182741116751,
+								0.7906091370558372,
+								0,
+								0.5507614213197964,
+								0.018612521150592212,
+								0.3193739424703894
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 619327885776017,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
