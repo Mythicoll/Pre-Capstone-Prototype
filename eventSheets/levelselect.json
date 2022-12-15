@@ -391,6 +391,46 @@
 				}
 			],
 			"sid": 363980282473245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 279676763831614
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 417377163656042,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 943498034572025,
+					"parameters": {
+						"variable": "VolcanoLevelComp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 910667796587833,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 214904080207682
 		}
 	],
 	"sid": 604025887444433

@@ -13,7 +13,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "MineLevelComp2",
+			"name": "VolcanoLevelComp",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
@@ -1818,7 +1818,6 @@
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 314818908425729,
-							"disabled": true,
 							"parameters": {
 								"seconds": "2"
 							}
@@ -2878,7 +2877,8 @@
 					"sid": 413969961516995
 				}
 			],
-			"sid": 378198562276625
+			"sid": 378198562276625,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -2887,6 +2887,7 @@
 					"id": "is-overlapping-another-object",
 					"objectClass": "clam2",
 					"sid": 511984762097108,
+					"disabled": true,
 					"parameters": {
 						"object": "lavaTiles"
 					}
