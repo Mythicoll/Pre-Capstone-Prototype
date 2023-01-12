@@ -477,9 +477,6 @@
 		"items": [
 			"Puzzle 1",
 			"Layout PipePuzzle",
-			"PipePuzzleWorld",
-			"LevelSelect",
-			"Menu Page",
 			"Tile Puzzle Level",
 			"FinalGame-1",
 			"FinalGame-2",
@@ -489,7 +486,17 @@
 			"CartScene",
 			"VolcanoPuzzleWorld"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"PipePuzzleWorld",
+					"LevelSelect",
+					"Menu Page"
+				],
+				"subfolders": [],
+				"name": "Final"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
