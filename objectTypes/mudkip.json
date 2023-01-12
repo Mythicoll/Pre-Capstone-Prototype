@@ -24,6 +24,18 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"imageSpriteId": 8478438,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
 						"imageSpriteId": 7069856,
 						"useCollisionPoly": true,
 						"duration": 1
@@ -143,7 +155,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5829943,
+						"imageSpriteId": 28342,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -155,7 +167,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 68139,
+						"imageSpriteId": 9175544,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -186,6 +198,29 @@
 				],
 				"sid": 641686172221341,
 				"name": "Cute",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 6
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5637989,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 444441273031070,
+				"name": "Base",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
