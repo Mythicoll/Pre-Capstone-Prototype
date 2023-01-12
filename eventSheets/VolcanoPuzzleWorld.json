@@ -2084,6 +2084,14 @@
 					}
 				},
 				{
+					"id": "is-animation-playing",
+					"objectClass": "lavaplat",
+					"sid": 486694929657742,
+					"parameters": {
+						"animation": "\"Gone\""
+					}
+				},
+				{
 					"id": "trigger-once-while-true",
 					"objectClass": "System",
 					"sid": 250400277660677
@@ -2092,6 +2100,7 @@
 					"id": "is-visible",
 					"objectClass": "lavaplat",
 					"sid": 319339465603303,
+					"disabled": true,
 					"isInverted": true
 				}
 			],
@@ -2114,6 +2123,15 @@
 					"parameters": {
 						"object": "TestPlayerC"
 					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "lavaplat",
+					"sid": 256382702088373,
+					"parameters": {
+						"animation": "\"Gone\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -2135,11 +2153,12 @@
 					}
 				},
 				{
-					"id": "set-visible",
+					"id": "set-animation",
 					"objectClass": "lavaplat",
-					"sid": 675484122046142,
+					"sid": 974891481619614,
 					"parameters": {
-						"visibility": "invisible"
+						"animation": "\"Gone\"",
+						"from": "beginning"
 					}
 				},
 				{
@@ -2166,6 +2185,14 @@
 					}
 				},
 				{
+					"id": "is-animation-playing",
+					"objectClass": "lavaplat",
+					"sid": 479891338458058,
+					"parameters": {
+						"animation": "\"Gone\""
+					}
+				},
+				{
 					"id": "trigger-once-while-true",
 					"objectClass": "System",
 					"sid": 179957023704109
@@ -2174,6 +2201,7 @@
 					"id": "is-visible",
 					"objectClass": "lavaplat",
 					"sid": 997577093367148,
+					"disabled": true,
 					"isInverted": true
 				}
 			],
@@ -2283,7 +2311,7 @@
 				{
 					"id": "on-animation-finished",
 					"objectClass": "lavaplat",
-					"sid": 890433787731907,
+					"sid": 958542594313956,
 					"parameters": {
 						"animation": "\"Cracked\""
 					}
@@ -2297,7 +2325,6 @@
 					"id": "is-overlapping-another-object",
 					"objectClass": "lavaplat",
 					"sid": 845905820304885,
-					"disabled": true,
 					"parameters": {
 						"object": "Creatures"
 					},
@@ -2308,9 +2335,18 @@
 				{
 					"id": "signal",
 					"objectClass": "System",
-					"sid": 349362122177455,
+					"sid": 826478083037089,
 					"parameters": {
-						"tag": "\"Cracking\""
+						"tag": "\"Gone\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "lavaplat",
+					"sid": 904872047123897,
+					"parameters": {
+						"animation": "\"Gone\"",
+						"from": "beginning"
 					}
 				}
 			],
