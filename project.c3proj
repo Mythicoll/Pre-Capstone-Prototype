@@ -381,7 +381,8 @@
 			"lavaPlatwallsmall",
 			"lavaPlatspirel",
 			"HurtBox",
-			"Checkpoint"
+			"Checkpoint",
+			"artclass"
 		],
 		"subfolders": [
 			{
