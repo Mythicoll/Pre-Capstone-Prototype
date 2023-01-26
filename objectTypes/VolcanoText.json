@@ -11,12 +11,7 @@
 			"sid": 575515647213081
 		}
 	],
-	"effectTypes": [
-		{
-			"effectId": "warpripple",
-			"name": "WarpRipple"
-		}
-	],
+	"effectTypes": [],
 	"image": {
 		"width": 128,
 		"height": 256,

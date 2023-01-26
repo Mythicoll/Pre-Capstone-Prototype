@@ -308,6 +308,30 @@
 						"x": "MapTileMine.X",
 						"y": "MapTileMine.Y"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MineText",
+					"sid": 162110606751470,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FactoryText",
+					"sid": 724755185087633,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "VolcanoText",
+					"sid": 847096858005766,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 100668038872559
@@ -349,6 +373,30 @@
 						"x": "MapTileFactory.X",
 						"y": "MapTileFactory.Y"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MineText",
+					"sid": 223832406399437,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FactoryText",
+					"sid": 614982387677665,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "VolcanoText",
+					"sid": 774468903332370,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 765402525170998
@@ -389,6 +437,30 @@
 					"parameters": {
 						"x": "MapTileVolcano.X",
 						"y": "MapTileVolcano.Y"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MineText",
+					"sid": 839332700477921,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FactoryText",
+					"sid": 537292286630743,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "VolcanoText",
+					"sid": 192852854092129,
+					"parameters": {
+						"visibility": "visible"
 					}
 				}
 			],
