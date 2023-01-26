@@ -2517,6 +2517,33 @@
 				}
 			],
 			"sid": 340630968861831
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 709609855381325
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "PlayerShadow",
+					"sid": 735178975690769,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "TestPlayerC",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 447999338051853
 		}
 	],
 	"sid": 194596489338002

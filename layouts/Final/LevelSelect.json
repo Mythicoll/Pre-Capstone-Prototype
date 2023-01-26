@@ -363,8 +363,8 @@
 					"instance": {
 						"isEnabled": true,
 						"parameters": {
-							"start-radius": 0.25,
-							"end-radius": 0.7
+							"start-radius": 0.18,
+							"end-radius": 0.8
 						}
 					}
 				}
