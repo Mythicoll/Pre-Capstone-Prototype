@@ -20446,7 +20446,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 1077,
 					"instanceVariables": {},
@@ -20488,7 +20489,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 1078,
 					"instanceVariables": {},
@@ -36495,7 +36497,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 1118,
 					"instanceVariables": {},
@@ -36573,7 +36576,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": false,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 1121,
 					"instanceVariables": {},

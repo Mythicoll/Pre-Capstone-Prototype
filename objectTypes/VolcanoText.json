@@ -1,0 +1,31 @@
+{
+	"name": "VolcanoText",
+	"plugin-id": "Spritefont2",
+	"sid": 379301015772203,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 575515647213081
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "warpripple",
+			"name": "WarpRipple"
+		}
+	],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6078025,
+		"useCollisionPoly": true
+	}
+}

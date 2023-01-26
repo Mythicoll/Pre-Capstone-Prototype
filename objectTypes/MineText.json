@@ -1,0 +1,26 @@
+{
+	"name": "MineText",
+	"plugin-id": "Spritefont2",
+	"sid": 673606892272370,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 355537769978953
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1087109,
+		"useCollisionPoly": true
+	}
+}

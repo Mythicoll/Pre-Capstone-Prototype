@@ -5,6 +5,7 @@
 	"resultMode": "default",
 	"ease": "noease",
 	"pathMode": "line",
+	"resizeMode": "size",
 	"playheadTime": 0,
 	"totalTime": 4,
 	"stepTime": 0.1,
@@ -19,6 +20,7 @@
 	"repeatCount": 1,
 	"startOnLayout": "",
 	"transformWithSceneGraph": true,
+	"ignoreSystemTimescale": true,
 	"tracks": [
 		{
 			"type": "instance-track",
@@ -30,6 +32,7 @@
 			"resultMode": "default",
 			"ease": "default",
 			"pathMode": "default",
+			"resizeMode": "default",
 			"initialVisibility": true,
 			"id": "",
 			"virtualPosition": {
@@ -175,6 +178,7 @@
 				"resultMode": "default",
 				"ease": "default",
 				"pathMode": "default",
+				"resizeMode": "",
 				"expanded": true,
 				"name": "Property Track Folder",
 				"items": [],
@@ -191,6 +195,7 @@
 			"resultMode": "default",
 			"ease": "default",
 			"pathMode": "default",
+			"resizeMode": "default",
 			"initialVisibility": true,
 			"id": "",
 			"virtualPosition": {
@@ -336,6 +341,7 @@
 				"resultMode": "default",
 				"ease": "default",
 				"pathMode": "default",
+				"resizeMode": "",
 				"expanded": true,
 				"name": "Property Track Folder",
 				"items": [],
@@ -349,6 +355,7 @@
 		"resultMode": "default",
 		"ease": "default",
 		"pathMode": "default",
+		"resizeMode": "default",
 		"expanded": true,
 		"name": "Track Folder",
 		"items": [],
@@ -360,6 +367,7 @@
 		"resultMode": "default",
 		"ease": "default",
 		"pathMode": "default",
+		"resizeMode": "default",
 		"expanded": true,
 		"name": "Timelines",
 		"items": [],
