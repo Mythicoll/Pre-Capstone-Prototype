@@ -22,10 +22,10 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "FinalGame2Text",
-					"sid": 403495171673895,
+					"sid": 665241576134755,
 					"parameters": {
 						"text": "\"It was not us who woke the beast . . . . . but it was our ambition. . . \"",
-						"duration": "7"
+						"duration": "4"
 					}
 				},
 				{
@@ -52,18 +52,18 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "FinalGame2Text3",
-					"sid": 580754031893480,
+					"sid": 401865521034279,
 					"parameters": {
 						"text": "\"The Divers warned us to stop submerging. . . . . heavens forgive our mistake . . . \"",
-						"duration": "8"
+						"duration": "6"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 304338777569448,
+					"sid": 890855658270580,
 					"parameters": {
-						"seconds": "22"
+						"seconds": "15"
 					}
 				},
 				{
