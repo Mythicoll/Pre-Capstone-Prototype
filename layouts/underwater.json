@@ -312,12 +312,12 @@
 							"speed": 0.01,
 							"x-speed": 0.02,
 							"y-speed": 0.02,
-							"intensity": 2,
+							"intensity": 1.2,
 							"frequency": 4,
-							"angle": 7,
+							"angle": 5,
 							"delta": 20,
-							"reflectivity": 200,
-							"emboss": 0.3
+							"reflectivity": 180,
+							"emboss": 0.28
 						}
 					}
 				}
@@ -440,8 +440,8 @@
 						}
 					},
 					"world": {
-						"x": -356,
-						"y": 1068,
+						"x": 200,
+						"y": 1122,
 						"width": 124.29262937911088,
 						"height": 165.72350583881448,
 						"originX": 0.5172413793103449,
@@ -648,7 +648,7 @@
 					"type": "SleepMudkip",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Sleep",
+						"initial-animation": "Wake",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false

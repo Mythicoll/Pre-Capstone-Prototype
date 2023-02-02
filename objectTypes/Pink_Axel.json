@@ -1,0 +1,43 @@
+{
+	"name": "Pink_Axel",
+	"plugin-id": "Sprite",
+	"sid": 829597112899444,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 642537175813827
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1965537,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 479472689585539,
+				"name": "Animation 2",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 6
+			}
+		],
+		"subfolders": []
+	}
+}

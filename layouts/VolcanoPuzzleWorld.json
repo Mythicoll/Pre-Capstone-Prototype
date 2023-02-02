@@ -33810,7 +33810,7 @@
 						},
 						"8Direction": {
 							"properties": {
-								"max-speed": 250,
+								"max-speed": 300,
 								"acceleration": 600,
 								"deceleration": 500,
 								"directions": "dir-4",

@@ -58,10 +58,10 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "FinalGame2Text3",
-					"sid": 675722931895096,
+					"sid": 415894521566777,
 					"parameters": {
 						"text": "\"Why Hello There!\"",
-						"duration": "3"
+						"duration": "2"
 					}
 				},
 				{
@@ -83,10 +83,10 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "FinalGame2Text3",
-					"sid": 266315575529910,
+					"sid": 653089504841831,
 					"parameters": {
 						"text": "\"I see you've figured out how to walk around with that thing on your head.\"",
-						"duration": "4"
+						"duration": "3"
 					}
 				},
 				{
@@ -108,10 +108,10 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "FinalGame2Text3",
-					"sid": 900498738626213,
+					"sid": 941598521479737,
 					"parameters": {
 						"text": "\"Now try to head over to that big round machine behind me and press and hold 'E' to interact with it\"",
-						"duration": "5"
+						"duration": "4"
 					}
 				}
 			],
@@ -139,6 +139,7 @@
 					"id": "spawn-another-object",
 					"objectClass": "Underwater_tutorial2",
 					"sid": 451393836723467,
+					"disabled": true,
 					"parameters": {
 						"object": "PickupParticle",
 						"layer": "2",
@@ -222,11 +223,11 @@
 				{
 					"id": "pin-to-object-imagepoint",
 					"objectClass": "PlayerShadow",
-					"sid": 693974419335489,
+					"sid": 873290574379752,
 					"behaviorType": "Pin",
 					"parameters": {
 						"pin-to": "TestPlayerC",
-						"image-point": "0",
+						"image-point": "1",
 						"angle": false,
 						"width-type": "no",
 						"height-type": "no",
@@ -732,6 +733,7 @@
 					"id": "spawn-another-object",
 					"objectClass": "Underwater_tutorial2",
 					"sid": 193662170375918,
+					"disabled": true,
 					"parameters": {
 						"object": "PickupParticle",
 						"layer": "2",

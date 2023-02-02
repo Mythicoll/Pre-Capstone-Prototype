@@ -21002,35 +21002,6 @@
 					}
 				},
 				{
-					"type": "Crab",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 746,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 608,
-						"y": 1760,
-						"width": 96,
-						"height": 64,
-						"originX": 0.5,
-						"originY": 0.65625,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "CollectableBottle",
 					"properties": {
 						"initially-visible": true,
@@ -21043,7 +21014,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2463.755184579538,
+						"x": 2465.755184579538,
 						"y": 665.755184579538,
 						"width": 108.48963084092415,
 						"height": 108.48963084092415,
@@ -21413,35 +21384,6 @@
 					}
 				},
 				{
-					"type": "CollectMudkip_Pink",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 864,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2462,
-						"y": 675,
-						"width": 57.75,
-						"height": 24,
-						"originX": 0.5151515151515151,
-						"originY": -0.16666666666666666,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 1
-					}
-				},
-				{
 					"type": "TestPlayerC",
 					"properties": {
 						"initially-visible": true,
@@ -21776,10 +21718,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 480,
-						"y": 704,
-						"width": 832,
-						"height": 1536,
+						"x": 1280,
+						"y": 400,
+						"width": 288,
+						"height": -992,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -21795,7 +21737,7 @@
 				{
 					"type": "ShadowLeftArea",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -21805,10 +21747,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 992,
-						"y": 544,
-						"width": 832,
-						"height": 1536,
+						"x": 1072,
+						"y": 1072,
+						"width": 672,
+						"height": 480,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -21910,6 +21852,35 @@
 						"y": 864,
 						"width": 544,
 						"height": 1333,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ShadowLeftArea",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 864,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1152,
+						"y": 768,
+						"width": 288,
+						"height": -160,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -22208,6 +22179,152 @@
 						"height": 96,
 						"originX": 0.5,
 						"originY": 0.5135135135135135,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "chaseEnemy2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "IDLE",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1371,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 32,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 120,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": false,
+								"diagonals": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 200,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 608,
+						"y": 1792,
+						"width": 96,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.65625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Mudkip",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 746,
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2880,
+						"y": 1280,
+						"width": 384,
+						"height": 384,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pink_Axel",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 2",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1918,
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2464,
+						"y": 680,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

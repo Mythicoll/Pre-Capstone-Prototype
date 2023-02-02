@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 32700,
+	"savedWithRelease": 32702,
 	"name": "PRE-CAP Prototype",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -361,7 +361,8 @@
 			"artclass",
 			"MineText",
 			"FactoryText",
-			"VolcanoText"
+			"VolcanoText",
+			"Pink_Axel"
 		],
 		"subfolders": [
 			{
