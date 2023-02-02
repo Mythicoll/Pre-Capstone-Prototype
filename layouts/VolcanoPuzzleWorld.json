@@ -22698,6 +22698,1128 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1919,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 4336,
+						"y": 3536,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1921,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3616,
+						"y": 5088,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1922,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3680,
+						"y": 4960,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1923,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3616,
+						"y": 4960,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1924,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3616,
+						"y": 4896,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1925,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3744,
+						"y": 4960,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1926,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3744,
+						"y": 5024,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1927,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3808,
+						"y": 4960,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1928,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3808,
+						"y": 4896,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1929,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3808,
+						"y": 5024,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1930,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3680,
+						"y": 4896,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1931,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3744,
+						"y": 4896,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1932,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3616,
+						"y": 5024,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1933,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3680,
+						"y": 5024,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1934,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3680,
+						"y": 5088,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1935,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3744,
+						"y": 5088,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lavaTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1936,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WaterBackground": {
+							"isEnabled": false,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.03,
+								"y-speed": 0.03,
+								"intensity": 10,
+								"frequency": 10,
+								"angle": 50,
+								"delta": 180,
+								"reflectivity": 100,
+								"emboss": 0.2
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.01,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 199,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						},
+						"Vignette": {
+							"isEnabled": true,
+							"parameters": {
+								"start-radius": 0.5,
+								"end-radius": 0.9
+							}
+						}
+					},
+					"world": {
+						"x": 3808,
+						"y": 5088,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 274733071904177,
@@ -25923,7 +27045,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -25959,7 +27081,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34383,7 +35505,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34419,7 +35541,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34455,7 +35577,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34491,7 +35613,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34527,7 +35649,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34563,7 +35685,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34599,7 +35721,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34635,7 +35757,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34671,7 +35793,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34707,7 +35829,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34743,7 +35865,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34779,7 +35901,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34815,7 +35937,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34851,7 +35973,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34887,7 +36009,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34923,7 +36045,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34959,7 +36081,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -34995,7 +36117,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35031,7 +36153,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35067,7 +36189,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35103,7 +36225,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35139,7 +36261,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35355,7 +36477,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35427,7 +36549,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35463,7 +36585,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35499,7 +36621,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35571,7 +36693,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35643,7 +36765,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35679,7 +36801,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35715,7 +36837,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35751,7 +36873,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35787,7 +36909,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35823,7 +36945,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35859,7 +36981,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35895,7 +37017,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35931,7 +37053,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -35967,7 +37089,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -36003,7 +37125,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -36039,7 +37161,7 @@
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -36309,8 +37431,8 @@
 						}
 					},
 					"world": {
-						"x": 2496,
-						"y": 4896,
+						"x": 2368,
+						"y": 4928,
 						"width": 256,
 						"height": 256,
 						"originX": 0.5,
