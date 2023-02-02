@@ -1,5 +1,5 @@
 {
-	"name": "FinalGame-1",
+	"name": "Title",
 	"events": [
 		{
 			"eventType": "block",
@@ -41,7 +41,7 @@
 					"objectClass": "System",
 					"sid": 812053554856675,
 					"parameters": {
-						"layout": "FinalGame-2"
+						"layout": "Intro Screen"
 					}
 				}
 			],

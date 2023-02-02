@@ -1,5 +1,5 @@
 {
-	"name": "FinalGame-1",
+	"name": "Title",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -148,5 +148,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "FinalGame-1"
+	"eventSheet": "Title"
 }
