@@ -13,6 +13,10 @@
 		{
 			"effectId": "water",
 			"name": "Water"
+		},
+		{
+			"effectId": "vignette",
+			"name": "Vignette"
 		}
 	],
 	"animations": {

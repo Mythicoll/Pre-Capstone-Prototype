@@ -5,7 +5,12 @@
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "burn",
+			"name": "Burn"
+		}
+	],
 	"animations": {
 		"items": [
 			{
