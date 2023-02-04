@@ -243,35 +243,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TestEffect",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 935,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 843,
-						"y": 592.5,
-						"width": 2064,
-						"height": 1600,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "underwaterbgv",
 					"properties": {
 						"initially-visible": true,
@@ -732,6 +703,98 @@
 				}
 			],
 			"sid": 100063898873566,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Top",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "underwaterbgv2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 922,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 846,
+						"y": 193,
+						"width": 1920.354217564082,
+						"height": 216.60578720114873,
+						"originX": 0.5,
+						"originY": -2.6515151515151514,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TestEffect",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 935,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 774,
+						"y": 636,
+						"width": 2064,
+						"height": 1600,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 293953784457234,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

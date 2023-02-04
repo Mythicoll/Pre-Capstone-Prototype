@@ -21,11 +21,35 @@
 						"imageSpriteId": 9571249,
 						"useCollisionPoly": true,
 						"duration": 1
+					},
+					{
+						"width": 720,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 693867,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 720,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 222110,
+						"useCollisionPoly": true,
+						"duration": 1
 					}
 				],
 				"sid": 173962031855979,
 				"name": "Default",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

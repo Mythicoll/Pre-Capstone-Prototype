@@ -1,0 +1,73 @@
+{
+	"name": "underwaterbgv2",
+	"plugin-id": "Sprite",
+	"sid": 281356693055826,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 722,
+						"height": 66,
+						"originX": 0.5,
+						"originY": -2.6515151515151514,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8360834,
+						"collisionPoly": {
+							"points": [
+								0.0013850415512465374,
+								0,
+								0.9986149584487535,
+								0,
+								0.9986149584487535,
+								0.9848484848484849,
+								0.0013850415512465374,
+								0.9848484848484849
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 722,
+						"height": 68,
+						"originX": 0.5,
+						"originY": -2.5441176470588234,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8587105,
+						"collisionPoly": {
+							"points": [
+								0.0013850415512465374,
+								0,
+								0.9986149584487535,
+								0,
+								0.9986149584487535,
+								0.9852941176470589,
+								0.0013850415512465374,
+								0.9852941176470589
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 458518306256853,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
