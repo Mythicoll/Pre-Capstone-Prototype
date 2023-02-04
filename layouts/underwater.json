@@ -557,10 +557,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1359,
-						"y": 583,
-						"width": 435.4537862965483,
-						"height": 435.4537862965483,
+						"x": 1374.1725888324872,
+						"y": 643.4974619289341,
+						"width": 589.4537862965483,
+						"height": 317.4537862965483,
 						"originX": 0.5076142131979695,
 						"originY": 0.4873096446700508,
 						"color": [
@@ -576,7 +576,7 @@
 				{
 					"type": "E",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -592,8 +592,8 @@
 						}
 					},
 					"world": {
-						"x": 1363,
-						"y": 506,
+						"x": 224,
+						"y": 1810,
 						"width": 256,
 						"height": 256,
 						"originX": 0.5,

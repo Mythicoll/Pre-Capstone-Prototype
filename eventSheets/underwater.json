@@ -237,11 +237,25 @@
 				{
 					"id": "pin-to-object-imagepoint",
 					"objectClass": "E",
-					"sid": 475906569271259,
+					"sid": 348836345047105,
 					"behaviorType": "Pin",
 					"parameters": {
 						"pin-to": "TestPlayerC",
-						"image-point": "0",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "InteractBar",
+					"sid": 902936195798868,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "E",
+						"image-point": "1",
 						"angle": true,
 						"width-type": "no",
 						"height-type": "no",
@@ -772,47 +786,6 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 537946617598560
-				}
-			],
-			"actions": [
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "InteractBar",
-					"sid": 562045482964100,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "E",
-						"image-point": "1",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "E",
-					"sid": 757698072525033,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "InteractTrigger",
-						"image-point": "0",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				}
-			],
-			"sid": 800780112549570
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
 					"sid": 294308996384640
 				},
 				{
@@ -1028,6 +1001,39 @@
 				}
 			],
 			"sid": 185385865590486
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 877880466552428
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 712645751515259,
+					"parameters": {
+						"tag": "\"Beach\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 201244585359146,
+					"parameters": {
+						"audio-file": "Steam on the Beach",
+						"loop": "not-looping",
+						"volume": "15",
+						"stereo-pan": "0",
+						"tag-optional": "\"Beach\""
+					}
+				}
+			],
+			"sid": 915756204643349
 		}
 	],
 	"sid": 854919884790757
