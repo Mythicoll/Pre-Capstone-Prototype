@@ -11,6 +11,29 @@
 			{
 				"frames": [
 					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3842849,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 858657798932422,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
 						"width": 33,
 						"height": 12,
 						"originX": 0.5151515151515151,
@@ -18,7 +41,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4332030,
+						"imageSpriteId": 5192780,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -30,7 +53,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2026671,
+						"imageSpriteId": 4697686,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -42,7 +65,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9028587,
+						"imageSpriteId": 7931504,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -54,13 +77,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5724552,
+						"imageSpriteId": 2713961,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 204800246261986,
-				"name": "Animation 1",
+				"sid": 849597413656061,
+				"name": "Animation 2",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,

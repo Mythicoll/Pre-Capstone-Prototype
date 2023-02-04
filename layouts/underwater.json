@@ -272,22 +272,22 @@
 					}
 				},
 				{
-					"type": "UnderWaterBackground",
+					"type": "underwaterbgv",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 922,
+					"uid": 1938,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 863,
 						"y": 376,
-						"width": 1808.3940629284727,
-						"height": 1205.596041952315,
+						"width": 1808.394063,
+						"height": 1205.596042,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
