@@ -566,9 +566,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
+					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 611026147993257
+					"sid": 146137008264669
 				},
 				{
 					"id": "compare-eventvar",
@@ -606,9 +606,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
+					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 829331774157607
+					"sid": 695692749208672
 				},
 				{
 					"id": "compare-eventvar",
@@ -646,14 +646,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
+					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 279676763831614
+					"sid": 181451059705271
 				},
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 940425675176504,
+					"sid": 826663810383444,
 					"parameters": {
 						"variable": "LevelSelected",
 						"comparison": 0,
@@ -686,9 +686,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
+					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 699391102967508
+					"sid": 362078679517625
 				},
 				{
 					"id": "compare-boolean-eventvar",
