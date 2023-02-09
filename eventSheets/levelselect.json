@@ -229,6 +229,11 @@
 						"comparison": 5,
 						"value": "4"
 					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 434155363783997
 				}
 			],
 			"actions": [
@@ -256,6 +261,11 @@
 						"comparison": 3,
 						"value": "0"
 					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 889984434001005
 				}
 			],
 			"actions": [
@@ -598,6 +608,15 @@
 						"variable": "LevelSelected",
 						"value": "2"
 					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 616552199829338,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 363980282473245
@@ -638,6 +657,15 @@
 						"variable": "LevelSelected",
 						"value": "3"
 					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 749905880960976,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 435371100347024
@@ -677,6 +705,15 @@
 					"parameters": {
 						"variable": "LevelSelected",
 						"value": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 232466829014784,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
 					}
 				}
 			],
