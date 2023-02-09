@@ -485,39 +485,9 @@
 			],
 			"actions": [
 				{
-					"id": "set-position",
-					"objectClass": "MapTileCheck",
-					"sid": 192531477379418,
-					"parameters": {
-						"x": "MapTileMine.X",
-						"y": "MapTileMine.Y"
-					}
-				}
-			],
-			"sid": 713381890326029
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 531848111270331
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 239473470396584,
-					"parameters": {
-						"variable": "VolcanoLevelComp"
-					}
-				}
-			],
-			"actions": [
-				{
 					"id": "spawn-another-object",
-					"objectClass": "MapTileVolcano",
-					"sid": 813607738757047,
+					"objectClass": "MapTileMine",
+					"sid": 198059770180033,
 					"parameters": {
 						"object": "MapTileCheck",
 						"layer": "0",
@@ -526,7 +496,7 @@
 					}
 				}
 			],
-			"sid": 219343738476593
+			"sid": 713381890326029
 		},
 		{
 			"eventType": "block",
@@ -559,6 +529,38 @@
 				}
 			],
 			"sid": 363291627710974
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 877504179349406
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 695758570138160,
+					"parameters": {
+						"variable": "VolcanoLevelComp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "MapTileVolcano",
+					"sid": 535882025912233,
+					"parameters": {
+						"object": "MapTileCheck",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 442934466595356
 		},
 		{
 			"eventType": "block",
