@@ -2544,6 +2544,41 @@
 				}
 			],
 			"sid": 447999338051853
+		},
+		{
+			"eventType": "comment",
+			"text": "Compass AI is functional but not perfect the compass and object it points to must be on the same layer."
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Compass_AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 702798260085415
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "Compass_Prototype",
+							"sid": 836756253955032,
+							"parameters": {
+								"angle": "angle(Compass_Prototype.X, Compass_Prototype.Y, Compass_Point.X, Compass_Point.Y)"
+							}
+						}
+					],
+					"sid": 257136226795801
+				}
+			],
+			"sid": 476811952966548
 		}
 	],
 	"sid": 194596489338002

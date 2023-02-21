@@ -27042,6 +27042,74 @@
 					}
 				},
 				{
+					"type": "Compass_Point",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1940,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2296,
+						"y": 3136,
+						"width": 30.050441628542906,
+						"height": 30.050441628542906,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Compass_Prototype",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1939,
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 192.48369697974002,
+						"y": 64.74510084366776,
+						"width": 50.21393817464007,
+						"height": 59.96421743185174,
+						"originX": 0.49514563106796117,
+						"originY": 0.4959349593495935,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
