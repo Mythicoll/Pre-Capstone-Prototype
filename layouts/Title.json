@@ -108,6 +108,35 @@
 							1
 						]
 					}
+				},
+				{
+					"type": "FullTitle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1941,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 502,
+						"y": 420,
+						"width": 500,
+						"height": 400,
+						"originX": 0.25,
+						"originY": 0.3125,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 510195772899393,

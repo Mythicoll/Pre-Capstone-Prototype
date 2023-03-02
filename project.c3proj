@@ -367,7 +367,8 @@
 			"underwaterbgv",
 			"underwaterbgv2",
 			"Compass_Prototype",
-			"Compass_Point"
+			"Compass_Point",
+			"FullTitle"
 		],
 		"subfolders": [
 			{
