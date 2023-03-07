@@ -1,0 +1,73 @@
+{
+	"name": "BossBattle",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 604718536406115,
+					"disabled": true,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 667092553410806,
+					"parameters": {
+						"object": "Boss_Trigger"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Boss_Arm_L1",
+					"sid": 882039265974291,
+					"disabled": true,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "TestPlayerC",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TestPlayerC",
+					"sid": 647831995839389,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 130919806524638
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 544625175482734
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 277016324754576,
+					"parameters": {
+						"scale": ".45"
+					}
+				}
+			],
+			"sid": 891048193533175
+		}
+	],
+	"sid": 473248740564804
+}

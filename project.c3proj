@@ -368,7 +368,12 @@
 			"underwaterbgv2",
 			"Compass_Prototype",
 			"Compass_Point",
-			"FullTitle"
+			"FullTitle",
+			"Boss_Platform",
+			"Boss_Body",
+			"Boss_Arm_L1",
+			"Boss_Trigger",
+			"Sprite2"
 		],
 		"subfolders": [
 			{
@@ -471,7 +476,8 @@
 			"Underwater",
 			"MinePuzzleWorld",
 			"CartScene",
-			"VolcanoPuzzleWorld"
+			"VolcanoPuzzleWorld",
+			"BossBattleTest"
 		],
 		"subfolders": [
 			{
@@ -499,7 +505,8 @@
 			"UnderWater",
 			"CartScene",
 			"MinePuzzleWorld",
-			"VolcanoPuzzleWorld"
+			"VolcanoPuzzleWorld",
+			"BossBattle"
 		],
 		"subfolders": []
 	},
