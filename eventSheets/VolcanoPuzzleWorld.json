@@ -2575,7 +2575,29 @@
 							}
 						}
 					],
-					"sid": 257136226795801
+					"sid": 257136226795801,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 702182080956063
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "Compass_Prototype",
+							"sid": 925228177293959,
+							"parameters": {
+								"angle": "angle(TestPlayerC.X, TestPlayerC.Y, SteamEnd.X, SteamEnd.Y)"
+							}
+						}
+					],
+					"sid": 598753268565049
 				}
 			],
 			"sid": 476811952966548
