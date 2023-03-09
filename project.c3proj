@@ -373,7 +373,9 @@
 			"Boss_Body",
 			"Boss_Arm_L1",
 			"Boss_Trigger",
-			"Sprite2"
+			"Sprite2",
+			"compneedle",
+			"comp"
 		],
 		"subfolders": [
 			{

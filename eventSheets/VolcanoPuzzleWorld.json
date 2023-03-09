@@ -2590,8 +2590,8 @@
 					"actions": [
 						{
 							"id": "set-angle",
-							"objectClass": "Compass_Prototype",
-							"sid": 925228177293959,
+							"objectClass": "compneedle",
+							"sid": 903257783707136,
 							"parameters": {
 								"angle": "angle(TestPlayerC.X, TestPlayerC.Y, SteamEnd.X, SteamEnd.Y)"
 							}

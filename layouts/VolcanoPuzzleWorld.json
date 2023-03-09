@@ -38189,15 +38189,15 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Compass_Prototype",
+					"type": "comp",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1939,
+					"uid": 1954,
 					"instanceVariables": {},
 					"behaviors": {
 						"Anchor": {
@@ -38211,12 +38211,12 @@
 						}
 					},
 					"world": {
-						"x": 192.48369697974002,
-						"y": 64.74510084366776,
-						"width": 59.96421743185173,
-						"height": 50.21393817464008,
-						"originX": 0.5040650406504066,
-						"originY": 0.49514563106796117,
+						"x": 213.20789352827782,
+						"y": 67.04310845189927,
+						"width": 99.26015257036576,
+						"height": 99.26015257036576,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -38224,6 +38224,45 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "compneedle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1953,
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 221.17210408283944,
+						"y": 62.51060253704141,
+						"width": 46.603513886617876,
+						"height": 46.603513886617876,
+						"originX": 0.8,
+						"originY": 0.5333333333333333,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.03304458987356762,
 						"zElevation": 0
 					}
 				},
