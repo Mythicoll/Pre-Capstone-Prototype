@@ -375,7 +375,10 @@
 			"Boss_Trigger",
 			"Sprite2",
 			"compneedle",
-			"comp"
+			"comp",
+			"CaveDark",
+			"Cavewall",
+			"Cavesidewall"
 		],
 		"subfolders": [
 			{
