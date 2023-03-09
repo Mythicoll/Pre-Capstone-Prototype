@@ -378,7 +378,12 @@
 			"comp",
 			"CaveDark",
 			"Cavewall",
-			"Cavesidewall"
+			"Cavesidewall",
+			"Cavesidecorner",
+			"Cavesidecorner2",
+			"CavewallFlipped",
+			"CavesidewallFlip",
+			"Cavesidecorner3"
 		],
 		"subfolders": [
 			{
@@ -466,7 +471,8 @@
 			"Pipes",
 			"Creatures",
 			"PlayerXY",
-			"Clams"
+			"Clams",
+			"Walls"
 		],
 		"subfolders": []
 	},

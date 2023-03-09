@@ -1,0 +1,17 @@
+{
+	"name": "Walls",
+	"plugin-id": "Sprite",
+	"sid": 753101390685975,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"CavesidewallFlip",
+		"Cavesidewall",
+		"Cavewall",
+		"Cavesidecorner",
+		"Cavesidecorner2",
+		"CavewallFlipped",
+		"Cavesidecorner3"
+	]
+}

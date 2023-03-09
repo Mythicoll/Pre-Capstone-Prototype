@@ -1,7 +1,7 @@
 {
-	"name": "Cavesidewall",
+	"name": "Cavesidecorner",
 	"plugin-id": "Sprite",
-	"sid": 739982150481072,
+	"sid": 130427323130879,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2281614,
+						"imageSpriteId": 8318080,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 140198807693659,
+				"sid": 173126989613477,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
