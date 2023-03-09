@@ -1780,9 +1780,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 1232,
-						"y": 2016,
+						"y": 2000,
 						"width": 192,
-						"height": 192,
+						"height": 224,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
