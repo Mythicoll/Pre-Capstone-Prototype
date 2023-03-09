@@ -3,7 +3,13 @@
 	"plugin-id": "Sprite",
 	"sid": 753101390685975,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 523041391723084
+		}
+	],
 	"effectTypes": [],
 	"members": [
 		"CavesidewallFlip",
@@ -12,6 +18,7 @@
 		"Cavesidecorner",
 		"Cavesidecorner2",
 		"CavewallFlipped",
-		"Cavesidecorner3"
+		"Cavesidecorner3",
+		"Cavesidecorner4"
 	]
 }

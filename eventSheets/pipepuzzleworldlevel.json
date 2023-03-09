@@ -1577,6 +1577,59 @@
 				}
 			],
 			"sid": 994257744450337
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Compass_AI3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 660157224067576
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "Compass_Prototype",
+							"sid": 614259778361177,
+							"parameters": {
+								"angle": "angle(Compass_Prototype.X, Compass_Prototype.Y, Compass_Point.X, Compass_Point.Y)"
+							}
+						}
+					],
+					"sid": 635038920443489,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 950787422869627
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "compneedle",
+							"sid": 321473524081462,
+							"parameters": {
+								"angle": "angle(TestPlayerC.X, TestPlayerC.Y, SteamEnd.X, SteamEnd.Y)"
+							}
+						}
+					],
+					"sid": 513495282472770
+				}
+			],
+			"sid": 694388234662408
 		}
 	],
 	"sid": 149726328012861

@@ -1,7 +1,7 @@
 {
-	"name": "Cavesidecorner3",
+	"name": "Cavesidecorner4",
 	"plugin-id": "Sprite",
-	"sid": 947935986277726,
+	"sid": 695355760041634,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9685786,
+						"imageSpriteId": 309985,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -35,7 +35,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 740808862884820,
+				"sid": 485683144214942,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
