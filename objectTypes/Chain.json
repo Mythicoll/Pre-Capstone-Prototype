@@ -1,0 +1,44 @@
+{
+	"name": "Chain",
+	"plugin-id": "Sprite",
+	"sid": 393058704309003,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.25,
+						"originY": 0.4375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4547766,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ChainEnd",
+								"x": 0.65625,
+								"y": 0.46875
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 277766234306266,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

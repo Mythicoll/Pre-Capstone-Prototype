@@ -384,7 +384,9 @@
 			"CavewallFlipped",
 			"CavesidewallFlip",
 			"Cavesidecorner3",
-			"Cavesidecorner4"
+			"Cavesidecorner4",
+			"Ancor",
+			"Chain"
 		],
 		"subfolders": [
 			{

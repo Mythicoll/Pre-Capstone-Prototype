@@ -888,6 +888,20 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"Theme\""
 					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Ancor",
+					"sid": 435876332235868,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Ancor",
+						"image-point": "3",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
 				}
 			],
 			"sid": 749842239098896
@@ -1627,6 +1641,70 @@
 						}
 					],
 					"sid": 513495282472770
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 151516152291809,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unpin",
+							"objectClass": "Ancor",
+							"sid": 743450641334978,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 417066782120003
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "key",
+							"sid": 306929008591165,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Ancor",
+							"sid": 236418072257751,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "TestPlayerC",
+								"image-point": "3",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Ancor",
+							"sid": 839082063517784,
+							"disabled": true,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "TestPlayerC",
+								"image-point": "3",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 150465571502052
 				}
 			],
 			"sid": 694388234662408

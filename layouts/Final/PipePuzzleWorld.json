@@ -21349,6 +21349,52 @@
 					}
 				},
 				{
+					"type": "Ancor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1973,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 500,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1088,
+						"y": 2912,
+						"width": 76.5,
+						"height": 73.5,
+						"originX": 0.5294117647058824,
+						"originY": 0.5510204081632653,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "PlayerShadow",
 					"properties": {
 						"initially-visible": true,
@@ -22410,6 +22456,35 @@
 							1
 						],
 						"angle": 0.03304458987356762,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Chain",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2048,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 3040,
+						"width": 64,
+						"height": 64,
+						"originX": 0.25,
+						"originY": 0.4375,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				},

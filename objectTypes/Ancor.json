@@ -1,0 +1,48 @@
+{
+	"name": "Ancor",
+	"plugin-id": "Sprite",
+	"sid": 364411729203108,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 609753808832258
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 905291905753538
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 51,
+						"height": 49,
+						"originX": 0.5294117647058824,
+						"originY": 0.5510204081632653,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4140120,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 570289909627508,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
