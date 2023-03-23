@@ -21367,23 +21367,64 @@
 						},
 						"MoveTo": {
 							"properties": {
-								"max-speed": 500,
+								"max-speed": 400,
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
 								"set-angle": false,
-								"stop-on-solids": false,
+								"stop-on-solids": true,
 								"enabled": true
 							}
 						}
 					},
 					"world": {
 						"x": 1088,
-						"y": 2912,
+						"y": 2848,
 						"width": 76.5,
 						"height": 73.5,
-						"originX": 0.5294117647058824,
-						"originY": 0.5510204081632653,
+						"originX": 1,
+						"originY": 0.08163265306122448,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Chain",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1679,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 800,
+						"y": 3008,
+						"width": 64,
+						"height": 64,
+						"originX": 0.25,
+						"originY": 0.4375,
 						"color": [
 							1,
 							1,
@@ -22470,7 +22511,19 @@
 					},
 					"uid": 2048,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 3040,

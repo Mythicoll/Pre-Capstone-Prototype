@@ -1638,6 +1638,17 @@
 							"parameters": {
 								"angle": "angle(TestPlayerC.X, TestPlayerC.Y, SteamEnd.X, SteamEnd.Y)"
 							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Ancor",
+							"sid": 623772319295203,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "TestPlayerC",
+								"image-point": "3",
+								"mode": "direct"
+							}
 						}
 					],
 					"sid": 513495282472770
@@ -1660,6 +1671,12 @@
 							"objectClass": "Ancor",
 							"sid": 743450641334978,
 							"behaviorType": "Pin"
+						},
+						{
+							"id": "stop",
+							"objectClass": "Ancor",
+							"sid": 200827613550491,
+							"behaviorType": "MoveTo"
 						}
 					],
 					"sid": 417066782120003
@@ -1678,17 +1695,6 @@
 					],
 					"actions": [
 						{
-							"id": "move-to-object",
-							"objectClass": "Ancor",
-							"sid": 236418072257751,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"object": "TestPlayerC",
-								"image-point": "3",
-								"mode": "direct"
-							}
-						},
-						{
 							"id": "pin-to-object-imagepoint",
 							"objectClass": "Ancor",
 							"sid": 839082063517784,
@@ -1701,6 +1707,15 @@
 								"width-type": "no",
 								"height-type": "no",
 								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Ancor",
+							"sid": 189337120938459,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": true
 							}
 						}
 					],
