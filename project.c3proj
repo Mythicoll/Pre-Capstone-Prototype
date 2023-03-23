@@ -386,7 +386,8 @@
 			"Cavesidecorner3",
 			"Cavesidecorner4",
 			"Ancor",
-			"Chain"
+			"Chain",
+			"TestPlayerC2"
 		],
 		"subfolders": [
 			{
