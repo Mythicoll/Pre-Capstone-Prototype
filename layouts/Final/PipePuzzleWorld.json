@@ -21406,15 +21406,9 @@
 					"uid": 1679,
 					"instanceVariables": {},
 					"behaviors": {
-						"Bullet": {
+						"Pin": {
 							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
@@ -22512,15 +22506,9 @@
 					"uid": 2048,
 					"instanceVariables": {},
 					"behaviors": {
-						"Bullet": {
+						"Pin": {
 							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
+								"destroy": false
 							}
 						}
 					},
