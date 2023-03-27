@@ -388,7 +388,9 @@
 			"Ancor",
 			"Chain",
 			"TestPlayerC2",
-			"Chaintest"
+			"Chaintest",
+			"PushableBlock",
+			"PushBlockCollider"
 		],
 		"subfolders": [
 			{

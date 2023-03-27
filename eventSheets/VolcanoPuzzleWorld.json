@@ -62,400 +62,410 @@
 			"sid": 576526761643226
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "PlayerMovement2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 985266243398975,
-					"parameters": {
-						"key": 39
-					},
-					"isInverted": true
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 777893600455252,
+							"parameters": {
+								"key": 39
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 323974814083988,
+							"parameters": {
+								"key": 38
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 897107993181918,
+							"parameters": {
+								"key": 40
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 665391131228463,
+							"parameters": {
+								"key": 37
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 780309849700170,
+							"parameters": {
+								"variable": "Walking"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 347351314736391,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 208753285536758,
+							"parameters": {
+								"animation": "\"IDLE\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 598817796171445,
+							"parameters": {
+								"variable": "Walking",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 278882926739871
 				},
 				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 443658794579617,
-					"parameters": {
-						"key": 38
-					},
-					"isInverted": true
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 132860816618103,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 765291748355285,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 121371330838097,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 598570039246991,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 405501352085101,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 316491550775582,
+							"parameters": {
+								"variable": "LeftORRight",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 383965706405754
 				},
 				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 270826544991906,
-					"parameters": {
-						"key": 40
-					},
-					"isInverted": true
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 972276471852368,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 449293706607870,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 787012824830961,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 761882276603664,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 377167661212410,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 265929989626306,
+							"parameters": {
+								"variable": "LeftORRight",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 247380219393479
 				},
 				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 104564299671777,
-					"parameters": {
-						"key": 37
-					},
-					"isInverted": true
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 421732330726053,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 430415672823146,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 906606208584563,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 645408137416840,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 720390263764267,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 594783543553858
 				},
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 892174713089211,
-					"parameters": {
-						"variable": "Walking"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 717960444045205,
+							"parameters": {
+								"key": 40
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 717811468097213,
+							"parameters": {
+								"variable": "LeftORRight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 928221029115070,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 650220017621629,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 595867073519023,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 349511178332251,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 378507380968369
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 652348562814078,
+							"parameters": {
+								"key": 40
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 190910407017156,
+							"parameters": {
+								"variable": "LeftORRight"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 949716836682399,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 433422770269251,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 199256295674173,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 504213804509999,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 892427922252151
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 173047389291409
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "PlayerShadow",
+							"sid": 110055425736365,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "TestPlayerC",
+								"image-point": "0",
+								"angle": false,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 626783848176449
 				}
 			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "TestPlayerC",
-					"sid": 698327552469802,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerShadow",
-					"sid": 910071622946116,
-					"parameters": {
-						"animation": "\"IDLE\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 494458015409842,
-					"parameters": {
-						"variable": "Walking",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 868795208795135
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 852167837518879,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "TestPlayerC",
-					"sid": 844729257115501,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerShadow",
-					"sid": 933765159670897,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 219008021669082,
-					"parameters": {
-						"variable": "Walking",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "TestPlayerC",
-					"sid": 884762626839445,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 977114958413323,
-					"parameters": {
-						"variable": "LeftORRight",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 846971514771632
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 145894626776218,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "TestPlayerC",
-					"sid": 341950302657404,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerShadow",
-					"sid": 851212334172670,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 137414362282855,
-					"parameters": {
-						"variable": "Walking",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "TestPlayerC",
-					"sid": 475599713673957,
-					"parameters": {
-						"state": "mirrored"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 514473506783473,
-					"parameters": {
-						"variable": "LeftORRight",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 573745118396629
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 831318701285089,
-					"parameters": {
-						"key": 38
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "TestPlayerC",
-					"sid": 288002570341119,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerShadow",
-					"sid": 949080353679390,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 102925151559540,
-					"parameters": {
-						"variable": "Walking",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "TestPlayerC",
-					"sid": 419862963576418,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 922022440393476
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 183395242253317,
-					"parameters": {
-						"key": 40
-					}
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 672706183768166,
-					"parameters": {
-						"variable": "LeftORRight"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "TestPlayerC",
-					"sid": 112110575639693,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerShadow",
-					"sid": 627818359600047,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "TestPlayerC",
-					"sid": 212718645676193,
-					"parameters": {
-						"state": "mirrored"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 189334310258522,
-					"parameters": {
-						"variable": "Walking",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 831656101421285
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 299290319893126,
-					"parameters": {
-						"key": 40
-					}
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 180191054496438,
-					"parameters": {
-						"variable": "LeftORRight"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "TestPlayerC",
-					"sid": 196810073126530,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "PlayerShadow",
-					"sid": 948845349235111,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 972793666278018,
-					"parameters": {
-						"variable": "Walking",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "TestPlayerC",
-					"sid": 616150660374275,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 888116907704377
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 773333628921387
-				}
-			],
-			"actions": [
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "PlayerShadow",
-					"sid": 390957987073497,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "TestPlayerC",
-						"image-point": "0",
-						"angle": false,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				}
-			],
-			"sid": 938570793844014
+			"sid": 299109763138420
 		},
 		{
 			"eventType": "group",
@@ -1237,1120 +1247,1150 @@
 			"sid": 400960424762506
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interact Script",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "TestPlayerC",
-					"sid": 614189646274727,
-					"parameters": {
-						"object": "InteractTrigger"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 672418775224635,
+							"parameters": {
+								"object": "InteractTrigger"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 419558893947979
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "E",
+							"sid": 619279378373108,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 405565454495551,
+							"parameters": {
+								"variable": "Interact",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 433953203236484
 				},
 				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 497041750837934
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "E",
-					"sid": 592124071690230,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 956613927779365,
+							"parameters": {
+								"object": "InteractTrigger"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 911835740487757,
+							"parameters": {
+								"variable": "Interact",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "E",
+							"sid": 786621744069944,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InteractBar",
+							"sid": 247807806106447,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 502019829296360
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 875874941925591,
-					"parameters": {
-						"variable": "Interact",
-						"value": "true"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 435536281587472,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 619542240156695,
+							"parameters": {
+								"variable": "Interact"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 639088086831342,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "E",
+							"sid": 257328143655857,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InteractBar",
+							"sid": 826019425107613,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "InteractBar",
+							"sid": 253177279586186,
+							"parameters": {
+								"instance-variable": "interactCounter",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 130233206911337,
+							"parameters": {
+								"value": "InteractBar.interactCounter"
+							}
+						}
+					],
+					"sid": 791224260562092
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 100244842023076
+						},
+						{
+							"id": "compare-progress",
+							"objectClass": "InteractBar",
+							"sid": 200524976930105,
+							"parameters": {
+								"comparison": 5,
+								"value": "3"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 334209387913734
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 933562949293924,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 767201095764280,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InteractBar",
+							"sid": 581985963978396,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "InteractBar",
+							"sid": 912132546043448,
+							"parameters": {
+								"instance-variable": "interactCounter",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 360337014575781
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 614934530405954
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "InteractBar",
+							"sid": 670088146544430,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "E",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "PlayerCheckEnemyClam",
+							"sid": 246871964512895,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "clam",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "E",
+							"sid": 512575853292542,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "InteractTrigger",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 651522529210240
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 802357822778148
+						},
+						{
+							"id": "compare-progress",
+							"objectClass": "InteractBar",
+							"sid": 715726157634582,
+							"parameters": {
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 713115552800660
+						}
+					],
+					"actions": [
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 225142781387827,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "InteractBar",
+							"sid": 460433110644818,
+							"parameters": {
+								"instance-variable": "interactCounter",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 964601564413186
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 775606888471878,
+							"parameters": {
+								"key": 69
+							},
+							"isInverted": true
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 429760574723192,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 136364901499706,
+							"disabled": true,
+							"parameters": {
+								"variable": "Interact"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 587494438662835,
+							"disabled": true
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 270218007739961,
+							"disabled": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 940890490414366,
+							"disabled": true,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "InteractBar",
+							"sid": 938007587429819,
+							"parameters": {
+								"instance-variable": "interactCounter",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 604260681956053,
+							"parameters": {
+								"value": "InteractBar.interactCounter"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InteractBar",
+							"sid": 948279987960107,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 292961465956104
 				}
 			],
-			"sid": 877522811446221
+			"sid": 787446550458687
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Clam AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "TestPlayerC",
-					"sid": 436658919065872,
-					"parameters": {
-						"object": "InteractTrigger"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 490301636060312,
-					"parameters": {
-						"variable": "Interact",
-						"value": "false"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 967284342387954,
+							"parameters": {
+								"object": "PlayerCheckEnemyClam"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 945301947924635
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 527083975396458,
+							"disabled": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "clam",
+							"sid": 358804924684403,
+							"parameters": {
+								"animation": "\"Attack\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 122645186687684,
+							"parameters": {
+								"variable": "Clam",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "clam",
+							"sid": 385205792287803,
+							"parameters": {
+								"instance-variable": "PlayerX",
+								"value": "TestPlayerC.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "clam",
+							"sid": 928728982517884,
+							"parameters": {
+								"instance-variable": "PlayerY",
+								"value": "TestPlayerC.Y"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 613570296604867,
+							"parameters": {
+								"seconds": "3"
+							}
+						}
+					],
+					"sid": 307057614854327
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "E",
-					"sid": 977387073366991,
-					"parameters": {
-						"visibility": "invisible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 397393474941245,
+							"parameters": {
+								"object": "PlayerCheckEnemyClam2"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 265270032283524,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 647627796480094,
+							"disabled": true
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 429327859023530,
+							"disabled": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "clam2",
+							"sid": 672473209361617,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 476938005061673,
+							"parameters": {
+								"variable": "Clam",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "clam2",
+							"sid": 558827053489887,
+							"parameters": {
+								"instance-variable": "PlayerX",
+								"value": "TestPlayerC.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "clam2",
+							"sid": 995570599602680,
+							"parameters": {
+								"instance-variable": "PlayerY",
+								"value": "TestPlayerC.Y"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 950471766974863,
+							"parameters": {
+								"seconds": "3"
+							}
+						}
+					],
+					"sid": 156382043667103
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "InteractBar",
-					"sid": 621403397641404,
-					"parameters": {
-						"visibility": "invisible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 227190314441143,
+							"parameters": {
+								"object": "PlayerCheckEnemyClam"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 453846339371983
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 344224386673422
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 545352854244814,
+							"parameters": {
+								"variable": "Clam"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 933987690057434,
+							"parameters": {
+								"variable": "Clam",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 752741676214752
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 407683392802565,
+							"parameters": {
+								"object": "PlayerCheckEnemyClam2"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 435677538436741
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 167945149317632
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 976989057491436,
+							"parameters": {
+								"variable": "Clam2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 399781700558560,
+							"parameters": {
+								"variable": "Clam2",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 847623633884941
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "clam",
+							"sid": 228260333484923,
+							"parameters": {
+								"animation": "\"Attack\""
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 826705438784888
+						}
+					],
+					"actions": [
+						{
+							"id": "set-flipped",
+							"objectClass": "clam",
+							"sid": 240004940553771,
+							"parameters": {
+								"state": "flipped"
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "clam",
+							"sid": 454376496319049,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "clam.PlayerX",
+								"y": "clam.PlayerY",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "clam",
+							"sid": 213080917292179,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 295523354092693
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "clam2",
+							"sid": 528438641392205,
+							"parameters": {
+								"animation": "\"Animation 1\""
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 186771305216446
+						}
+					],
+					"actions": [
+						{
+							"id": "set-flipped",
+							"objectClass": "clam2",
+							"sid": 157468644956463,
+							"parameters": {
+								"state": "flipped"
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "clam2",
+							"sid": 531081299706107,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "clam2.PlayerX",
+								"y": "clam2.PlayerY",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "clam2",
+							"sid": 545753364470726,
+							"parameters": {
+								"animation": "\"Default\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 734469644627153
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "clam",
+							"sid": 766423178640488,
+							"parameters": {
+								"object": "TestPlayerC"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 701589611060616,
+							"parameters": {
+								"variable": "HP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "TestPlayerC",
+							"sid": 435333492668834,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						}
+					],
+					"sid": 492597262489990
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "clam2",
+							"sid": 603685973904385,
+							"parameters": {
+								"object": "TestPlayerC"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 767188924642852,
+							"parameters": {
+								"variable": "HP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "TestPlayerC",
+							"sid": 192612197171947,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						}
+					],
+					"sid": 386963587767798
 				}
 			],
-			"sid": 355591622813151
+			"sid": 615541334951072
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Lava Tile Script",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 249240775315995,
-					"parameters": {
-						"key": 69
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lavaplat",
+							"sid": 479435309695504,
+							"parameters": {
+								"object": "Creatures"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "lavaplat",
+							"sid": 372514559524167,
+							"parameters": {
+								"animation": "\"Cracked\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 654201168534732,
+							"parameters": {
+								"tag": "\"Cracking\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "lavaplat",
+							"sid": 482416197748514,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 200347642824748
 				},
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 188054624014565,
-					"parameters": {
-						"variable": "Interact"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lavaplat",
+							"sid": 703824124557934,
+							"parameters": {
+								"object": "Creatures"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "lavaplat",
+							"sid": 902298512513784,
+							"parameters": {
+								"animation": "\"Gone\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 513519789481806
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "lavaplat",
+							"sid": 442830883842940,
+							"disabled": true,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Creatures",
+							"sid": 884715437251474
+						}
+					],
+					"sid": 743388006013187
 				},
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 845267589885624,
-					"parameters": {
-						"interval-seconds": "1.0"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lavaplat",
+							"sid": 282966974058362,
+							"parameters": {
+								"object": "TestPlayerC"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "lavaplat",
+							"sid": 422681061788007,
+							"parameters": {
+								"animation": "\"Gone\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "lavaplat",
+							"sid": 355992141516306,
+							"parameters": {
+								"animation": "\"Cracked\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 843379455260187,
+							"parameters": {
+								"tag": "\"Cracking\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "lavaplat",
+							"sid": 657662146706134,
+							"parameters": {
+								"animation": "\"Gone\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 476096579518833,
+							"parameters": {
+								"variable": "PlatformStepped",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 866058349273883
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lavaplat",
+							"sid": 856586379513048,
+							"parameters": {
+								"object": "TestPlayerC"
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "lavaplat",
+							"sid": 836084755675517,
+							"parameters": {
+								"animation": "\"Gone\""
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 638474834207425
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "lavaplat",
+							"sid": 992055433597581,
+							"disabled": true,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 702655830062740,
+							"parameters": {
+								"variable": "HP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "TestPlayerC",
+							"sid": 183544171553366,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						}
+					],
+					"sid": 579473186909827
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "HurtBox",
+							"sid": 721753452629580,
+							"parameters": {
+								"object": "TestPlayerC"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 450736776082841
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 726764683174315,
+							"parameters": {
+								"variable": "HP",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "TestPlayerC",
+							"sid": 181949676683999,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TestPlayerC",
+							"sid": 363917731145950,
+							"parameters": {
+								"x": "Checkpoint.PlayerX",
+								"y": "Checkpoint.PlayerY"
+							}
+						}
+					],
+					"sid": 317118640947203
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "HurtBox",
+							"sid": 536371645048579,
+							"parameters": {
+								"object": "Creatures"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 884066350065985
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Creatures",
+							"sid": 286023428547739
+						}
+					],
+					"sid": 507125511464902
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "lavaplat",
+							"sid": 550103159678654,
+							"parameters": {
+								"animation": "\"Cracked\""
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 415812725100715
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "lavaplat",
+							"sid": 622459066626553,
+							"parameters": {
+								"object": "Creatures"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 844238797183789,
+							"parameters": {
+								"tag": "\"Gone\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "lavaplat",
+							"sid": 556005537889787,
+							"parameters": {
+								"animation": "\"Gone\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 663184489820559
 				}
 			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "E",
-					"sid": 904866042998883,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "InteractBar",
-					"sid": 786933602411072,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "add-to-instvar",
-					"objectClass": "InteractBar",
-					"sid": 686817696554737,
-					"parameters": {
-						"instance-variable": "interactCounter",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-progress",
-					"objectClass": "InteractBar",
-					"sid": 177994642366119,
-					"parameters": {
-						"value": "InteractBar.interactCounter"
-					}
-				}
-			],
-			"sid": 511582159182777
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 227664927475215
-				},
-				{
-					"id": "compare-progress",
-					"objectClass": "InteractBar",
-					"sid": 993206874325763,
-					"parameters": {
-						"comparison": 5,
-						"value": "3"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 629586080951785
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 556469344661006,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
-					"id": "set-progress",
-					"objectClass": "InteractBar",
-					"sid": 421880337102913,
-					"parameters": {
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "InteractBar",
-					"sid": 166340146967564,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "InteractBar",
-					"sid": 539320970314644,
-					"parameters": {
-						"instance-variable": "interactCounter",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 287256295511993
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 426067686320525
-				}
-			],
-			"actions": [
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "InteractBar",
-					"sid": 789766058356101,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "E",
-						"image-point": "1",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "PlayerCheckEnemyClam",
-					"sid": 728675172174177,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "clam",
-						"image-point": "0",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "E",
-					"sid": 269215428333066,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "InteractTrigger",
-						"image-point": "0",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				}
-			],
-			"sid": 340423308248505
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 543173549184402
-				},
-				{
-					"id": "compare-progress",
-					"objectClass": "InteractBar",
-					"sid": 119991298717882,
-					"parameters": {
-						"comparison": 3,
-						"value": "0"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 385360567752137
-				}
-			],
-			"actions": [
-				{
-					"id": "set-progress",
-					"objectClass": "InteractBar",
-					"sid": 589459965431386,
-					"parameters": {
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "InteractBar",
-					"sid": 442236875547730,
-					"parameters": {
-						"instance-variable": "interactCounter",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 880845109191651
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "key",
-					"sid": 795259984048974,
-					"parameters": {
-						"key": 69
-					},
-					"isInverted": true
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 512221672232312,
-					"parameters": {
-						"interval-seconds": "1.0"
-					}
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 293895895440728,
-					"disabled": true,
-					"parameters": {
-						"variable": "Interact"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 161223762679658,
-					"disabled": true
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 383004518848967,
-					"disabled": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-progress",
-					"objectClass": "InteractBar",
-					"sid": 661896746757061,
-					"disabled": true,
-					"parameters": {
-						"value": "0"
-					}
-				},
-				{
-					"id": "subtract-from-instvar",
-					"objectClass": "InteractBar",
-					"sid": 829348456190855,
-					"parameters": {
-						"instance-variable": "interactCounter",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-progress",
-					"objectClass": "InteractBar",
-					"sid": 900046975456606,
-					"parameters": {
-						"value": "InteractBar.interactCounter"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "InteractBar",
-					"sid": 869664428027333,
-					"disabled": true,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 729192347381455
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "TestPlayerC",
-					"sid": 510766463798455,
-					"parameters": {
-						"object": "PlayerCheckEnemyClam"
-					}
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 801268626559235
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 451677069353797,
-					"disabled": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "clam",
-					"sid": 294932154759647,
-					"parameters": {
-						"animation": "\"Attack\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 518339906140681,
-					"parameters": {
-						"variable": "Clam",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "clam",
-					"sid": 186811894332969,
-					"parameters": {
-						"instance-variable": "PlayerX",
-						"value": "TestPlayerC.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "clam",
-					"sid": 943489467384783,
-					"parameters": {
-						"instance-variable": "PlayerY",
-						"value": "TestPlayerC.Y"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 626925057900731,
-					"parameters": {
-						"seconds": "3"
-					}
-				}
-			],
-			"sid": 266214980404604
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "TestPlayerC",
-					"sid": 327198902272125,
-					"parameters": {
-						"object": "PlayerCheckEnemyClam2"
-					}
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 744335086956591,
-					"parameters": {
-						"interval-seconds": "2"
-					}
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 353079079922622,
-					"disabled": true
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 979136914334131,
-					"disabled": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "clam2",
-					"sid": 937018558992056,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 899114931958343,
-					"parameters": {
-						"variable": "Clam",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "clam2",
-					"sid": 710340730768465,
-					"parameters": {
-						"instance-variable": "PlayerX",
-						"value": "TestPlayerC.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "clam2",
-					"sid": 391436909268845,
-					"parameters": {
-						"instance-variable": "PlayerY",
-						"value": "TestPlayerC.Y"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 835563226410403,
-					"parameters": {
-						"seconds": "3"
-					}
-				}
-			],
-			"sid": 892317631299993
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "TestPlayerC",
-					"sid": 690692700953247,
-					"parameters": {
-						"object": "PlayerCheckEnemyClam"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 303154951469757
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 432089366021486
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 694037242752659,
-					"parameters": {
-						"variable": "Clam"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 605513883871135,
-					"parameters": {
-						"variable": "Clam",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 163868958742101
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "TestPlayerC",
-					"sid": 574982264102127,
-					"parameters": {
-						"object": "PlayerCheckEnemyClam2"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 938377271755526
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 985026512364530
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 988543011064203,
-					"parameters": {
-						"variable": "Clam2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 398369435389485,
-					"parameters": {
-						"variable": "Clam2",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 899197543425672
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-animation-finished",
-					"objectClass": "clam",
-					"sid": 243774979747802,
-					"parameters": {
-						"animation": "\"Attack\""
-					}
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 888212386913442
-				}
-			],
-			"actions": [
-				{
-					"id": "set-flipped",
-					"objectClass": "clam",
-					"sid": 957418846010619,
-					"parameters": {
-						"state": "flipped"
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "clam",
-					"sid": 936288282860419,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "clam.PlayerX",
-						"y": "clam.PlayerY",
-						"mode": "direct"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "clam",
-					"sid": 560883869044941,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 882473666571262
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-animation-finished",
-					"objectClass": "clam2",
-					"sid": 551954079974190,
-					"parameters": {
-						"animation": "\"Animation 1\""
-					}
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 982243597829298
-				}
-			],
-			"actions": [
-				{
-					"id": "set-flipped",
-					"objectClass": "clam2",
-					"sid": 946180425396157,
-					"parameters": {
-						"state": "flipped"
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "clam2",
-					"sid": 500699661429630,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "clam2.PlayerX",
-						"y": "clam2.PlayerY",
-						"mode": "direct"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "clam2",
-					"sid": 933523613214768,
-					"parameters": {
-						"animation": "\"Default\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 329046090188547
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "clam",
-					"sid": 837838337527705,
-					"parameters": {
-						"object": "TestPlayerC"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 749025478628213,
-					"parameters": {
-						"variable": "HP",
-						"value": "1"
-					}
-				},
-				{
-					"id": "flash",
-					"objectClass": "TestPlayerC",
-					"sid": 513348819471567,
-					"behaviorType": "Flash",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "1.0"
-					}
-				}
-			],
-			"sid": 403882439802246
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "clam2",
-					"sid": 435736153245115,
-					"parameters": {
-						"object": "TestPlayerC"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 487601215715076,
-					"parameters": {
-						"variable": "HP",
-						"value": "1"
-					}
-				},
-				{
-					"id": "flash",
-					"objectClass": "TestPlayerC",
-					"sid": 216271052616982,
-					"behaviorType": "Flash",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "1.0"
-					}
-				}
-			],
-			"sid": 678600618229216
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "lavaplat",
-					"sid": 762684128855021,
-					"parameters": {
-						"object": "Creatures"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "lavaplat",
-					"sid": 783001141757777,
-					"parameters": {
-						"animation": "\"Cracked\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait-for-signal",
-					"objectClass": "System",
-					"sid": 326868234351502,
-					"parameters": {
-						"tag": "\"Cracking\""
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "lavaplat",
-					"sid": 581419746516927,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 652924944432142
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "lavaplat",
-					"sid": 508890691515799,
-					"parameters": {
-						"object": "Creatures"
-					}
-				},
-				{
-					"id": "is-animation-playing",
-					"objectClass": "lavaplat",
-					"sid": 486694929657742,
-					"parameters": {
-						"animation": "\"Gone\""
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 250400277660677
-				},
-				{
-					"id": "is-visible",
-					"objectClass": "lavaplat",
-					"sid": 319339465603303,
-					"disabled": true,
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Creatures",
-					"sid": 560230681482406
-				}
-			],
-			"sid": 260662055857085
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "lavaplat",
-					"sid": 553723150530646,
-					"parameters": {
-						"object": "TestPlayerC"
-					}
-				},
-				{
-					"id": "is-animation-playing",
-					"objectClass": "lavaplat",
-					"sid": 256382702088373,
-					"parameters": {
-						"animation": "\"Gone\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "lavaplat",
-					"sid": 565690237478534,
-					"parameters": {
-						"animation": "\"Cracked\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait-for-signal",
-					"objectClass": "System",
-					"sid": 454969487168158,
-					"parameters": {
-						"tag": "\"Cracking\""
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "lavaplat",
-					"sid": 974891481619614,
-					"parameters": {
-						"animation": "\"Gone\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 801030836788981,
-					"parameters": {
-						"variable": "PlatformStepped",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 948549502044588
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "lavaplat",
-					"sid": 294171093216675,
-					"parameters": {
-						"object": "TestPlayerC"
-					}
-				},
-				{
-					"id": "is-animation-playing",
-					"objectClass": "lavaplat",
-					"sid": 479891338458058,
-					"parameters": {
-						"animation": "\"Gone\""
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 179957023704109
-				},
-				{
-					"id": "is-visible",
-					"objectClass": "lavaplat",
-					"sid": 997577093367148,
-					"disabled": true,
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 995584024186019,
-					"parameters": {
-						"variable": "HP",
-						"value": "1"
-					}
-				},
-				{
-					"id": "flash",
-					"objectClass": "TestPlayerC",
-					"sid": 511763692145138,
-					"behaviorType": "Flash",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "1.0"
-					}
-				}
-			],
-			"sid": 641616521249881
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "HurtBox",
-					"sid": 303191019485396,
-					"parameters": {
-						"object": "TestPlayerC"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 233782414064870
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 592864986013134,
-					"parameters": {
-						"variable": "HP",
-						"value": "1"
-					}
-				},
-				{
-					"id": "flash",
-					"objectClass": "TestPlayerC",
-					"sid": 513252195529241,
-					"behaviorType": "Flash",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "1.0"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "TestPlayerC",
-					"sid": 789248378905486,
-					"parameters": {
-						"x": "Checkpoint.PlayerX",
-						"y": "Checkpoint.PlayerY"
-					}
-				}
-			],
-			"sid": 208116996120741
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "HurtBox",
-					"sid": 844681406344350,
-					"parameters": {
-						"object": "Creatures"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 332832280013688
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Creatures",
-					"sid": 574025061729956
-				}
-			],
-			"sid": 907308068946108
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-animation-finished",
-					"objectClass": "lavaplat",
-					"sid": 958542594313956,
-					"parameters": {
-						"animation": "\"Cracked\""
-					}
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 442265399526777
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "lavaplat",
-					"sid": 845905820304885,
-					"parameters": {
-						"object": "Creatures"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "signal",
-					"objectClass": "System",
-					"sid": 826478083037089,
-					"parameters": {
-						"tag": "\"Gone\""
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "lavaplat",
-					"sid": 904872047123897,
-					"parameters": {
-						"animation": "\"Gone\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 863272449485438
+			"sid": 881165652606854
 		},
 		{
 			"eventType": "block",

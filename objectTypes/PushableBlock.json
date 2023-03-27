@@ -1,0 +1,48 @@
+{
+	"name": "PushableBlock",
+	"plugin-id": "Sprite",
+	"sid": 131114911528845,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 327912421922860
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 524153318147004
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2614608,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 480848666777237,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
