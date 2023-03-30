@@ -2729,6 +2729,50 @@
 				}
 			],
 			"sid": 736929789081477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 267186636688937,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 621402872618222,
+					"disabled": true,
+					"parameters": {
+						"object": "InteractTrigger"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-pinned",
+					"objectClass": "PushableBlock",
+					"sid": 818306461107664,
+					"behaviorType": "Pin"
+				}
+			],
+			"actions": [
+				{
+					"id": "unpin",
+					"objectClass": "PushableBlock",
+					"sid": 236176768391785,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "stop",
+					"objectClass": "PushableBlock",
+					"sid": 440383325288081,
+					"behaviorType": "8Direction"
+				}
+			],
+			"sid": 778837133964820
 		}
 	],
 	"sid": 779865521013904
