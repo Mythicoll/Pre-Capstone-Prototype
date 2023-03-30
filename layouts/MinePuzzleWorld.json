@@ -17856,8 +17856,13 @@
 						},
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						}
 					},
@@ -17866,8 +17871,43 @@
 						"y": 2432,
 						"width": 96,
 						"height": 96,
-						"originX": 0.5,
+						"originX": 0,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "InteractTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1866,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 96,
+						"y": 3296,
+						"width": 197,
+						"height": 197,
+						"originX": 0.5076142131979695,
+						"originY": 0.4873096446700508,
 						"color": [
 							1,
 							1,

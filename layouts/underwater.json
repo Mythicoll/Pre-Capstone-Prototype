@@ -526,7 +526,13 @@
 					},
 					"uid": 1913,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"world": {
 						"x": 1374.1725888324872,
 						"y": 643.4974619289341,

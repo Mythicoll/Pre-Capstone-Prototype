@@ -14,6 +14,11 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 524153318147004
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 280278568367028
 		}
 	],
 	"effectTypes": [],
@@ -24,7 +29,7 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.5,
+						"originX": 0,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",

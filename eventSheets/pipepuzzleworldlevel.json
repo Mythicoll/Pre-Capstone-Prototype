@@ -1314,12 +1314,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 221318926628561,
-							"disabled": true
-						},
-						{
 							"id": "compare-progress",
 							"objectClass": "InteractBar",
 							"sid": 181316966185363,
@@ -1436,12 +1430,6 @@
 								"comparison": 3,
 								"value": "0"
 							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 277198925703000,
-							"disabled": true
 						}
 					],
 					"actions": [
@@ -1488,15 +1476,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-progress",
-							"objectClass": "InteractBar",
-							"sid": 261714773574676,
-							"disabled": true,
-							"parameters": {
-								"value": "0"
-							}
-						},
-						{
 							"id": "subtract-from-instvar",
 							"objectClass": "InteractBar",
 							"sid": 917605215194393,
@@ -1511,15 +1490,6 @@
 							"sid": 584450084499307,
 							"parameters": {
 								"value": "InteractBar.interactCounter"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "InteractBar",
-							"sid": 991975240233652,
-							"disabled": true,
-							"parameters": {
-								"visibility": "invisible"
 							}
 						}
 					],
@@ -1569,12 +1539,6 @@
 								"object": "InteractTrigger"
 							},
 							"isInverted": true
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 369865881518585,
-							"disabled": true
 						}
 					],
 					"actions": [

@@ -2252,9 +2252,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-overlapping-another-object",
+							"id": "on-collision-with-another-object",
 							"objectClass": "TestPlayerC",
-							"sid": 203876705772593,
+							"sid": 738660150384272,
 							"parameters": {
 								"object": "PushableBlock"
 							}
@@ -2262,6 +2262,7 @@
 					],
 					"actions": [],
 					"sid": 136360471885726,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -2297,12 +2298,437 @@
 									}
 								}
 							],
-							"sid": 112091483300987
+							"sid": 112091483300987,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 694174650213821,
+							"parameters": {
+								"object": "PushableBlock"
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 419951600748954,
+							"parameters": {
+								"key": 69
+							}
+						}
+					],
+					"actions": [],
+					"sid": 203904323139404,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-within-angle",
+									"objectClass": "System",
+									"sid": 860348461987062,
+									"parameters": {
+										"angle-1": "TestPlayerC.8Direction.MovingAngle",
+										"within": "80",
+										"angle-2": "angle(TestPlayerC.X, TestPlayerC.Y, PushableBlock.X, PushableBlock.Y)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-x",
+									"objectClass": "PushableBlock",
+									"sid": 658129826337137,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"vector-x": "TestPlayerC.8Direction.VectorX"
+									}
+								},
+								{
+									"id": "set-vector-y",
+									"objectClass": "PushableBlock",
+									"sid": 611614889659443,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"vector-y": "TestPlayerC.8Direction.VectorY"
+									}
+								}
+							],
+							"sid": 804425199685999
 						}
 					]
 				}
 			],
 			"sid": 680403146797322
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interact Script 3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 351494376865425,
+							"parameters": {
+								"key": 69
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 694714983214581,
+							"parameters": {
+								"variable": "Interact"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 232775155660750,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "E",
+							"sid": 381892704836817,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InteractBar",
+							"sid": 793561226903948,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "InteractBar",
+							"sid": 290328592513725,
+							"parameters": {
+								"instance-variable": "interactCounter",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 747122322155988,
+							"parameters": {
+								"value": "InteractBar.interactCounter"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "PushableBlock",
+							"sid": 198302354950345,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "TestPlayerC",
+								"image-point": "4",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 579541018165009
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-progress",
+							"objectClass": "InteractBar",
+							"sid": 676447991732617,
+							"parameters": {
+								"comparison": 5,
+								"value": "3"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 808750906052633
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 946996390701442,
+							"parameters": {
+								"variable": "Lever1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 735887690514795,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 253265461085173,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InteractBar",
+							"sid": 538899410230579,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "InteractBar",
+							"sid": 888156805238840,
+							"parameters": {
+								"instance-variable": "interactCounter",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 738830723329459
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 427942840730187
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "InteractBar",
+							"sid": 161240342207130,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "E",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "E",
+							"sid": 709208775839102,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "InteractTrigger",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "InteractTrigger",
+							"sid": 538237501004600,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "PushableBlock",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 394286888768768
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 405740217456011
+						},
+						{
+							"id": "compare-progress",
+							"objectClass": "InteractBar",
+							"sid": 664685980068253,
+							"parameters": {
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 196593345922261,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "InteractBar",
+							"sid": 639628701265748,
+							"parameters": {
+								"instance-variable": "interactCounter",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 324218604032004
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 469963444087369,
+							"parameters": {
+								"key": 69
+							},
+							"isInverted": true
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 150506909800882,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "InteractBar",
+							"sid": 594008881062163,
+							"parameters": {
+								"instance-variable": "interactCounter",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-progress",
+							"objectClass": "InteractBar",
+							"sid": 381548266682121,
+							"parameters": {
+								"value": "InteractBar.interactCounter"
+							}
+						}
+					],
+					"sid": 574521485805637
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 306114016812619,
+							"parameters": {
+								"object": "InteractTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "E",
+							"sid": 147903515727381,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 373404827629396,
+							"parameters": {
+								"variable": "Interact",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 975489128640930
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "TestPlayerC",
+							"sid": 368749498966078,
+							"parameters": {
+								"object": "InteractTrigger"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 847040628466828,
+							"parameters": {
+								"variable": "Interact",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "E",
+							"sid": 511701378560779,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "InteractBar",
+							"sid": 373243399256017,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 529285287824950
+				}
+			],
+			"sid": 736929789081477
 		}
 	],
 	"sid": 779865521013904
