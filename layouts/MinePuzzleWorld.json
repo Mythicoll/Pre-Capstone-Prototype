@@ -17867,11 +17867,11 @@
 						}
 					},
 					"world": {
-						"x": 864,
-						"y": 2432,
+						"x": 832,
+						"y": 2400,
 						"width": 96,
-						"height": 96,
-						"originX": 0,
+						"height": 64,
+						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,

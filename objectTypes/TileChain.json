@@ -1,0 +1,26 @@
+{
+	"name": "TileChain",
+	"plugin-id": "TiledBg",
+	"sid": 720431939830231,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 312265686519056
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 14,
+		"height": 7,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3719500,
+		"useCollisionPoly": true
+	}
+}

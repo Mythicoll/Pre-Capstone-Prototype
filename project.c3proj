@@ -385,12 +385,12 @@
 			"CavesidewallFlip",
 			"Cavesidecorner3",
 			"Cavesidecorner4",
-			"Ancor",
+			"Anchor",
 			"Chain",
-			"TestPlayerC2",
 			"Chaintest",
 			"PushableBlock",
-			"PushBlockCollider"
+			"PushBlockCollider",
+			"TileChain"
 		],
 		"subfolders": [
 			{

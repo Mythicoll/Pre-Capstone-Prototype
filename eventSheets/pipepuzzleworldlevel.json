@@ -1171,11 +1171,11 @@
 				},
 				{
 					"id": "pin-to-object-imagepoint",
-					"objectClass": "Ancor",
+					"objectClass": "Anchor",
 					"sid": 435876332235868,
 					"behaviorType": "Pin",
 					"parameters": {
-						"pin-to": "Ancor",
+						"pin-to": "Anchor",
 						"image-point": "3",
 						"angle": true,
 						"width-type": "no",
@@ -1655,7 +1655,7 @@
 						},
 						{
 							"id": "move-to-object",
-							"objectClass": "Ancor",
+							"objectClass": "Anchor",
 							"sid": 623772319295203,
 							"behaviorType": "MoveTo",
 							"parameters": {
@@ -1682,13 +1682,13 @@
 					"actions": [
 						{
 							"id": "unpin",
-							"objectClass": "Ancor",
+							"objectClass": "Anchor",
 							"sid": 743450641334978,
 							"behaviorType": "Pin"
 						},
 						{
 							"id": "stop",
-							"objectClass": "Ancor",
+							"objectClass": "Anchor",
 							"sid": 200827613550491,
 							"behaviorType": "MoveTo"
 						}
@@ -1710,7 +1710,7 @@
 					"actions": [
 						{
 							"id": "pin-to-object-imagepoint",
-							"objectClass": "Ancor",
+							"objectClass": "Anchor",
 							"sid": 839082063517784,
 							"disabled": true,
 							"behaviorType": "Pin",
@@ -1725,7 +1725,7 @@
 						},
 						{
 							"id": "set-enabled",
-							"objectClass": "Ancor",
+							"objectClass": "Anchor",
 							"sid": 189337120938459,
 							"behaviorType": "MoveTo",
 							"parameters": {
@@ -1737,6 +1737,50 @@
 				}
 			],
 			"sid": 694388234662408
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 138705353230973
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "TileChain",
+					"sid": 544092989488498,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Anchor",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "TileChain",
+					"sid": 353451396088815,
+					"parameters": {
+						"width": "distance(Anchor.x,Anchor.y,TestPlayerC.ImagePointX(4),TestPlayerC.ImagePointY(4))"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "TileChain",
+					"sid": 978759156508475,
+					"parameters": {
+						"x": "TestPlayerC.X",
+						"y": "TestPlayerC.Y"
+					}
+				}
+			],
+			"sid": 862548844001458
 		}
 	],
 	"sid": 149726328012861
