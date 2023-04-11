@@ -391,7 +391,8 @@
 			"PushableBlock",
 			"PushBlockCollider",
 			"TileChain",
-			"EnemySpawnPoint"
+			"EnemySpawnPoint",
+			"Cavesidewall2"
 		],
 		"subfolders": [
 			{
