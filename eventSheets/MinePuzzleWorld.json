@@ -2932,6 +2932,81 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy",
+							"sid": 958755735038419,
+							"parameters": {
+								"object": "Anchor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "chaseEnemy",
+							"sid": 284078993040089,
+							"parameters": {
+								"instance-variable": "health",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 986624040034371
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "clam",
+							"sid": 359860826505881,
+							"parameters": {
+								"object": "Anchor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "chaseEnemy",
+							"sid": 983525844134647,
+							"parameters": {
+								"instance-variable": "health",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 928419490869739
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "clam2",
+							"sid": 767240628137402,
+							"parameters": {
+								"object": "Anchor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "chaseEnemy",
+							"sid": 580209233488396,
+							"parameters": {
+								"instance-variable": "health",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 117896998555650
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "every-tick",
 							"objectClass": "System",
 							"sid": 126626848640376
@@ -3025,6 +3100,50 @@
 						}
 					],
 					"sid": 621557416623430
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "chaseEnemy",
+							"sid": 437998395736389,
+							"parameters": {
+								"instance-variable": "health",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "chaseEnemy",
+							"sid": 320252880978117
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 288610091646837,
+							"parameters": {
+								"seconds": "3.0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 652634071164480,
+							"parameters": {
+								"object-to-create": "chaseEnemy",
+								"layer": "1",
+								"x": "EnemySpawnPoint.x",
+								"y": "EnemySpawnPoint.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 745614455612098
 				}
 			],
 			"sid": 698309310552526
