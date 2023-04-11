@@ -19819,6 +19819,7 @@
 						"spray-cone": 15,
 						"type": "one-shot",
 						"object": -1,
+						"initially-visible": true,
 						"live-preview": false,
 						"speed": 150,
 						"size": 30,
@@ -20272,7 +20273,9 @@
 						"live-preview": false
 					},
 					"uid": 1371,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Health": 1
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -20285,6 +20288,7 @@
 								"rotate-speed": 135,
 								"rotate-object": false,
 								"diagonals": false,
+								"direct-movement": "to-destination",
 								"enabled": true
 							}
 						},
@@ -20357,6 +20361,35 @@
 						"y": 680,
 						"width": 64,
 						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawnPoint",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 339,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 608,
+						"y": 1792,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -17290,6 +17290,7 @@
 						"spray-cone": 15,
 						"type": "one-shot",
 						"object": -1,
+						"initially-visible": true,
 						"live-preview": false,
 						"speed": 150,
 						"size": 30,
@@ -17617,6 +17618,7 @@
 								"rotate-speed": 135,
 								"rotate-object": false,
 								"diagonals": false,
+								"direct-movement": "to-destination",
 								"enabled": true
 							}
 						},
@@ -17672,7 +17674,9 @@
 						"live-preview": false
 					},
 					"uid": 961,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Health": 1
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -17685,6 +17689,7 @@
 								"rotate-speed": 135,
 								"rotate-object": false,
 								"diagonals": false,
+								"direct-movement": "to-destination",
 								"enabled": true
 							}
 						},

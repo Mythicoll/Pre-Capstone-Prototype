@@ -1609,7 +1609,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Compass_AI3",
+			"title": "Compass/Anchor Ai",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -1734,6 +1734,31 @@
 						}
 					],
 					"sid": 150465571502052
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy2",
+							"sid": 571684528455645,
+							"parameters": {
+								"object": "Anchor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "chaseEnemy2",
+							"sid": 817179987311292,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 724130150140590
 				}
 			],
 			"sid": 694388234662408
@@ -1781,6 +1806,60 @@
 				}
 			],
 			"sid": 862548844001458
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Crab Enemy Script",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "chaseEnemy2",
+							"sid": 378404359067090,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "chaseEnemy2",
+							"sid": 507087428363780
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 750002305017092,
+							"parameters": {
+								"seconds": "3.0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 966786557650896,
+							"parameters": {
+								"object-to-create": "chaseEnemy2",
+								"layer": "1",
+								"x": "EnemySpawnPoint.x",
+								"y": "EnemySpawnPoint.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 385100399927404
+				}
+			],
+			"sid": 512934608578052
 		}
 	],
 	"sid": 149726328012861

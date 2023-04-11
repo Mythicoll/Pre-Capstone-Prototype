@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 32703,
+	"savedWithRelease": 33600,
 	"name": "PRE-CAP Prototype",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -390,7 +390,8 @@
 			"Chaintest",
 			"PushableBlock",
 			"PushBlockCollider",
-			"TileChain"
+			"TileChain",
+			"EnemySpawnPoint"
 		],
 		"subfolders": [
 			{
