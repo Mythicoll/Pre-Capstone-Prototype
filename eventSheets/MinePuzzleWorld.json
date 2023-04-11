@@ -462,6 +462,15 @@
 							}
 						},
 						{
+							"id": "set-position",
+							"objectClass": "Anchor",
+							"sid": 977914031740544,
+							"parameters": {
+								"x": "TestPlayerC.X",
+								"y": "TestPlayerC.Y"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "MineCartWall",
 							"sid": 845224510306200,
@@ -617,6 +626,15 @@
 							"parameters": {
 								"x": "MineTrack1A.X",
 								"y": "MineTrack1A.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Anchor",
+							"sid": 661618701531005,
+							"parameters": {
+								"x": "TestPlayerC.X",
+								"y": "TestPlayerC.Y"
 							}
 						},
 						{
@@ -778,6 +796,15 @@
 							}
 						},
 						{
+							"id": "set-position",
+							"objectClass": "Anchor",
+							"sid": 212824793582604,
+							"parameters": {
+								"x": "TestPlayerC.X",
+								"y": "TestPlayerC.Y"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "MineCartWall",
 							"sid": 559482751516897,
@@ -933,6 +960,15 @@
 							"parameters": {
 								"x": "MineTrack2A.X",
 								"y": "MineTrack2A.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Anchor",
+							"sid": 771800961277910,
+							"parameters": {
+								"x": "TestPlayerC.X",
+								"y": "TestPlayerC.Y"
 							}
 						},
 						{
@@ -1094,6 +1130,15 @@
 							}
 						},
 						{
+							"id": "set-position",
+							"objectClass": "Anchor",
+							"sid": 955828329766165,
+							"parameters": {
+								"x": "TestPlayerC.X",
+								"y": "TestPlayerC.Y"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "MineCartWall",
 							"sid": 444756906003959,
@@ -1249,6 +1294,15 @@
 							"parameters": {
 								"x": "MineTrack3A.X",
 								"y": "MineTrack3A.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Anchor",
+							"sid": 921683074660511,
+							"parameters": {
+								"x": "TestPlayerC.X",
+								"y": "TestPlayerC.Y"
 							}
 						},
 						{
