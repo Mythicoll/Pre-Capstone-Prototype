@@ -477,6 +477,7 @@
 						"spray-cone": 15,
 						"type": "one-shot",
 						"object": -1,
+						"initially-visible": true,
 						"live-preview": false,
 						"speed": 150,
 						"size": 30,

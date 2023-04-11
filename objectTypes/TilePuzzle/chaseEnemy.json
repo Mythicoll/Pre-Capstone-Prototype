@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 528035176631236,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 248352991587941
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pathfinding",

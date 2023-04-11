@@ -2655,7 +2655,9 @@
 						"live-preview": false
 					},
 					"uid": 276,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"health": 1
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -2668,6 +2670,7 @@
 								"rotate-speed": 135,
 								"rotate-object": false,
 								"diagonals": false,
+								"direct-movement": "to-destination",
 								"enabled": true
 							}
 						},
@@ -2882,7 +2885,9 @@
 						"live-preview": false
 					},
 					"uid": 908,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"health": 1
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -2895,6 +2900,7 @@
 								"rotate-speed": 135,
 								"rotate-object": false,
 								"diagonals": false,
+								"direct-movement": "to-destination",
 								"enabled": true
 							}
 						},

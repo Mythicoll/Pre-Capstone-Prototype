@@ -2641,6 +2641,330 @@
 				}
 			],
 			"sid": 476811952966548
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Compass/Anchor Ai3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 842446578300996
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "Compass_Prototype",
+							"sid": 683315511754838,
+							"parameters": {
+								"angle": "angle(Compass_Prototype.X, Compass_Prototype.Y, Compass_Point.X, Compass_Point.Y)"
+							}
+						}
+					],
+					"sid": 272367448782508,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 757642938284731
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "compneedle",
+							"sid": 858471515554626,
+							"parameters": {
+								"angle": "angle(TestPlayerC.X, TestPlayerC.Y, SteamEnd.X, SteamEnd.Y)"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Anchor",
+							"sid": 719420286680675,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "TestPlayerC",
+								"image-point": "3",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 278253945867793
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 497056440833863,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unpin",
+							"objectClass": "Anchor",
+							"sid": 780585275119048,
+							"behaviorType": "Pin"
+						},
+						{
+							"id": "stop",
+							"objectClass": "Anchor",
+							"sid": 763806849936929,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"sid": 749908034033050
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "key",
+							"sid": 783003539289810,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Anchor",
+							"sid": 782013134428452,
+							"disabled": true,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "TestPlayerC",
+								"image-point": "3",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Anchor",
+							"sid": 826328182944071,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": true
+							}
+						}
+					],
+					"sid": 315846410470969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy2",
+							"sid": 994684910539686,
+							"parameters": {
+								"object": "Anchor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "chaseEnemy2",
+							"sid": 391225406020230,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 928663328154331
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "chaseEnemy",
+							"sid": 973314333915791,
+							"parameters": {
+								"object": "Anchor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "chaseEnemy",
+							"sid": 247289174294109,
+							"parameters": {
+								"instance-variable": "health",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 438597768797221
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 276807512618917
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "TileChain",
+							"sid": 563168338794673,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Anchor",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "TileChain",
+							"sid": 761460128559054,
+							"parameters": {
+								"width": "distance(Anchor.x,Anchor.y,TestPlayerC.ImagePointX(4),TestPlayerC.ImagePointY(4))"
+							}
+						},
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "TileChain",
+							"sid": 161435740616016,
+							"parameters": {
+								"x": "TestPlayerC.X",
+								"y": "TestPlayerC.Y"
+							}
+						}
+					],
+					"sid": 208707738337060
+				}
+			],
+			"sid": 221735603280937
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Crab Enemy Script3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "chaseEnemy2",
+							"sid": 594678834020689,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "chaseEnemy2",
+							"sid": 834220244779190
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 410421206993953,
+							"parameters": {
+								"seconds": "3.0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 507671346788451,
+							"parameters": {
+								"object-to-create": "chaseEnemy2",
+								"layer": "1",
+								"x": "EnemySpawnPoint.x",
+								"y": "EnemySpawnPoint.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 970003595430760
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "chaseEnemy",
+							"sid": 970913850011777,
+							"parameters": {
+								"instance-variable": "health",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "chaseEnemy",
+							"sid": 249725898247479
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 720447063929537,
+							"parameters": {
+								"seconds": "3.0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 466863668238026,
+							"parameters": {
+								"object-to-create": "chaseEnemy",
+								"layer": "1",
+								"x": "EnemySpawnPoint.x",
+								"y": "EnemySpawnPoint.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 758544549041743
+				}
+			],
+			"sid": 271318854529728
 		}
 	],
 	"sid": 194596489338002

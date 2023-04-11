@@ -27072,6 +27072,97 @@
 					}
 				},
 				{
+					"type": "Anchor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 366,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2209.7548271923865,
+						"y": 4185.808656165162,
+						"width": 76.5,
+						"height": 73.5,
+						"originX": 1,
+						"originY": 0.08163265306122448,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TileChain",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 367,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 2209.7548271923865,
+						"y": 4185.808656165162,
+						"width": 32,
+						"height": 7,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "lavaPlatspirel",
 					"properties": {
 						"initially-visible": true,
@@ -37675,7 +37766,9 @@
 						"live-preview": false
 					},
 					"uid": 1308,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"health": 1
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -37815,7 +37908,9 @@
 						"live-preview": false
 					},
 					"uid": 1310,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"health": 1
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -37999,7 +38094,9 @@
 						"live-preview": false
 					},
 					"uid": 1313,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"health": 1
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -38112,7 +38209,9 @@
 						"live-preview": false
 					},
 					"uid": 1863,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"health": 1
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
