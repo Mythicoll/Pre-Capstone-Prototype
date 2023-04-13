@@ -132,9 +132,9 @@
 					},
 					"world": {
 						"x": 1632,
-						"y": 3520,
+						"y": 3328,
 						"width": 1085,
-						"height": 1000,
+						"height": 672,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2190,42 +2190,6 @@
 							1
 						],
 						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Cavesidecorner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2011,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1504,
-						"y": 2848,
-						"width": 128,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				},
