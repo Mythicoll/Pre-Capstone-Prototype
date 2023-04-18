@@ -1,7 +1,7 @@
 {
-	"name": "MetalTile",
+	"name": "Rust",
 	"plugin-id": "Sprite",
-	"sid": 465194589639198,
+	"sid": 132120140229422,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,13 +18,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 247044,
+						"imageSpriteId": 9387870,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 255700280357511,
-				"name": "Default",
+				"sid": 219289670838651,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

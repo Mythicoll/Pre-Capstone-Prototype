@@ -705,6 +705,7 @@
 							"id": "set-visible",
 							"objectClass": "Divider2",
 							"sid": 756479123705203,
+							"disabled": true,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -877,8 +878,8 @@
 						},
 						{
 							"id": "destroy",
-							"objectClass": "CollectMudkip_Pink",
-							"sid": 905640024552258
+							"objectClass": "Pink_Axel",
+							"sid": 357987991204674
 						},
 						{
 							"id": "wait",

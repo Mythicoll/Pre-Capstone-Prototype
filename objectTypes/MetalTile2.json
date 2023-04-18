@@ -1,7 +1,7 @@
 {
-	"name": "MetalTile",
+	"name": "MetalTile2",
 	"plugin-id": "Sprite",
-	"sid": 465194589639198,
+	"sid": 263681539804807,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,24 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 247044,
+						"imageSpriteId": 2293660,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7750284,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 255700280357511,
+				"sid": 474962531536479,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

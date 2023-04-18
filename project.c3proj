@@ -392,7 +392,10 @@
 			"PushBlockCollider",
 			"TileChain",
 			"EnemySpawnPoint",
-			"Cavesidewall2"
+			"Cavesidewall2",
+			"Rust",
+			"MetalTile2",
+			"Divider5"
 		],
 		"subfolders": [
 			{
