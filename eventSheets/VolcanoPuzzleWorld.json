@@ -108,6 +108,42 @@
 							"isInverted": true
 						},
 						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 438085762252061,
+							"parameters": {
+								"key": 68
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 889399758487549,
+							"parameters": {
+								"key": 87
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 574559818165507,
+							"parameters": {
+								"key": 65
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 566195479335351,
+							"parameters": {
+								"key": 83
+							},
+							"isInverted": true
+						},
+						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 780309849700170,
@@ -436,6 +472,341 @@
 						}
 					],
 					"sid": 892427922252151
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 726155315195660,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 142331624518871,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 773298601159136,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 561602337795337,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "TestPlayerC",
+							"sid": 681208336125605,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 478553589561235,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 786106680725558,
+							"parameters": {
+								"variable": "LeftORRight",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 929124330885592
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 732325622975915,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 909405357982837,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 998646403234354,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "TestPlayerC",
+							"sid": 447269564778075,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 891956743458790,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 231154271934763,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 281308250618831,
+							"parameters": {
+								"variable": "LeftORRight",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 862032992146227
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 379269356213606,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 890690587327684,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 991568486566141,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "TestPlayerC",
+							"sid": 615801897935560,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 631969905574291,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 292291860475045,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 130860205320840
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 624515074876001,
+							"parameters": {
+								"key": 83
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 432232594359551,
+							"parameters": {
+								"variable": "LeftORRight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 938979811114680,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 542329433784697,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "TestPlayerC",
+							"sid": 342062848499916,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 236429764647601,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 547110719586317,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 265247373952939
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "key",
+							"sid": 123935296755717,
+							"parameters": {
+								"key": 83
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 533672007365021,
+							"parameters": {
+								"variable": "LeftORRight"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestPlayerC",
+							"sid": 818587722183694,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerShadow",
+							"sid": 651730295439533,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "TestPlayerC",
+							"sid": 377388998797639,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 623561635250046,
+							"parameters": {
+								"variable": "Walking",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "TestPlayerC",
+							"sid": 910625778619273,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 616348474254946
 				},
 				{
 					"eventType": "block",
