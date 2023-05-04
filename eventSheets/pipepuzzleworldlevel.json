@@ -23,6 +23,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "LeverCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 722864739677331
+		},
+		{
+			"eventType": "variable",
 			"name": "Lever1",
 			"type": "boolean",
 			"initialValue": "false",
@@ -50,6 +60,36 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 855070776780394
+		},
+		{
+			"eventType": "variable",
+			"name": "CrabCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 322057403120013
+		},
+		{
+			"eventType": "variable",
+			"name": "LeverTrigger",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 185511047089881
+		},
+		{
+			"eventType": "variable",
+			"name": "Momentum",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 414650350502796
 		},
 		{
 			"eventType": "block",
@@ -1039,24 +1079,89 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-boolean-eventvar",
+							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 262231761373103,
+							"sid": 833893788460631,
 							"parameters": {
-								"variable": "Lever1"
-							},
-							"isInverted": true
+								"interval-seconds": "15"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 240084225196471,
+							"parameters": {
+								"variable": "CrabCount",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "EnemySpawnPoint",
+							"sid": 522164383424915,
+							"parameters": {
+								"object": "chaseEnemy2",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 561515425735006,
+							"parameters": {
+								"variable": "CrabCount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 677995137342967
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 452325917797029,
+							"disabled": true,
+							"parameters": {
+								"variable": "LeverCount",
+								"comparison": 5,
+								"value": "1"
+							}
 						},
 						{
 							"id": "trigger-once-while-true",
 							"objectClass": "System",
-							"sid": 785257698823602
+							"sid": 785257698823602,
+							"disabled": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 130186830095832,
+							"parameters": {
+								"variable": "LeverTrigger"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 449637214199090,
+							"parameters": {
+								"variable": "Lever1"
+							}
 						},
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 451586345316776,
-							"disabled": true
+							"sid": 451586345316776
 						}
 					],
 					"actions": [
@@ -1072,9 +1177,10 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Divider",
-							"sid": 990857746485881,
+							"sid": 928965241177155,
+							"disabled": true,
 							"parameters": {
-								"animation": "\"ON\"",
+								"animation": "\"OFF\"",
 								"from": "beginning"
 							}
 						},
@@ -1082,6 +1188,7 @@
 							"id": "set-enabled",
 							"objectClass": "Divider",
 							"sid": 365707716687623,
+							"disabled": true,
 							"behaviorType": "Solid",
 							"parameters": {
 								"state": "enabled"
@@ -1091,6 +1198,7 @@
 							"id": "set-enabled",
 							"objectClass": "Divider2",
 							"sid": 690690696058187,
+							"disabled": true,
 							"behaviorType": "Solid",
 							"parameters": {
 								"state": "disabled"
@@ -1109,6 +1217,7 @@
 							"id": "set-visible",
 							"objectClass": "ShadowLeftArea",
 							"sid": 394328308735978,
+							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1117,6 +1226,7 @@
 							"id": "set-visible",
 							"objectClass": "ShadowRightArea",
 							"sid": 779663355369814,
+							"disabled": true,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1128,17 +1238,145 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 742464833293299
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 764554928199394,
+							"parameters": {
+								"variable": "LeverCount",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 854938872496644,
+							"sid": 270936558605727,
 							"parameters": {
 								"variable": "Lever1"
 							}
 						},
 						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 152700849871575,
+							"parameters": {
+								"variable": "LeverTrigger"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 621523281775693
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Lever",
+							"sid": 944177399292724,
+							"parameters": {
+								"animation": "\"Animation 3\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Divider",
+							"sid": 412909943999937,
+							"disabled": true,
+							"parameters": {
+								"animation": "\"OFF\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Divider",
+							"sid": 950323301541270,
+							"disabled": true,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Divider2",
+							"sid": 683194556603578,
+							"disabled": true,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Divider2",
+							"sid": 563910220704663,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ShadowLeftArea",
+							"sid": 947654403710413,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ShadowRightArea",
+							"sid": 840181270193787,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 660914837291487,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 854938872496644,
+							"parameters": {
+								"variable": "Lever1"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 438305506701009,
+							"parameters": {
+								"variable": "LeverCount",
+								"comparison": 5,
+								"value": "1"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 156302943175897
+						},
+						{
 							"id": "trigger-once-while-true",
 							"objectClass": "System",
-							"sid": 469303838707318
+							"sid": 469303838707318,
+							"disabled": true
 						}
 					],
 					"actions": [
@@ -1150,20 +1388,46 @@
 								"animation": "\"Animation 2\"",
 								"from": "beginning"
 							}
+						}
+					],
+					"sid": 513609246673858
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Lever",
+							"sid": 117160814091821,
+							"parameters": {
+								"animation": "\"Animation 2\""
+							}
 						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 236778896922507
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 190187644581894
+						}
+					],
+					"actions": [
 						{
 							"id": "set-animation",
 							"objectClass": "Divider",
-							"sid": 511027442046388,
+							"sid": 293469066581748,
 							"parameters": {
-								"animation": "\"OFF\"",
+								"animation": "\"ON\"",
 								"from": "beginning"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 348239435442950,
+							"sid": 410562223818033,
 							"disabled": true,
 							"parameters": {
 								"seconds": "1.0"
@@ -1172,7 +1436,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Divider",
-							"sid": 243093220276161,
+							"sid": 498289071385799,
 							"disabled": true,
 							"parameters": {
 								"animation": "\"Done\"",
@@ -1182,7 +1446,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "Divider",
-							"sid": 343149156529186,
+							"sid": 364874147419737,
 							"behaviorType": "Solid",
 							"parameters": {
 								"state": "disabled"
@@ -1191,7 +1455,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "Divider2",
-							"sid": 773273820129568,
+							"sid": 492379190735714,
 							"behaviorType": "Solid",
 							"parameters": {
 								"state": "enabled"
@@ -1200,7 +1464,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "Divider2",
-							"sid": 724480868519268,
+							"sid": 905551818898583,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1208,7 +1472,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "ShadowLeftArea",
-							"sid": 553236024012316,
+							"sid": 313962172876489,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1216,13 +1480,91 @@
 						{
 							"id": "set-visible",
 							"objectClass": "ShadowRightArea",
-							"sid": 640727577718322,
+							"sid": 128003134132252,
 							"parameters": {
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 513609246673858
+					"sid": 756701457772598
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Lever",
+							"sid": 292351257507833,
+							"parameters": {
+								"animation": "\"Animation 1\""
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 822149667036079
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 233047799960041
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Divider",
+							"sid": 453770347696555,
+							"parameters": {
+								"animation": "\"OFF\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Divider",
+							"sid": 319959350351459,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Divider2",
+							"sid": 383859983021559,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Divider2",
+							"sid": 862078666455812,
+							"disabled": true,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ShadowLeftArea",
+							"sid": 245561729380394,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ShadowRightArea",
+							"sid": 352876211109246,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 533369554806195
 				}
 			],
 			"sid": 901775100840203
@@ -1653,6 +1995,16 @@
 							}
 						},
 						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 984873317697308,
+							"parameters": {
+								"variable": "LeverCount",
+								"comparison": 5,
+								"value": "1"
+							}
+						},
+						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 758004936975228,
@@ -1901,6 +2253,16 @@
 							"parameters": {
 								"object": "InteractTrigger"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 652706200603191,
+							"parameters": {
+								"variable": "LeverCount",
+								"comparison": 5,
+								"value": "1"
+							}
 						}
 					],
 					"actions": [
@@ -2067,6 +2429,38 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 374199043385894
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 614196706364374,
+							"parameters": {
+								"variable": "CrabCount",
+								"comparison": 2,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 574255162697893,
+							"parameters": {
+								"variable": "CrabCount",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 310840841467785
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "key-is-down",
 							"objectClass": "key",
 							"sid": 151516152291809,
@@ -2135,6 +2529,31 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-key-released",
+							"objectClass": "key",
+							"sid": 212025511359807,
+							"parameters": {
+								"key": 49
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 445235812358710,
+							"parameters": {
+								"variable": "LeverCount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 687434758708362
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "chaseEnemy2",
 							"sid": 571684528455645,
@@ -2150,6 +2569,15 @@
 							"sid": 817179987311292,
 							"parameters": {
 								"instance-variable": "Health",
+								"value": "1"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 716745916625281,
+							"parameters": {
+								"variable": "CrabCount",
 								"value": "1"
 							}
 						}
@@ -2256,6 +2684,500 @@
 				}
 			],
 			"sid": 512934608578052
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 119905483725004,
+					"parameters": {
+						"object": "LeverPickup"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "LeverPickup",
+					"sid": 545930329383399
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 669881708640483,
+					"parameters": {
+						"variable": "LeverCount",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 388358086497529
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 198942005553247
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "chaseEnemy2",
+					"sid": 292688037887953,
+					"parameters": {
+						"animation": "\"IDLE\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "find-path",
+					"objectClass": "chaseEnemy2",
+					"sid": 907658574945937,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "chaseEnemy2.X+random(-32, 32)",
+						"y": "chaseEnemy2.Y+random(-32, 32)"
+					}
+				}
+			],
+			"sid": 379811688721110
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-failed-to-find-path",
+					"objectClass": "chaseEnemy2",
+					"sid": 880433793478498,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "chaseEnemy2",
+					"sid": 412524457087530,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "chaseEnemy2.X+random(-32, 32)",
+						"y": "chaseEnemy2.Y+random(-32, 32)"
+					}
+				}
+			],
+			"sid": 402037803856279
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "chaseEnemy2",
+					"sid": 668654270606428,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "TestPlayerC",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "chaseEnemy2",
+					"sid": 993035287520320,
+					"parameters": {
+						"animation": "\"HATE\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "chaseEnemy2",
+					"sid": 390297199336878,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "disabled"
+					}
+				},
+				{
+					"id": "move-to-object",
+					"objectClass": "chaseEnemy2",
+					"sid": 870547426862646,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "TestPlayerC",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 329613715132745,
+					"parameters": {
+						"seconds": "2"
+					}
+				}
+			],
+			"sid": 997982433297354
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "chaseEnemy2",
+					"sid": 483298942462902,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "TestPlayerC",
+						"image-point": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 512334011831102,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "chaseEnemy2",
+					"sid": 840599484680885,
+					"parameters": {
+						"animation": "\"IDLE\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "chaseEnemy2",
+					"sid": 170819294709130,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"sid": 291125008086602,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 490532428950142,
+							"parameters": {
+								"interval-seconds": "random(3,6)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "chaseEnemy2",
+							"sid": 745924406750998,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "chaseEnemy2.X+random(-32, 32)",
+								"y": "chaseEnemy2.Y+random(-32, 32)"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "chaseEnemy2",
+							"sid": 784435356115244,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "enabled"
+							}
+						}
+					],
+					"sid": 681468123844802
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "chaseEnemy2",
+					"sid": 310393740657859,
+					"parameters": {
+						"object": "TestPlayerC"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 622319812178285,
+					"parameters": {
+						"variable": "HP",
+						"value": "1"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "TestPlayerC",
+					"sid": 969635583597278,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "chaseEnemy2",
+					"sid": 796062603581859,
+					"behaviorType": "MoveTo"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 652493315109837,
+					"parameters": {
+						"seconds": "2"
+					}
+				}
+			],
+			"sid": 618031692669274
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "chaseEnemy2",
+					"sid": 447582185644394,
+					"parameters": {
+						"object": "TestPlayerC"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 110469584547599,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 735959131210530
+				}
+			],
+			"sid": 190761519605485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 486922696720931,
+					"parameters": {
+						"object": "InteractTrigger"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 814422174034277,
+					"parameters": {
+						"variable": "LeverCount",
+						"comparison": 5,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 836384198834902,
+					"parameters": {
+						"variable": "LeverTrigger"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Lever",
+					"sid": 919958928630431,
+					"parameters": {
+						"animation": "\"Animation 4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 169520135756725,
+					"parameters": {
+						"variable": "LeverTrigger",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 498081650401118
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 846183899111512,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "MetalTile4",
+					"sid": 752014517164656,
+					"parameters": {
+						"degrees": "1"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 581397151964636,
+					"parameters": {
+						"variable": "Momentum",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 953793045710983
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 563429524319368,
+					"parameters": {
+						"key": 81
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 634300052155752,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 4,
+						"value": "10"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 508816744425769,
+					"disabled": true,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 2,
+						"value": "20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "MetalTile4",
+					"sid": 775956881644076,
+					"parameters": {
+						"degrees": "5"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 591435742489821,
+					"parameters": {
+						"variable": "Momentum",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 476651192008300
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 518396897210222,
+					"parameters": {
+						"key": 81
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 141800003374652,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 4,
+						"value": "20"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 124073426376723,
+					"disabled": true,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 2,
+						"value": "20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "MetalTile4",
+					"sid": 133497819793125,
+					"parameters": {
+						"degrees": "1*Momentum"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 430700038595947,
+					"parameters": {
+						"variable": "Momentum",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 479533542357696
 		}
 	],
 	"sid": 149726328012861

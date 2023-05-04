@@ -138,7 +138,7 @@
 					}
 				],
 				"sid": 586530218443230,
-				"name": "OFF",
+				"name": "ON",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -269,7 +269,7 @@
 					}
 				],
 				"sid": 745211869212187,
-				"name": "ON",
+				"name": "OFF",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

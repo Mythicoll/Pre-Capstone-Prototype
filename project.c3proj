@@ -402,7 +402,8 @@
 			"TITLEFULL",
 			"MetalTile3",
 			"LeverPickup",
-			"DividerGreen"
+			"DividerGreen",
+			"MetalTile4"
 		],
 		"subfolders": [
 			{
