@@ -41078,6 +41078,77 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "ProgressBar2",
+					"properties": {
+						"value": 0,
+						"maximum": 100,
+						"tooltip": "",
+						"initially-visible": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 4235,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 336.6934217901614,
+						"y": 929.481592222904,
+						"width": 160,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "MOMSCORE",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "SUPERSCR",
+						"size": 18,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 4236,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 272.2903503881668,
+						"y": 898.6361597735581,
+						"width": 288,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 874102830141378,

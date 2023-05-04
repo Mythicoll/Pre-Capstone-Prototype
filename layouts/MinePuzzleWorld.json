@@ -18407,6 +18407,34 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "ProgressBar2",
+					"properties": {
+						"value": 0,
+						"maximum": 100,
+						"tooltip": "",
+						"initially-visible": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 4234,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 320,
+						"y": 736,
+						"width": 160,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
 				}
 			],
 			"sid": 578920353301245,
