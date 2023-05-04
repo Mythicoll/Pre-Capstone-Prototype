@@ -11445,8 +11445,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2464,
+						"x": 1600,
+						"y": 5344,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11474,8 +11474,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2400,
+						"x": 1600,
+						"y": 5280,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11503,8 +11503,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2336,
+						"x": 1600,
+						"y": 5216,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11532,8 +11532,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2272,
+						"x": 1600,
+						"y": 5152,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11561,8 +11561,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2528,
+						"x": 1600,
+						"y": 5408,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11590,8 +11590,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2592,
+						"x": 1600,
+						"y": 5472,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11619,8 +11619,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2656,
+						"x": 1600,
+						"y": 5536,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11648,8 +11648,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2720,
+						"x": 1600,
+						"y": 5600,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11677,8 +11677,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2784,
+						"x": 1600,
+						"y": 5664,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11706,8 +11706,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2848,
+						"x": 1600,
+						"y": 5728,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11735,8 +11735,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2912,
+						"x": 1600,
+						"y": 5792,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11764,8 +11764,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1280,
-						"y": 2976,
+						"x": 1600,
+						"y": 5856,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11793,8 +11793,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2464,
+						"x": 1344,
+						"y": 5344,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11822,8 +11822,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2464,
+						"x": 1408,
+						"y": 5344,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11851,8 +11851,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2400,
+						"x": 1344,
+						"y": 5280,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11880,8 +11880,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2400,
+						"x": 1408,
+						"y": 5280,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11909,8 +11909,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2336,
+						"x": 1344,
+						"y": 5216,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11938,8 +11938,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2336,
+						"x": 1408,
+						"y": 5216,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11967,8 +11967,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2272,
+						"x": 1344,
+						"y": 5152,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -11996,8 +11996,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2272,
+						"x": 1408,
+						"y": 5152,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12025,8 +12025,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2528,
+						"x": 1344,
+						"y": 5408,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12054,8 +12054,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2528,
+						"x": 1408,
+						"y": 5408,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12083,8 +12083,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2592,
+						"x": 1344,
+						"y": 5472,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12112,8 +12112,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2592,
+						"x": 1408,
+						"y": 5472,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12141,8 +12141,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2656,
+						"x": 1344,
+						"y": 5536,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12170,8 +12170,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2656,
+						"x": 1408,
+						"y": 5536,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12199,8 +12199,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2720,
+						"x": 1344,
+						"y": 5600,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12228,8 +12228,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2720,
+						"x": 1408,
+						"y": 5600,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12257,8 +12257,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2784,
+						"x": 1344,
+						"y": 5664,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12286,8 +12286,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2784,
+						"x": 1408,
+						"y": 5664,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12315,8 +12315,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2848,
+						"x": 1344,
+						"y": 5728,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12344,8 +12344,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2848,
+						"x": 1408,
+						"y": 5728,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12373,8 +12373,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2912,
+						"x": 1344,
+						"y": 5792,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12402,8 +12402,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2912,
+						"x": 1408,
+						"y": 5792,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12431,8 +12431,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1024,
-						"y": 2976,
+						"x": 1344,
+						"y": 5856,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12460,8 +12460,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1088,
-						"y": 2976,
+						"x": 1408,
+						"y": 5856,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12489,8 +12489,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2464,
+						"x": 1472,
+						"y": 5344,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12518,8 +12518,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2400,
+						"x": 1472,
+						"y": 5280,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12547,8 +12547,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2336,
+						"x": 1472,
+						"y": 5216,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12576,8 +12576,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2272,
+						"x": 1472,
+						"y": 5152,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12605,8 +12605,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2528,
+						"x": 1472,
+						"y": 5408,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12634,8 +12634,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2592,
+						"x": 1472,
+						"y": 5472,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12663,8 +12663,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2656,
+						"x": 1472,
+						"y": 5536,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12692,8 +12692,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2720,
+						"x": 1472,
+						"y": 5600,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12721,8 +12721,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2784,
+						"x": 1472,
+						"y": 5664,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12750,8 +12750,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2848,
+						"x": 1472,
+						"y": 5728,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12779,8 +12779,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2912,
+						"x": 1472,
+						"y": 5792,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12808,8 +12808,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1152,
-						"y": 2976,
+						"x": 1472,
+						"y": 5856,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12837,8 +12837,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2400,
+						"x": 1536,
+						"y": 5280,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12866,8 +12866,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2336,
+						"x": 1536,
+						"y": 5216,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12895,8 +12895,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2272,
+						"x": 1536,
+						"y": 5152,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12924,8 +12924,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2464,
+						"x": 1536,
+						"y": 5344,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12953,8 +12953,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2528,
+						"x": 1536,
+						"y": 5408,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -12982,8 +12982,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2592,
+						"x": 1536,
+						"y": 5472,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -13011,8 +13011,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2656,
+						"x": 1536,
+						"y": 5536,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -13040,8 +13040,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2720,
+						"x": 1536,
+						"y": 5600,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -13069,8 +13069,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2784,
+						"x": 1536,
+						"y": 5664,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -13098,8 +13098,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2848,
+						"x": 1536,
+						"y": 5728,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -13127,8 +13127,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2912,
+						"x": 1536,
+						"y": 5792,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -13156,8 +13156,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1216,
-						"y": 2976,
+						"x": 1536,
+						"y": 5856,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -14063,10 +14063,10 @@
 						}
 					},
 					"world": {
-						"x": 976,
-						"y": 2624,
+						"x": 1296,
+						"y": 5488,
 						"width": 32,
-						"height": 768,
+						"height": 736,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -14099,46 +14099,10 @@
 						}
 					},
 					"world": {
-						"x": 1328,
-						"y": 2624,
+						"x": 1648,
+						"y": 5488,
 						"width": 32,
-						"height": 768,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Divider3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "ON",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 669,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1088,
-						"y": 1376,
-						"width": 704,
-						"height": 192,
+						"height": 736,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -19423,8 +19387,8 @@
 						}
 					},
 					"world": {
-						"x": 1152,
-						"y": 3024,
+						"x": 1472,
+						"y": 5920,
 						"width": 384,
 						"height": 128,
 						"originX": 0.5,
@@ -19494,6 +19458,42 @@
 							1
 						],
 						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Divider6",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "ON",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 418,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1088,
+						"y": 1376,
+						"width": 704,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -20131,8 +20131,8 @@
 						}
 					},
 					"world": {
-						"x": 1088,
-						"y": 2848,
+						"x": 1376,
+						"y": 5728,
 						"width": 76.5,
 						"height": 73.5,
 						"originX": 0.5490196078431373,
@@ -20166,8 +20166,8 @@
 						}
 					},
 					"world": {
-						"x": 800,
-						"y": 3008,
+						"x": 1120,
+						"y": 5888,
 						"width": 64,
 						"height": 64,
 						"originX": 0.25,
@@ -20211,8 +20211,8 @@
 						}
 					},
 					"world": {
-						"x": 1088,
-						"y": 2848,
+						"x": 1376,
+						"y": 5728,
 						"width": 32,
 						"height": 7,
 						"originX": 0,
@@ -20497,8 +20497,8 @@
 						}
 					},
 					"world": {
-						"x": 1152,
-						"y": 2880,
+						"x": 1440,
+						"y": 5760,
 						"width": 48,
 						"height": 112,
 						"originX": 0.5833333333333334,
@@ -21537,7 +21537,7 @@
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 3000,
-	"height": 3000,
+	"height": 6000,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
