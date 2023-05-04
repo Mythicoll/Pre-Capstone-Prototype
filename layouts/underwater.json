@@ -662,6 +662,52 @@
 					}
 				},
 				{
+					"type": "Anchor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5081,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1191,
+						"y": 716,
+						"width": 76.5,
+						"height": 73.5,
+						"originX": 0.5490196078431373,
+						"originY": 0.10204081632653061,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.39375462233354996,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "SleepMudkip",
 					"properties": {
 						"initially-visible": true,
