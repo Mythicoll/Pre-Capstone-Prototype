@@ -61,9 +61,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 890855658270580,
+					"sid": 535036872937193,
 					"parameters": {
-						"seconds": "15"
+						"seconds": "12"
 					}
 				},
 				{
@@ -137,6 +137,38 @@
 				}
 			],
 			"sid": 970823311847545
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 710356098520048,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 831570893938345,
+					"parameters": {
+						"tag": "\"Beach\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 797786677521544,
+					"parameters": {
+						"layout": "Underwater"
+					}
+				}
+			],
+			"sid": 780627208902110
 		}
 	],
 	"sid": 853469557618692

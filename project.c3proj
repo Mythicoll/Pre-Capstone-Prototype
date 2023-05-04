@@ -396,7 +396,10 @@
 			"Rust",
 			"MetalTile2",
 			"Divider5",
-			"Divider6"
+			"Divider6",
+			"SLIME",
+			"GameBanner",
+			"TITLEFULL"
 		],
 		"subfolders": [
 			{
@@ -464,7 +467,7 @@
 			{
 				"items": [
 					"FinalGameTitlePage",
-					"FinalGameStartPageText",
+					"START",
 					"FinalGameStartPageButton",
 					"FinalGame2Text",
 					"FinalGame2Text3",
@@ -593,7 +596,16 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "SUPERSCR.TTF",
+					"type": "application/font-sfnt",
+					"sid": 843633467408111,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {

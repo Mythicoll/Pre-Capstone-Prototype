@@ -1,7 +1,7 @@
 {
-	"name": "FinalGameTitlePage",
+	"name": "GameBanner",
 	"plugin-id": "Sprite",
-	"sid": 538945609907258,
+	"sid": 427792500601873,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 128,
+						"height": 85,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7235595,
+						"imageSpriteId": 2125746,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 925662317201689,
-				"name": "Animation 1",
+				"sid": 117687247564837,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

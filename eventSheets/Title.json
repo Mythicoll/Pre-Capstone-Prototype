@@ -30,9 +30,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "FinalGameStartPageButton",
-					"sid": 588735208549239
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 953905700438531,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "START"
+					}
 				}
 			],
 			"actions": [
