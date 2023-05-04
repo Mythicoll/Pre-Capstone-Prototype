@@ -403,7 +403,12 @@
 			"MetalTile3",
 			"LeverPickup",
 			"DividerGreen",
-			"MetalTile4"
+			"MetalTile4",
+			"STEAMEND2",
+			"STEAMENDVALVE",
+			"ProgressBar",
+			"ProgressBar2",
+			"MOMSCORE"
 		],
 		"subfolders": [
 			{

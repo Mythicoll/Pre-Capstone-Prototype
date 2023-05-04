@@ -17,6 +17,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 312549869611219
+		},
+		{
+			"name": "HP",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 461458370307826
 		}
 	],
 	"behaviorTypes": [
@@ -24,6 +31,11 @@
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
 			"sid": 771747177461480
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 331695989437346
 		}
 	],
 	"effectTypes": [],

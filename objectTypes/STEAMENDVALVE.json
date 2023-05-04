@@ -1,0 +1,37 @@
+{
+	"name": "STEAMENDVALVE",
+	"plugin-id": "Sprite",
+	"sid": 505450843605034,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 22,
+						"height": 14,
+						"originX": 0.5,
+						"originY": 0.42857142857142855,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8154472,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 534592934699456,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

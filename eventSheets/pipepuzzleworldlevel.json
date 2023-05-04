@@ -92,6 +92,16 @@
 			"sid": 414650350502796
 		},
 		{
+			"eventType": "variable",
+			"name": "NOCLICK",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 444069924231422
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2345,20 +2355,45 @@
 			],
 			"actions": [
 				{
-					"id": "set-boolean-eventvar",
+					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 232331868645715,
+					"sid": 181637219739769,
 					"parameters": {
-						"variable": "FactoryLevelComp",
-						"value": "true"
+						"layer": "5",
+						"visibility": "visible"
 					}
 				},
 				{
-					"id": "go-to-layout",
+					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 326789636714183,
+					"sid": 994977831121198,
 					"parameters": {
-						"layout": "LevelSelect"
+						"layer": "4",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "STEAMEND2",
+					"sid": 642692894809243,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "STEAMENDVALVE",
+					"sid": 644161943218437,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ProgressBar2",
+					"sid": 665072052732171,
+					"parameters": {
+						"visibility": "visible"
 					}
 				}
 			],
@@ -3042,19 +3077,28 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "key",
-					"sid": 846183899111512,
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 282979152431904,
 					"parameters": {
-						"key": 81
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 173051283626603,
+					"parameters": {
+						"layer": "5"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "rotate-clockwise",
-					"objectClass": "MetalTile4",
-					"sid": 752014517164656,
+					"objectClass": "STEAMENDVALVE",
+					"sid": 703486935505734,
 					"parameters": {
 						"degrees": "1"
 					}
@@ -3075,11 +3119,20 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "key",
-					"sid": 563429524319368,
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 950083372223997,
 					"parameters": {
-						"key": 81
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 455936684997771,
+					"parameters": {
+						"layer": "5"
 					}
 				},
 				{
@@ -3096,7 +3149,6 @@
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 508816744425769,
-					"disabled": true,
 					"parameters": {
 						"variable": "Momentum",
 						"comparison": 2,
@@ -3107,8 +3159,8 @@
 			"actions": [
 				{
 					"id": "rotate-clockwise",
-					"objectClass": "MetalTile4",
-					"sid": 775956881644076,
+					"objectClass": "STEAMENDVALVE",
+					"sid": 273454917989762,
 					"parameters": {
 						"degrees": "5"
 					}
@@ -3121,6 +3173,15 @@
 						"variable": "Momentum",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "STEAMEND2",
+					"sid": 932114700811076,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
 				}
 			],
 			"sid": 476651192008300
@@ -3129,11 +3190,12 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "key",
-					"sid": 518396897210222,
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 379929956994493,
 					"parameters": {
-						"key": 81
+						"mouse-button": "left",
+						"click-type": "clicked"
 					}
 				},
 				{
@@ -3147,9 +3209,108 @@
 					}
 				},
 				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 463614280131054,
+					"parameters": {
+						"layer": "5"
+					}
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 124073426376723,
+					"disabled": true,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 2,
+						"value": "20"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 162567709698674,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 3,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "STEAMENDVALVE",
+					"sid": 782626579364065,
+					"parameters": {
+						"degrees": "1.75*Momentum"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 922950371089380,
+					"parameters": {
+						"variable": "Momentum",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 783933824941257,
+					"parameters": {
+						"variable": "NOCLICK",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-magnitude",
+					"objectClass": "STEAMEND2",
+					"sid": 340554041696799,
+					"behaviorType": "Sine",
+					"parameters": {
+						"magnitude": "10"
+					}
+				}
+			],
+			"sid": 479533542357696
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 990922460928543,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 816185150073152,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 4,
+						"value": "100"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 845648203984449,
+					"parameters": {
+						"layer": "5"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 237690899552254,
 					"disabled": true,
 					"parameters": {
 						"variable": "Momentum",
@@ -3161,23 +3322,201 @@
 			"actions": [
 				{
 					"id": "rotate-clockwise",
-					"objectClass": "MetalTile4",
-					"sid": 133497819793125,
+					"objectClass": "STEAMENDVALVE",
+					"sid": 886855928357444,
 					"parameters": {
-						"degrees": "1*Momentum"
+						"degrees": "1.75*Momentum"
 					}
 				},
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 430700038595947,
+					"sid": 678081036088922,
 					"parameters": {
 						"variable": "Momentum",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 339140220405692,
+					"parameters": {
+						"variable": "NOCLICK",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-magnitude",
+					"objectClass": "STEAMEND2",
+					"sid": 823222256737458,
+					"behaviorType": "Sine",
+					"parameters": {
+						"magnitude": "Momentum/2"
+					}
+				}
+			],
+			"sid": 841276320132672
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 306800090719774,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 4,
+						"value": "100"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 774044901637986,
+					"parameters": {
+						"layer": "5"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 847824056263863,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 127818916883161,
+					"parameters": {
+						"variable": "NOCLICK",
 						"value": "1"
 					}
 				}
 			],
-			"sid": 479533542357696
+			"sid": 420730230177098
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 811686752136856,
+					"parameters": {
+						"variable": "Momentum",
+						"comparison": 4,
+						"value": "100"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 702483139880295,
+					"parameters": {
+						"variable": "NOCLICK",
+						"comparison": 4,
+						"value": "5"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 124985072737968,
+					"parameters": {
+						"layer": "5"
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 284162467497157
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 709997087050799,
+					"parameters": {
+						"variable": "FactoryLevelComp",
+						"value": "true"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 196682958039379,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
+				}
+			],
+			"sid": 330716267479070
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 981642228615666
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 986166453792806,
+					"parameters": {
+						"layer": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-progress",
+					"objectClass": "ProgressBar2",
+					"sid": 889079116924678,
+					"parameters": {
+						"value": "Momentum"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MOMSCORE",
+					"sid": 148228755866393,
+					"parameters": {
+						"text": "Momentum"
+					}
+				}
+			],
+			"sid": 800024274949906
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 375841736507562
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 223584326864202,
+					"parameters": {
+						"layer": "5",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 149611996055738
 		}
 	],
 	"sid": 149726328012861
