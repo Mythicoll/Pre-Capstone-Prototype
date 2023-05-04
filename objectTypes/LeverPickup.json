@@ -1,0 +1,68 @@
+{
+	"name": "LeverPickup",
+	"plugin-id": "Sprite",
+	"sid": 399866461572281,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 893604966063386
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "highlightshadow",
+			"name": "HighlightShadow"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2857675,
+						"collisionPoly": {
+							"points": [
+								0.5625,
+								0.5625,
+								0.5,
+								0.5625,
+								0.40625,
+								0.5625,
+								1,
+								0.5,
+								0.96875,
+								0.96875,
+								0.5,
+								0.96875,
+								0,
+								0.96875,
+								0.9375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 756802879100744,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

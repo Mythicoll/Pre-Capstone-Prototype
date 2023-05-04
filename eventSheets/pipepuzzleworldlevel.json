@@ -971,45 +971,69 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "key",
-							"sid": 861219666796132,
-							"disabled": true,
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 120387478248699,
 							"parameters": {
-								"key": 32
-							}
-						},
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "TestPlayerC",
-							"sid": 355579349409540,
-							"disabled": true,
-							"parameters": {
-								"object": "Lever"
+								"interval-seconds": "5"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "toggle-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 898378548290161,
-							"disabled": true,
+							"id": "set-animation",
+							"objectClass": "DividerGreen",
+							"sid": 170126161334572,
 							"parameters": {
-								"variable": "Lever1"
+								"animation": "\"OFF\"",
+								"from": "beginning"
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 414713197924941,
-							"disabled": true,
+							"id": "set-enabled",
+							"objectClass": "DividerGreen",
+							"sid": 282820404108122,
+							"behaviorType": "Solid",
 							"parameters": {
-								"seconds": "1.0"
+								"state": "disabled"
 							}
 						}
 					],
 					"sid": 515380884529404
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 116628495964405,
+							"parameters": {
+								"interval-seconds": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "DividerGreen",
+							"sid": 785537459438675,
+							"parameters": {
+								"animation": "\"ON\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "DividerGreen",
+							"sid": 932494353193733,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 879328157007327
 				},
 				{
 					"eventType": "block",
