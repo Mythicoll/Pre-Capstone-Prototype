@@ -1,0 +1,25 @@
+{
+	"name": "PLAYING",
+	"plugin-id": "Text",
+	"sid": 151821656263907,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 889337466890366
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 553592563435509
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 297796129406492
+		}
+	],
+	"effectTypes": []
+}

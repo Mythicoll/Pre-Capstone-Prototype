@@ -113,6 +113,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Flash",
 			"name": "Flash",
 			"author": "Scirra",
@@ -150,6 +157,13 @@
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -418,7 +432,14 @@
 			"MOMSCORE",
 			"Treasure",
 			"TreasureSpawn",
-			"Sprite3"
+			"Sprite3",
+			"CollectMudkip_Green",
+			"CollectMudkip_Red",
+			"thanks",
+			"FOR",
+			"PLAYING",
+			"Shadow2",
+			"MetalTile5"
 		],
 		"subfolders": [
 			{
@@ -478,7 +499,8 @@
 					"Player",
 					"SolidWall",
 					"chaseEnemy",
-					"Door4"
+					"Door4",
+					"chaseEnemy3"
 				],
 				"subfolders": [],
 				"name": "TilePuzzle"
@@ -599,6 +621,14 @@
 					"name": "Steam Shaft.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 787850663390198,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Save Area Experiments.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 926419918402075,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -750,7 +780,7 @@
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
@@ -759,5 +789,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "Title"
 }

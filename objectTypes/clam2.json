@@ -17,6 +17,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 531964050963227
+		},
+		{
+			"name": "HP",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 322692245756358
 		}
 	],
 	"behaviorTypes": [

@@ -4,6 +4,12 @@
 	"sid": 574239060784777,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 138248375557223
+		}
+	],
 	"effectTypes": []
 }

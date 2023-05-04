@@ -22,6 +22,16 @@
 			"sid": 227647604735636
 		},
 		{
+			"eventType": "variable",
+			"name": "crabkill",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 109959319586625
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Movement",
@@ -3537,6 +3547,15 @@
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 634526920635108,
+							"parameters": {
+								"variable": "CrabCount",
+								"value": "1"
+							}
 						}
 					],
 					"sid": 621557416623430
@@ -3556,6 +3575,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 768658413612168,
+							"parameters": {
+								"variable": "CrabCount",
+								"value": "1"
+							}
+						},
 						{
 							"id": "destroy",
 							"objectClass": "chaseEnemy",
@@ -4023,6 +4051,151 @@
 				}
 			],
 			"sid": 459743572727231
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 255933325115008,
+					"parameters": {
+						"object": "CollectableBottle"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "CollectableBottle",
+					"sid": 572019309819711,
+					"parameters": {
+						"object": "PickupParticle",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CollectMudkip_Green",
+					"sid": 540273299693466
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CollectableBottle",
+					"sid": 687040320452016
+				}
+			],
+			"sid": 234928893409358
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 932660891539916,
+					"parameters": {
+						"variable": "crabkill",
+						"comparison": 5,
+						"value": "4"
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 631993772140527
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "chaseEnemy3",
+					"sid": 561685718028107
+				}
+			],
+			"sid": 285837349704368
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 385817084590383,
+					"parameters": {
+						"key": 50
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 771378002493112,
+					"parameters": {
+						"variable": "crabkill",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 710907811835848
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 689261330735032
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 203888081622669
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 312294120189440,
+					"parameters": {
+						"audio-file": "Steam Shaft",
+						"loop": "looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"Beach\""
+					}
+				}
+			],
+			"sid": 878625775636881
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 892980321132564,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Anchor",
+					"sid": 359647983661984,
+					"parameters": {
+						"x": "TestPlayerC.X",
+						"y": "TestPlayerC.Y"
+					}
+				}
+			],
+			"sid": 534274167552713
 		}
 	],
 	"sid": 779865521013904

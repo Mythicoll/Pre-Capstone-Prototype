@@ -1,19 +1,14 @@
 {
-	"name": "TITLEFULL",
+	"name": "CollectMudkip_Red",
 	"plugin-id": "Sprite",
-	"sid": 338739728771129,
+	"sid": 829751510541237,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Sin",
 			"name": "Sine",
-			"sid": 952147021336347
-		},
-		{
-			"behaviorId": "Fade",
-			"name": "Fade",
-			"sid": 134656610512914
+			"sid": 454382130419758
 		}
 	],
 	"effectTypes": [],
@@ -22,21 +17,21 @@
 			{
 				"frames": [
 					{
-						"width": 2382,
-						"height": 1144,
-						"originX": 0.5104953820319059,
-						"originY": 0.7543706293706294,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9284058,
+						"imageSpriteId": 596049,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 368004653930964,
-				"name": "Default",
-				"isLooping": false,
+				"sid": 175998922648544,
+				"name": "Animation 1",
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

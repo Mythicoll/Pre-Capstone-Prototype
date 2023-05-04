@@ -1706,6 +1706,11 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "TriggerTextCollect",
+							"sid": 518953367011468
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 957993780528871,
@@ -1716,7 +1721,15 @@
 						{
 							"id": "set-text",
 							"objectClass": "SpriteFont",
-							"sid": 268237753252595,
+							"sid": 354929097995843,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TextCollect",
+							"sid": 675925679052014,
 							"parameters": {
 								"text": "\"\""
 							}
@@ -1826,6 +1839,11 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "TriggerTextDoor",
+							"sid": 113124815846445
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 555068168594208,
@@ -1837,6 +1855,14 @@
 							"id": "set-text",
 							"objectClass": "SpriteFont",
 							"sid": 221441140131375,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TextDoor",
+							"sid": 570865461617844,
 							"parameters": {
 								"text": "\"\""
 							}
@@ -1882,7 +1908,8 @@
 							}
 						}
 					],
-					"sid": 875214093839832
+					"sid": 875214093839832,
+					"disabled": true
 				}
 			],
 			"sid": 346772684278892
@@ -1903,18 +1930,6 @@
 					"sid": 190560147977035,
 					"parameters": {
 						"tag": "\"Theme\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 378259043894050,
-					"parameters": {
-						"audio-file": "Theme-ish",
-						"loop": "looping",
-						"volume": "-10",
-						"stereo-pan": "0",
-						"tag-optional": "\"Theme\""
 					}
 				},
 				{
@@ -3517,6 +3532,241 @@
 				}
 			],
 			"sid": 149611996055738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 945694557140687
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 972190307242785
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 258068045633959,
+					"parameters": {
+						"audio-file": "Part of the Machine",
+						"loop": "looping",
+						"volume": "-2",
+						"stereo-pan": "0",
+						"tag-optional": "\"Beach\""
+					}
+				}
+			],
+			"sid": 112313788125854
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 266831267746865,
+					"parameters": {
+						"interval-seconds": "15"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 988481796268171,
+					"parameters": {
+						"tag": "\"Beach\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 564526123596001,
+					"parameters": {
+						"audio-file": "Part of the Machine",
+						"loop": "not-looping",
+						"volume": "15",
+						"stereo-pan": "0",
+						"tag-optional": "\"Beach\""
+					}
+				}
+			],
+			"sid": 482097472686521,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 441216818235540
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 839240801345951,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 884841592813410,
+					"parameters": {
+						"animation": "\"HP3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 716131933547245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 219560515612093
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 447223207430127,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 884910750816811,
+					"parameters": {
+						"animation": "\"HP2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 767810768911372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 457249010739392
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 575238940759398,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 501492476221664,
+					"parameters": {
+						"animation": "\"HP1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 252415207985435
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 286279669157387
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 582723778312161,
+					"parameters": {
+						"variable": "HP",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 159837593056130,
+					"parameters": {
+						"layout": "LevelSelect"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 648365868536000,
+					"disabled": true
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 642209969976422,
+					"disabled": true,
+					"parameters": {
+						"variable": "HP",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 460585422700070
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 299233568309214,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Anchor",
+					"sid": 490858483767108,
+					"parameters": {
+						"x": "TestPlayerC.X",
+						"y": "TestPlayerC.Y"
+					}
+				}
+			],
+			"sid": 731417371008933
 		}
 	],
 	"sid": 149726328012861

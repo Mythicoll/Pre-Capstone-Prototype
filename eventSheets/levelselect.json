@@ -67,6 +67,56 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "key",
+					"sid": 449733477932823,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 986816616913481,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 202446902164073
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 207756956012843,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 466768926500865,
+					"parameters": {
+						"variable": "LevelSelected",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 526910867110761
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
 					"sid": 360824732470938,
 					"parameters": {
 						"key": 32
@@ -94,6 +144,25 @@
 			],
 			"actions": [
 				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 593073021682984,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "1.5",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 690412399522824,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 668804653619682,
@@ -112,6 +181,77 @@
 				}
 			],
 			"sid": 991169656683578
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 569118303287000,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 285677514089558,
+					"parameters": {
+						"variable": "MineLevelComp"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 803561624505711,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 861010096061609,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "1.5",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 887053377939523,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 209481341474604,
+					"parameters": {
+						"layout": "MinePuzzleWorld"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 198774285892817,
+					"parameters": {
+						"variable": "HP",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 342262965404193
 		},
 		{
 			"eventType": "block",
@@ -146,6 +286,25 @@
 			],
 			"actions": [
 				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 325298972830530,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "1.5",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 939597134988417,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 952707848354284,
@@ -164,6 +323,77 @@
 				}
 			],
 			"sid": 458991202507432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 321500883274569,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 623186570479579,
+					"parameters": {
+						"variable": "FactoryLevelComp"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 252485900389057,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 401908403665242,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "1.5",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 148074963266250,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 135049891266687,
+					"parameters": {
+						"layout": "PipePuzzleWorld"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 288924364945414,
+					"parameters": {
+						"variable": "HP",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 533049205538114
 		},
 		{
 			"eventType": "block",
@@ -198,6 +428,25 @@
 			],
 			"actions": [
 				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 271740508626470,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "1.5",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 124849738028850,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 692875458128583,
@@ -216,6 +465,77 @@
 				}
 			],
 			"sid": 814040198987023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 225444652081320,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 233495437618800,
+					"parameters": {
+						"variable": "VolcanoLevelComp"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 679457517614558,
+					"parameters": {
+						"variable": "LevelSelected",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 484362064336780,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "1.5",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 676368922082304,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 639425349372096,
+					"parameters": {
+						"layout": "VolcanoPuzzleWorld"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 309763605726497,
+					"parameters": {
+						"variable": "HP",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 478828355849683
 		},
 		{
 			"eventType": "block",
@@ -760,6 +1080,130 @@
 				}
 			],
 			"sid": 267821385908779
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 501511411650385,
+					"parameters": {
+						"variable": "MineLevelComp"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 984356007687865,
+					"parameters": {
+						"variable": "VolcanoLevelComp"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 959582829985010,
+					"parameters": {
+						"variable": "FactoryLevelComp"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 578504515537687,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "TreasureSpawn",
+					"sid": 351280473942332,
+					"parameters": {
+						"object": "Treasure",
+						"layer": "4",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 975115734670983
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 415907119608662,
+					"parameters": {
+						"key": 49
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 503819086708901,
+					"parameters": {
+						"variable": "VolcanoLevelComp",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 793265047312841,
+					"parameters": {
+						"variable": "MineLevelComp",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 206909324139874,
+					"parameters": {
+						"variable": "FactoryLevelComp",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 354637824364175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 176142647392643
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 361841252586298
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 602747414242934,
+					"parameters": {
+						"audio-file": "Save Area Experiments",
+						"loop": "looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 283198919918558
 		}
 	],
 	"sid": 604025887444433

@@ -2916,7 +2916,8 @@
 					}
 				}
 			],
-			"sid": 245196001188425
+			"sid": 245196001188425,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -3196,10 +3197,10 @@
 					"actions": [
 						{
 							"id": "subtract-from-instvar",
-							"objectClass": "chaseEnemy",
-							"sid": 734464607206272,
+							"objectClass": "clam",
+							"sid": 615267716296289,
 							"parameters": {
-								"instance-variable": "health",
+								"instance-variable": "HP",
 								"value": "1"
 							}
 						}
@@ -3221,10 +3222,10 @@
 					"actions": [
 						{
 							"id": "subtract-from-instvar",
-							"objectClass": "chaseEnemy",
-							"sid": 732801346392942,
+							"objectClass": "clam2",
+							"sid": 190724891920988,
 							"parameters": {
-								"instance-variable": "health",
+								"instance-variable": "HP",
 								"value": "1"
 							}
 						}
@@ -3328,6 +3329,52 @@
 						}
 					],
 					"sid": 970003595430760
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "clam",
+							"sid": 628088643420081,
+							"parameters": {
+								"instance-variable": "HP",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "clam",
+							"sid": 534755331296040
+						}
+					],
+					"sid": 654071663719217
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "clam2",
+							"sid": 605071859306218,
+							"parameters": {
+								"instance-variable": "HP",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "clam2",
+							"sid": 201957169306614
+						}
+					],
+					"sid": 702486643263698
 				},
 				{
 					"eventType": "block",
@@ -3811,6 +3858,68 @@
 				}
 			],
 			"sid": 199199440434184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "TestPlayerC",
+					"sid": 841534931380951,
+					"parameters": {
+						"object": "CollectableBottle"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "CollectableBottle",
+					"sid": 296429745672366,
+					"parameters": {
+						"object": "PickupParticle",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CollectMudkip_Red",
+					"sid": 842680049531970
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CollectableBottle",
+					"sid": 816855296839311
+				}
+			],
+			"sid": 904588169408380
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "key",
+					"sid": 659970511331841,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Anchor",
+					"sid": 107518163780402,
+					"parameters": {
+						"x": "TestPlayerC.X",
+						"y": "TestPlayerC.Y"
+					}
+				}
+			],
+			"sid": 915900590479542
 		}
 	],
 	"sid": 194596489338002

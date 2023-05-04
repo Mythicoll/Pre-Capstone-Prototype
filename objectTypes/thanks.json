@@ -1,0 +1,20 @@
+{
+	"name": "thanks",
+	"plugin-id": "Text",
+	"sid": 478982357691658,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 876116345193303
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 228207847971780
+		}
+	],
+	"effectTypes": []
+}

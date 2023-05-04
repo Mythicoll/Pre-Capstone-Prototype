@@ -14,17 +14,47 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 149832733894575,
+					"sid": 835875996032220,
 					"parameters": {
-						"audio-file": "Steam on the Beach",
+						"audio-file": "Save Area Experiments",
 						"loop": "not-looping",
 						"volume": "15",
 						"stereo-pan": "0",
 						"tag-optional": "\"Beach\""
 					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "TITLEFULL",
+					"sid": 277103192557335,
+					"behaviorType": "Fade"
 				}
 			],
 			"sid": 657488529742692
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-time",
+					"objectClass": "System",
+					"sid": 737589951252944,
+					"parameters": {
+						"comparison": 0,
+						"time-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "TITLEFULL",
+					"sid": 505607045088506,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 856635631148488,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -41,6 +71,40 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-wait-time",
+					"objectClass": "TITLEFULL",
+					"sid": 980063968404223,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "0"
+					}
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "START",
+					"sid": 685377867388985,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 902876719104131,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 775987779543159,
+					"parameters": {
+						"tag": "\"Beach\""
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",

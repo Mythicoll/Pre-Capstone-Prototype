@@ -27014,35 +27014,6 @@
 					}
 				},
 				{
-					"type": "CollectableBottle",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1864,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 4256,
-						"y": 736,
-						"width": 128,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Compass_Point",
 					"properties": {
 						"initially-visible": false,
@@ -27152,6 +27123,35 @@
 						"height": 7,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CollectableBottle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1864,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4256,
+						"y": 736,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -37889,35 +37889,6 @@
 					}
 				},
 				{
-					"type": "CollectMudkip_Pink",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 2",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1112,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1162,
-						"y": 5378,
-						"width": 57.75,
-						"height": 24,
-						"originX": 0.5151515151515151,
-						"originY": -0.16666666666666666,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 1
-					}
-				},
-				{
 					"type": "TestPlayerC",
 					"properties": {
 						"initially-visible": true,
@@ -37975,7 +37946,7 @@
 					}
 				},
 				{
-					"type": "CollectMudkip_Pink",
+					"type": "CollectMudkip_Red",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -37983,14 +37954,29 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1937,
+					"uid": 4241,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 4,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 4250.406187337944,
-						"y": 753.9949280109712,
-						"width": 88.83431439988995,
-						"height": 101.52493074273136,
+						"x": 4254.306018510321,
+						"y": 747.3698355128175,
+						"width": 67.10785268497072,
+						"height": 69.7975267653223,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -38185,7 +38171,7 @@
 					"instanceVariables": {
 						"PlayerX": 0,
 						"PlayerY": 0,
-						"HP": 2
+						"HP": 1
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -38232,7 +38218,8 @@
 					"uid": 1306,
 					"instanceVariables": {
 						"PlayerX": 0,
-						"PlayerY": 0
+						"PlayerY": 0,
+						"HP": 1
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -38560,7 +38547,8 @@
 					"uid": 1312,
 					"instanceVariables": {
 						"PlayerX": 0,
-						"PlayerY": 0
+						"PlayerY": 0,
+						"HP": 1
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -38676,7 +38664,7 @@
 					"instanceVariables": {
 						"PlayerX": 0,
 						"PlayerY": 0,
-						"HP": 2
+						"HP": 1
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -38795,7 +38783,7 @@
 					"instanceVariables": {
 						"PlayerX": 0,
 						"PlayerY": 0,
-						"HP": 2
+						"HP": 1
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -38843,7 +38831,7 @@
 					"instanceVariables": {
 						"PlayerX": 0,
 						"PlayerY": 0,
-						"HP": 2
+						"HP": 1
 					},
 					"behaviors": {
 						"MoveTo": {
